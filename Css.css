@@ -1,0 +1,370 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: #1c1c1c;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.nav li {
+  margin: 0 10px;
+  position: relative;
+}
+
+.nav li:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  transform: translateY(-50%);
+  height: 8px;
+  width: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav li:hover:before {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+
+.nav a {
+  color: #fff;
+  position: relative;
+}
+
+.nav a:hover {
+  color: #ffcc00;
+}
+
+.nav a:hover:before {
+  background-color: #ffcc00;
+}
+
+.language-switch {
+  margin-left: 20px;
+}
+
+#language-toggle {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+#language-toggle:hover {
+  opacity: 0.7;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.light-mode{
+  background-image: url('https://aguasclarasonline.com.ar/wp-content/uploads/2018/08/AguasClaras-Ingenieria-Outdoor-Nosotros-Home.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+.dark-mode{
+  background-image: url('https://img.freepik.com/free-vector/realistic-colorful-galaxy-background_23-2148965681.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.dark-mode .nombreRol {
+  width: fit-content;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 20px; 
+}
+
+.light-mode .nombreRol {
+  width: fit-content;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.863);
+  border: 3px solid #000000;
+  border-radius: 10px;
+  padding: 20px; 
+}
+
+.dark-mode .presentacion {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.light-mode .presentacion {
+  background-color: rgba(255, 255, 255, 0.863);
+  border: 3px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.certificate-grid iframe,
+.certificate-grid img {
+  width: 100%;
+  height: 250px;
+}
+
+@media (max-width: 768px) {
+  .certificate-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .certificate-grid iframe,
+  .certificate-grid img {
+    height: 200px;
+  }
+}
+
+.light-mode .skill-item{ 
+  border-color: black;
+  background-color: rgba(255, 255, 255, 0.863);
+}
+
+.dark-mode .skill-item{
+  border-color: white;
+  background-color: black;
+}
+
+.light-mode .cel {
+  color: black;
+}
+
+.dark-mode .cel {
+ color: white;
+}
+
+.light-mode .git {
+  color: black;
+}
+
+.dark-mode .git {
+ color: white;
+}
+
+.title {
+  text-decoration: underline;
+}
+
+button#theme-toggle {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.5s, background-color 0.5s;
+}
+
+button#theme-toggle:hover {
+  background-color: #777;
+}
+
+#sun-icon {
+  display: none;
+  font-size: 20px;
+}
+
+#moon-icon {
+  display: inline-block;
+  font-size: 20px;
+}
+
+#theme-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+#theme-toggle:hover {
+  transform: rotate(180deg);
+  color: #ffc107;
+}
+
+#imagen {
+  height: 10rem;
+  width: 10rem;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#rol {
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  text-align: justify;
+  margin-top: 30px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.skill-item i {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.skill-item span {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.light-mode a {
+  color: red;
+  text-decoration: none;
+}
+
+.light-mode a:hover {
+  color:rgba(180, 16, 16, 0.8);
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dark-mode .info {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.light-mode .info {
+  background-color: rgba(255, 255, 255, 0.863);
+  border: 3px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
+  color: #000000;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icons ul {
+  font-size: 25px;
+}
+
+.dark-mode .container.icons {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.light-mode .container.icons {
+  background-color: rgba(255, 255, 255, 0.863);
+  border: 3px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  margin-top: 30px;
+}
+
+.dark-mode .cv {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.light-mode .cv {
+  background-color: rgba(255, 255, 255, 0.863);
+  border: 3px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.cv-link {
+  cursor: pointer;
+}
+
+.dark-mode .pie {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.light-mode .pie {
+  background-color: rgba(255, 255, 255, 0.863);
+  border: 3px solid #000000;
+  border-radius: 10px;
+  padding: 20px;  
+}
+

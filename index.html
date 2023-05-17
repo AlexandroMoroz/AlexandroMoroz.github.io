@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-BOHCQsbvBn/qnxBxQ2wLOtlvJRqNz1QF5aG8m/07VdauZy0zk+I2B3qjR1T8DZ9nv7aCOzsz7fHzcM+DpVJjLg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Css.css" />
+  </head>
+
+  <body class="dark-mode">
+    <header class="p-3 text-bg-dark">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+          >
+            <svg
+              class="bi me-2"
+              width="40"
+              height="32"
+              role="img"
+              aria-label="Bootstrap"
+            >
+              <use xlink:href="#bootstrap" />
+            </svg>
+          </a>
+
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li>
+              <a href="#about" class="nav-link px-2 text-white" data-lang="en" data-lang-es="Sobre mi">
+                <span class="separator"></span>
+                About me
+              </a>
+            </li>
+            <li>
+              <a href="#certificates" class="nav-link px-2 text-white" data-lang="en" data-lang-es="Mis certificados">
+                <span class="separator"></span>
+                My certificates
+              </a>
+            </li>
+            <li>
+              <a href="#skills" class="nav-link px-2 text-white" data-lang="en" data-lang-es="Mis habilidades">
+                <span class="separator"></span>
+                My skills
+              </a>
+            </li>
+            <li>
+              <a href="#projects" class="nav-link px-2 text-white" data-lang="en" data-lang-es="Mis proyectos">
+                <span class="separator"></span>
+                My projects
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="nav-link px-2 text-white" data-lang="en" data-lang-es="Contáctame">
+                <span class="separator"></span>
+                Contact me
+              </a>
+            </li>
+            <li>
+              <a href="#cv" class="nav-link px-2 text-white" data-lang="en" data-lang-es="Mi CV">
+                <span class="separator"></span>
+                My CV
+              </a>
+            </li>
+          </ul>
+          <button id="theme-toggle">
+            <span id="moon-icon">&#x263D;</span>
+            <span id="sun-icon">&#x2600;</span>
+          </button>
+          <div class="language-switch">
+            <button id="language-toggle" onclick="toggleLanguage()">Switch to Spanish</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container text-center">
+      <img
+        src="./cv semi profesional.jpeg"
+        alt="Profile Picture"
+        class="rounded-circle img-thumbnail mt-3"
+        id="imagen"
+      />
+
+      <div class="nombreRol mt-1">
+        <h1>Alexandro Ivan Moroz</h1>
+        <p id="rol" data-lang="en" data-lang-es="Desarrollador Java Trainee">Trainee Java Developer</p>
+      </div>
+    </div>
+
+    <br />
+
+    <section id="about">
+      <div class="container">
+        <div class="presentacion">
+          <h2 data-lang="en" data-lang-es="Sobre mi">About Me</h2>
+          <p data-lang="en" data-lang-es="¡Hola! mi nombre Ivan Alexandro, hace poco me recibí como developer full stack en Java con la empresa Egg cooperation, ahí pude aprender HTML5, CSS, Java, JavaScript, Bootstrap, Git, Github, ReactJs, JPA, JDBC, Spring y MySQL. 
+          Busco mi primer trabajo como IT Trainee en Front-end o Back-end, sin importar los lenguajes de programación que usen siempre y cuando me permitan el tiempo suficiente para aprenderlos a manejar correctamente.
+          Me fascina aprender y siempre estoy en constante aprendizaje de nuevas herramientas, métodos, prácticas, etc.">
+            Hello! My name is Ivan Alexandro, and I recently graduated as a full
+            stack developer in Java from Egg Cooperation. There, I was able to
+            learn HTML5, CSS, Java, JavaScript, Bootstrap, Git, Github, ReactJs,
+            JPA, JDBC, Spring, and MySQL. I am looking for my first job as an IT
+            Trainee in Front-end or Back-end, regardless of the programming
+            languages they use, as long as they allow me enough time to learn
+            how to handle them correctly. I love to learn and I am always
+            constantly learning new tools, methods, practices, etc.
+          </p>
+        </div>
+
+        <br />
+       
+        <div id="certificates">
+          <h3 class="certificados" data-lang="en" data-lang-es="Certificados">Certificates (only in spanish)</h3>
+          <div class="certificate-grid">
+            <iframe src="./Certificado_Curso_Programacin_FullStack.pdf"></iframe>
+            <iframe src="./Certificado_de_Curso_Programacion_desde_Cero.pdf"></iframe>
+            <iframe src="./argentina_programa_2023.pdf"></iframe>
+            <img src="./certificate-elements-of-ai-es.png"></img>
+          </div>
+        </div>
+        
+        <br />
+
+        <h3 id="skills" data-lang="en" data-lang-es="Habilidades">Skills</h3>
+        <div class="skills-container">
+          <div class="skill-item">
+            <i class="fab fa-java" style="color: #007396"></i>
+            <span>Java</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-database" style="color: #4479a1"></i>
+            <span>JPA</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-cogs" style="color: #6db33f"></i>
+            <span>Spring Framework</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-html5" style="color: #e34f26"></i>
+            <span>HTML</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-css3" style="color: #1572b6"></i>
+            <span>CSS</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-js-square" style="color: #f7df1e"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-react" style="color: #61dafb"></i>
+            <span>React</span>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-bootstrap" style="color: #7952b3"></i>
+            <span>Bootstrap</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-database" style="color: #4479a1"></i>
+            <span>MySQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+
+    <section id="projects">
+      <div class="container">
+        <h2 data-lang="en" data-lang-es="Proyectos (videos todavia no disponibles)">Projects (videos not available yet)</h2>
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-6">
+            <div class="video-container">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                  title="YouTube video"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="info">
+              <h5 class="text-center title" data-lang="en" data-lang-es="Página de noticias">News Website</h5>
+              <p class="text-center" data-lang="en" data-lang-es="Este proyecto fue creado por mi, es una
+              práctica de un ejercicio propuesto en el curso de programación full stack, el ejercicio me pedia
+              hacer una página web de noticias para la empresa EGG (es quien ofrece el curso full stack) en donde
+              hay 3 roles, un usuario, un administrador y un periodista, el administrador tiene acceso a la lista
+              de usuarios, puede darlos de baja, cambiar su salario y cambiarles el rol, el periodista puede crear
+              noticias pero no darlas de baja y el usuario normal solamente puede ver las noticias.
+              el diseño fue creado a mi gusto, le he dado un toque de simpleza e intenté hacer una interfaz
+               cómoda para el usuario.">
+                This project was created by me, it is a practice of an exercise proposed in the full stack
+                programming course, the exercise asked me to make a news web page for the company EGG
+                (it is the one that offers the full stack course) where there are 3 roles , a user,
+                an administrator and a journalist, the administrator has access to the list of users,
+                he can unsubscribe them, change journalist salary and change their role, the journalist can create
+                news but not unsubscribe them and the normal user can only view News.
+                the design was created to my liking, I have given it a touch of simplicity
+                and I tried to make a comfortable interface for the user.
+              </p>
+              <div class="text-center">
+                <a href="https://github.com/AlexandroMoroz/Pagina-de-noticias" target="_blank" class="btn btn-primary" data-lang="en" data-lang-es="Repositorio Github">GitHub Repository</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+<!-- <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-6">
+            <div class="video-container">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                  title="YouTube video"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="info">
+              <h5 class="text-center">Project Title</h5>
+              <p class="text-center">
+                Este proyecto está hecho con Java, HTML y CSS. En un principio
+                iba a ser una página de funerales, pero al final terminó siendo
+                una página de noticias para la plataforma EGG.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </section>
+    
+    
+      
+  
+
+    <br />
+
+    <section id="contact">
+      <div class="container icons">
+        <h3 data-lang="en" data-lang-es="Contáctame">Contact me</h3>
+        <ol>
+          <ul>
+            <a href="https://www.linkedin.com/in/ivan-alexandro-moroz-java-developer-trainee/" target="_blank">
+              <i class="fab fa-linkedin" style="color: #0a66c2"></i>
+              Linkedin
+            </a>
+          </ul>
+          <ul>
+            <i class="fas fa-envelope" style="color: #d44638"></i>
+            <a href="#" onclick="revealEmail(event)" data-lang="en" data-lang-es="Correo electronico">            
+              Email
+            </a>
+          </ul>
+          <ul>
+            <i class="fas fa-phone cel" ></i>
+            <a href="#" onclick="revealPhoneNumber(event)" data-lang="en" data-lang-es="Número celular">          
+              Phone
+            </a>
+          </ul>
+          <ul>
+            <a href="https://github.com/AlexandroMoroz" target="_blank">
+              <i class="fab fa-github git"></i>
+              GitHub
+            </a>
+          </ul>
+          <ul>
+            <a href="https://www.instagram.com/alex_moroz5/" target="_blank">
+              <i class="fab fa-instagram" style="color: #e4405f"></i>
+              Instagram
+            </a>
+          </ul>
+        </ol>
+      </div>
+    </section>
+
+    <br />
+
+    <section>
+      <div class="container">
+        <div class="cv-link cv" id="cv" onclick="toggleCV()" data-lang="en" data-lang-es="Ver CV">View CV</div>
+        <br />
+        <div id="cv-content" style="display: none">
+          <embed id="cv-embed" type="application/pdf" width="100%" height="600px" />
+        </div>
+      </div>
+    </section>
+    
+
+    <div class="b-example-divider"></div>
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 pie"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <span id="footer-text" class="mb-3 mb-md-0" data-lang="en" data-lang-es="2023 / Hecho por Alexandro Ivan Moroz"
+            >2023 / made by Alexandro Ivan Moroz</span
+          >
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./JavaScript.js"></script>
+  </body>
+</html>
