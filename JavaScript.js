@@ -18,29 +18,31 @@ themeToggle.addEventListener("click", function () {
 });
 
 function toggleCV() {
-    var cvContent = document.getElementById("cv-content");
-    var cvEmbed = document.getElementById("cv-embed");
-    var cvLink = document.getElementById("cv");
-    var languageToggle = document.getElementById("language-toggle");
-    
-    if (cvContent.style.display === "none") {
-      cvContent.style.display = "block";
-      if (languageToggle.textContent === "Switch to Spanish") {
-        cvEmbed.src = "./Ivan_Alexandro_Moroz_CV_en.pdf";
-        cvLink.textContent = "Hide CV";
-      } else {
-        cvEmbed.src = "./Ivan_Alexandro_Moroz_CV_es.pdf";
-        cvLink.textContent = "Esconder CV";
-      }
+  var cvContent = document.getElementById("cv-content");
+  var cvEmbed = document.getElementById("cv-embed");
+  var cvLink = document.getElementById("cv");
+  var languageToggle = document.getElementById("language-toggle");
+  
+  if (cvContent.style.display === "block") {
+    cvContent.style.display = "none";
+    if (languageToggle.textContent === "Switch to Spanish") {
+      cvLink.textContent = "View CV";
     } else {
-      cvContent.style.display = "none";
-      if (languageToggle.textContent === "Switch to Spanish") {
-        cvLink.textContent = "View CV";
-      } else {
-        cvLink.textContent = "Ver CV";
-      }
+      cvLink.textContent = "Ver CV";
     }
+    return; 
   }
+  
+  cvContent.style.display = "block";
+  if (languageToggle.textContent === "Switch to Spanish") {
+    cvEmbed.src = "./Ivan_Alexandro_Moroz_CV_en.pdf";
+    cvLink.textContent = "Hide CV";
+  } else {
+    cvEmbed.src = "./Ivan_Alexandro_Moroz_CV_es.pdf";
+    cvLink.textContent = "Esconder CV";
+  }
+}
+
   
 function toggleLanguage() {
     var langButton = document.getElementById("language-toggle");
