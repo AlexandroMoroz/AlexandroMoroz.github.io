@@ -121,7 +121,7 @@ body {
 .certificate-grid iframe,
 .certificate-grid img {
   width: 100%;
-  height: 250px;
+  height: 300px;
 }
 
 @media (max-width: 768px) {
