@@ -45,19 +45,27 @@ function toggleCV() {
 
   
 function toggleLanguage() {
-    var langButton = document.getElementById("language-toggle");
+  var langButton = document.getElementById("language-toggle");
+  var cvContent = document.getElementById("cv-content");
+  var cvLink = document.getElementById("cv");
   
-    
+  if (cvContent.style.display === "block") {
+    cvContent.style.display = "none";
     if (langButton.textContent === "Switch to Spanish") {
-      
-      langButton.textContent = "Cambiar al Ingles";
-      replaceTextContent("en", "es");
+      cvLink.textContent = "View CV";
     } else {
-      
-      langButton.textContent = "Switch to Spanish";
-      replaceTextContent("es", "en");
+      cvLink.textContent = "Ver CV";
     }
   }
+  
+  if (langButton.textContent === "Switch to Spanish") {
+    langButton.textContent = "Cambiar al Ingles";
+    replaceTextContent("en", "es");
+  } else {
+    langButton.textContent = "Switch to Spanish";
+    replaceTextContent("es", "en");
+  }
+}
   
   function replaceTextContent(fromLanguage, toLanguage) {
     var elements = document.querySelectorAll('[data-lang]');
