@@ -67,16 +67,16 @@ body {
 }
 
 .light-mode{
-  background-image: url('https://aguasclarasonline.com.ar/wp-content/uploads/2018/08/AguasClaras-Ingenieria-Outdoor-Nosotros-Home.jpg');
+ background-image: url('./mar.webp');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: black;
 }
 
 .dark-mode{
-  background-image: url('https://img.freepik.com/free-vector/realistic-colorful-galaxy-background_23-2148965681.jpg');
+   background-image: url('./espacio.webp');  
   background-size: cover;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: white;
 }
 
