@@ -17,6 +17,26 @@ themeToggle.addEventListener("click", function () {
   }
 });
 
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  let offset = -100;
+
+  if (window.innerWidth < 768) {
+    
+    offset = -50;
+  } else if (window.innerWidth < 1024) {
+   
+    offset = -80;
+  }
+
+  const sectionOffsetTop = section.offsetTop + offset;
+
+  window.scrollTo({
+    top: sectionOffsetTop,
+    behavior: 'smooth'
+  });
+}
+
 function toggleCV() {
   var cvContent = document.getElementById("cv-content");
   var cvEmbed = document.getElementById("cv-embed");
