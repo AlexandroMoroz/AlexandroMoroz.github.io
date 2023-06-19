@@ -3,6 +3,10 @@
     position: static;
   }
 
+  .image-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
   .certificate-grid {
     grid-template-columns: repeat(1, 1fr);
     border: 3px solid #000000;
@@ -18,6 +22,15 @@
   .certificate-grid img:hover {
     transform: scale(1.1);
   }
+}
+
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 5px;
+  }
+
+
 }
 
 header {
@@ -173,6 +186,41 @@ body {
 
 .certificate-grid img:hover {
   transform: scale(1.4);
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.zoomable-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.zoomable-image:hover:not(.zoomed-image) {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.zoomed-image {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 85%;
+  max-height: 85%;
+  z-index: 9999;
+  pointer-events: none;
 }
 
 .navbar {

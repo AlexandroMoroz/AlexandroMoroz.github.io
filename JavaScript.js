@@ -17,16 +17,44 @@ themeToggle.addEventListener("click", function () {
   }
 });
 
+const images = document.querySelectorAll('.zoomable-image');
+let zoomedIndex = -1;
+
+images.forEach((image, index) => {
+  image.addEventListener('click', () => {
+    toggleZoom(image, index);
+  });
+});
+
+function toggleZoom(image, index) {
+  if (index === zoomedIndex) {
+    image.classList.remove('zoomed-image');
+    image.style.pointerEvents = 'auto';
+    zoomedIndex = -1;
+  } else {
+    images.forEach((otherImage, otherIndex) => {
+      if (otherIndex !== index && otherImage.classList.contains('zoomed-image')) {
+        otherImage.classList.remove('zoomed-image');
+        otherImage.style.pointerEvents = 'auto';
+      }
+    });
+    image.classList.add('zoomed-image');
+    image.style.pointerEvents = 'auto';
+    zoomedIndex = index;
+  }
+}
+
+
 function scrollToSection(sectionId) {
   const section = document.getElementById(sectionId);
   let offset = -100;
 
   if (window.innerWidth < 768) {
     
-    offset = -50;
+    offset = -150;
   } else if (window.innerWidth < 1024) {
    
-    offset = -80;
+    offset = -200;
   }
 
   const sectionOffsetTop = section.offsetTop + offset;
