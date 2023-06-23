@@ -29,8 +29,6 @@
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 5px;
   }
-
-
 }
 
 header {
@@ -139,6 +137,59 @@ body {
   color: white;
 }
 
+.dark-mode h2 {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  background: linear-gradient(to bottom,  #ff4d4d,
+  #ff944d,
+  #ffd24d,
+  #aaff4d,
+  #4dff4d,
+  #4dffa6,
+  #4dd2ff,
+  #4d4dff,
+  #a64dff,
+  #ff4dff,
+  #ff4da6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbowEffect 5s linear infinite;
+  background-size: 100% 200%;
+}
+
+.light-mode h2 {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  background: linear-gradient(
+    to bottom,
+    #ff4d4d,
+    #ff944d,
+    #ffd24d,
+    #ffcc00,
+    #a64dff,
+    #ff4da6
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbowEffect 10s linear infinite;
+  background-size: 100% 200%;
+}
+
+@keyframes rainbowEffect {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 200%;
+  }
+}
+
 .dark-mode .nombreRol {
   width: fit-content;
   margin: 0 auto;
@@ -155,6 +206,16 @@ body {
   border: 3px solid #000000;
   border-radius: 10px;
   padding: 20px;
+}
+
+.light-mode #github {
+  border: 3px solid #000000;
+  color: solid #fff;
+}
+
+.dark-mode #github {
+  border: 2px solid#fff;
+  color: solid #000000;
 }
 
 .dark-mode .presentacion {
@@ -200,6 +261,7 @@ body {
 }
 
 .zoomable-image {
+  border: 3px solid #000000;
   position: relative;
   width: 100%;
   height: auto;
@@ -358,12 +420,11 @@ a {
   text-decoration: none;
 }
 
-.light-mode a {
+.light-mode .links {
   color: red;
-  text-decoration: none;
 }
 
-.light-mode a:hover {
+.light-mode .links:hover {
   color: rgba(180, 16, 16, 0.8);
 }
 

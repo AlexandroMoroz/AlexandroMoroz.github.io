@@ -155,15 +155,3 @@ function revealEmail(event) {
     emailElement.href = "mailto:" + emailAddress;
     emailElement.innerText = emailAddress;
   }
-
-  function revealPhoneNumber(event) {
-    event.preventDefault();
-    var phoneElement = event.target;
-    var phoneNumber = "+54 011 6729-9200";
-    phoneElement.href = "tel:" + phoneNumber.replace(/\s/g, "");
-    phoneElement.innerText = phoneNumber;
-  }
-
- 
-
-  

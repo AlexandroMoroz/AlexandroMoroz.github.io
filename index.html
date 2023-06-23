@@ -54,21 +54,21 @@
               </a>
             </li>
              <li>
-              <a onclick="scrollToSection('skills')" class="nav-link px-2 text-white" data-lang="en" data-lang-es="Mis habilidades">
+              <a onclick="scrollToSection('skills')" class="nav-link px-2 text-white" data-lang="en" data-lang-es="Habilidades">
                 <span class="separator"></span>
-                My skills
+                Skills
               </a>
             </li> 
             <li>
-              <a onclick="scrollToSection('certificates')" class="nav-link px-2 text-white" data-lang="en" data-lang-es="Mis certificados">
+              <a onclick="scrollToSection('certificates')" class="nav-link px-2 text-white" data-lang="en" data-lang-es="Certificados">
                 <span class="separator"></span>
-                My certificates
+                Certificates
               </a>
             </li>
             <li>
-              <a onclick="scrollToSection('projects')" class="nav-link px-2 text-white" data-lang="en" data-lang-es="Mis proyectos">
+              <a onclick="scrollToSection('projects')" class="nav-link px-2 text-white" data-lang="en" data-lang-es="Proyectos">
                 <span class="separator"></span>
-                My projects
+                Projects
               </a>
             </li>                   
             <li>
@@ -78,9 +78,9 @@
               </a>
             </li>
             <li>
-              <a onclick="scrollToSection('cv')" class="nav-link px-2 text-white" data-lang="en" data-lang-es="Mi CV">
+              <a onclick="scrollToSection('cv')" class="nav-link px-2 text-white" data-lang="en" data-lang-es="CV">
                 <span class="separator"></span>
-                My CV
+                CV
               </a>
             </li>
           </ul>
@@ -117,7 +117,7 @@
     <section id="about">
       <div class="container">
         <div class="presentacion">
-          <h2 data-lang="en" data-lang-es="Sobre mi">About Me</h2>
+          <h2 class="text-center" data-lang="en" data-lang-es="Sobre mi">About Me</h2>
           <p data-lang="en" data-lang-es="¡Hola! mi nombre Ivan Alexandro, hace poco me recibí como developer full stack en Java con la empresa Egg cooperation, ahí pude aprender HTML5, CSS, Java, JavaScript, Bootstrap, Git, Github, ReactJs, JPA, JDBC, Spring y MySQL. 
           Busco mi primer trabajo como IT Trainee en Front-end o Back-end, sin importar los lenguajes de programación que usen siempre y cuando me permitan el tiempo suficiente para aprenderlos a manejar correctamente.
           Me fascina aprender y siempre estoy en constante aprendizaje de nuevas herramientas, métodos, prácticas, etc.">
@@ -134,7 +134,7 @@
 
         <br />
        
-        <h3 id="skills" data-lang="en" data-lang-es="Habilidades">Skills</h3>
+        <h2 id="skills" class="text-center" data-lang="en" data-lang-es="Habilidades">Skills</h2>
         <div class="skills-container">
           <div class="skill-item">
             <i class="fab fa-java" style="color: #007396"></i>
@@ -176,15 +176,24 @@
         
         <br />
 
-        <div id="certificates" >
-          <h3 class="certificados" data-lang="en" data-lang-es="Certificados">Certificates (only in spanish)</h3>
+        <div id="certificates">
+          <h2 class="certificados text-center" data-lang="en" data-lang-es="Certificados">Certificates (only in Spanish)</h2>
           <div class="certificate-grid">
-            <img src="./Certificado_Curso_Programacin_FullStack.jpg"></img>
-            <img src="./Certificado_de_Curso_Programacion_desde_Cero.jpg"></img>
-            <img src="./argentina_programa_2023.jpg"></img>
-            <img src="./certificate-elements-of-ai-es.png"></img>
+            <div class="image-container">
+              <img src="./Certificado_Curso_Programacin_FullStack.jpg" alt="Certificate 1">            
+            </div>
+            <div class="image-container">
+              <img src="./Certificado_de_Curso_Programacion_desde_Cero.jpg" alt="Certificate 2">           
+            </div>
+            <div class="image-container">
+              <img src="./argentina_programa_2023.jpg" alt="Certificate 3">
+            </div>
+            <div class="image-container">
+              <img src="./certificate-elements-of-ai-es.png" alt="Certificate 4">
+            </div>          
           </div>
         </div>
+        
         
       </div>
     </section>
@@ -193,7 +202,7 @@
 
     <section id="projects" >
       <div class="container">
-        <h2 data-lang="en" data-lang-es="Proyectos">Projects</h2>
+        <h2 class="text-center" data-lang="en" data-lang-es="Proyectos">Projects</h2>
         <div class="row d-flex align-items-center">
           <div class="col-lg-6">
             <div class="video-container">
@@ -227,7 +236,7 @@
                 and I tried to make a comfortable interface for the user.
               </p>
               <div class="text-center">
-                <a href="https://github.com/AlexandroMoroz/Pagina-de-noticias" target="_blank" class="btn btn-primary" data-lang="en" data-lang-es="Repositorio Github">GitHub Repository</a>
+                <a id="github" href="https://github.com/AlexandroMoroz/Pagina-de-noticias" target="_blank" class="btn btn-primary" data-lang="en" data-lang-es="Repositorio Github">GitHub Repository</a>
               </div>
             </div>
           </div>
@@ -274,7 +283,7 @@
               (Technical Lead, Scrum Master and Agile Delivery Manager).
               </p>
               <div class="text-center">
-                <a href="https://github.com/AlexandroMoroz/health-app" target="_blank" class="btn btn-primary" data-lang="en" data-lang-es="Repositorio Github">GitHub Repository</a>
+                <a id="github" href="https://github.com/AlexandroMoroz/health-app" target="_blank" class="btn btn-primary" data-lang="en" data-lang-es="Repositorio Github">GitHub Repository</a>
               </div>
             </div>
           </div>
@@ -290,34 +299,28 @@
 
     <section id="contact" >
       <div class="container icons">
-        <h3 data-lang="en" data-lang-es="Contáctame">Contact me</h3>
+        <h2 class="ps-5" data-lang="en" data-lang-es="Contáctame">Contact me</h2>
         <ol>
           <ul>
-            <a href="https://www.linkedin.com/in/ivan-alexandro-moroz-java-developer-trainee/" target="_blank">
+            <a href="https://www.linkedin.com/in/ivan-alexandro-moroz-java-developer-trainee/"  class="links" target="_blank">
               <i class="fab fa-linkedin" style="color: #0a66c2"></i>
               Linkedin
             </a>
           </ul>
           <ul>
             <i class="fas fa-envelope" style="color: #d44638"></i>
-            <a href="#" onclick="revealEmail(event)" data-lang="en" data-lang-es="Correo electronico">            
-              Email
+            <a href="#" onclick="revealEmail(event)"  class="links" data-lang="en" data-lang-es="Correo electronico (click para ver)">            
+              Email (click to see)
             </a>
-          </ul>
+          </ul>         
           <ul>
-            <i class="fas fa-phone cel" ></i>
-            <a href="#" onclick="revealPhoneNumber(event)" data-lang="en" data-lang-es="Número celular">          
-              Phone
-            </a>
-          </ul>
-          <ul>
-            <a href="https://github.com/AlexandroMoroz" target="_blank">
+            <a href="https://github.com/AlexandroMoroz" target="_blank" class="links">
               <i class="fab fa-github git"></i>
               GitHub
             </a>
           </ul>
           <ul>
-            <a href="https://www.instagram.com/alex_moroz5/" target="_blank">
+            <a href="https://www.instagram.com/alex_moroz5/"  class="links" target="_blank">
               <i class="fab fa-instagram" style="color: #e4405f"></i>
               Instagram
             </a>
