@@ -1,28 +1,54 @@
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .navbar {
     position: static;
   }
 
-  .image-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  #certificates.container {
+    max-width: none;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .certificate-grid {
-    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     border: 3px solid #000000;
+    grid-gap: 10px;
   }
 
   .certificate-grid img {
-    height: 200px;
-    height: 350px;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 350px;
     border: 5px solid #000000;
     transition: transform 0.3s;
+    object-fit: contain;
+    object-position: center;
   }
 
   .certificate-grid img:hover {
     transform: scale(1.1);
   }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+  }
 }
+
+
 
 @media (max-width: 480px) {
   .image-grid {
@@ -30,6 +56,8 @@
     grid-gap: 5px;
   }
 }
+
+
 
 header {
   position: fixed;
@@ -39,6 +67,14 @@ header {
   background-color: #1c1c1c;
   padding: 10px;
   z-index: 999;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #1c1c1c;
+  padding: 10px;
 }
 
 .nav {
@@ -126,14 +162,16 @@ body {
 .light-mode {
   background-image: url("./mar.webp");
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   color: black;
 }
 
 .dark-mode {
   background-image: url("./espacio.webp");
-  background-size: cover;
-  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
   color: white;
 }
 
@@ -285,14 +323,7 @@ body {
   pointer-events: none;
 }
 
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color: #1c1c1c;
-  padding: 10px;
-  border-radius: 20px;
-}
+
 
 .light-mode .skill-item {
   border-color: black;

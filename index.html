@@ -48,37 +48,67 @@
             class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
           >
             <li>
-              <a onclick="scrollToSection('about')" class="nav-link px-2 text-white" data-lang="en" data-lang-es="Sobre mi">
+              <a
+                onclick="scrollToSection('about')"
+                class="nav-link px-2 text-white"
+                data-lang="en"
+                data-lang-es="Sobre mi"
+              >
                 <span class="separator"></span>
                 About me
               </a>
             </li>
-             <li>
-              <a onclick="scrollToSection('skills')" class="nav-link px-2 text-white" data-lang="en" data-lang-es="Habilidades">
+            <li>
+              <a
+                onclick="scrollToSection('skills')"
+                class="nav-link px-2 text-white"
+                data-lang="en"
+                data-lang-es="Habilidades"
+              >
                 <span class="separator"></span>
                 Skills
               </a>
-            </li> 
+            </li>
             <li>
-              <a onclick="scrollToSection('certificates')" class="nav-link px-2 text-white" data-lang="en" data-lang-es="Certificados">
+              <a
+                onclick="scrollToSection('certificates')"
+                class="nav-link px-2 text-white"
+                data-lang="en"
+                data-lang-es="Certificados"
+              >
                 <span class="separator"></span>
                 Certificates
               </a>
             </li>
             <li>
-              <a onclick="scrollToSection('projects')" class="nav-link px-2 text-white" data-lang="en" data-lang-es="Proyectos">
+              <a
+                onclick="scrollToSection('projects')"
+                class="nav-link px-2 text-white"
+                data-lang="en"
+                data-lang-es="Proyectos"
+              >
                 <span class="separator"></span>
                 Projects
               </a>
-            </li>                   
+            </li>
             <li>
-              <a onclick="scrollToSection('contact')" class="nav-link px-2 text-white" data-lang="en" data-lang-es="Contáctame">
+              <a
+                onclick="scrollToSection('contact')"
+                class="nav-link px-2 text-white"
+                data-lang="en"
+                data-lang-es="Contáctame"
+              >
                 <span class="separator"></span>
                 Contact me
               </a>
             </li>
             <li>
-              <a onclick="scrollToSection('cv')" class="nav-link px-2 text-white" data-lang="en" data-lang-es="CV">
+              <a
+                onclick="scrollToSection('cv')"
+                class="nav-link px-2 text-white"
+                data-lang="en"
+                data-lang-es="CV"
+              >
                 <span class="separator"></span>
                 CV
               </a>
@@ -89,9 +119,20 @@
             <span id="sun-icon">&#x2600;</span>
           </button>
           <div class="language-switch">
-            <button id="language-toggle" class="ms-2" onclick="toggleLanguage()">Switch to Spanish</button>
+            <button
+              id="language-toggle"
+              class="ms-2"
+              onclick="toggleLanguage()"
+            >
+              Switch to Spanish
+            </button>
           </div>
-          <a href="#" class="px-2 text-white top" data-lang="en" data-lang-es="Ir al top">           
+          <a
+            href="#"
+            class="px-2 text-white top"
+            data-lang="en"
+            data-lang-es="Ir al top"
+          >
             Go to top
           </a>
         </div>
@@ -108,162 +149,236 @@
 
       <div class="nombreRol mt-1">
         <h1>Alexandro Ivan Moroz</h1>
-        <p id="rol" data-lang="en" data-lang-es="Full stack developer - Java">Full stack developer - Java</p>
+        <p id="rol" data-lang="en" data-lang-es="Full stack developer - Java">
+          Full stack developer - Java
+        </p>
       </div>
     </div>
 
     <br />
 
-    <section id="about">
-      <div class="container">
-        <div class="presentacion">
-          <h2 class="text-center" data-lang="en" data-lang-es="Sobre mi">About Me</h2>
-          <p data-lang="en" data-lang-es="¡Hola! mi nombre Ivan Alexandro, hace poco me recibí como developer full stack en Java con la empresa Egg cooperation, ahí pude aprender HTML5, CSS, Java, JavaScript, Bootstrap, Git, Github, ReactJs, JPA, JDBC, Spring y MySQL. 
+    <section id="about" class="container">
+      <div class="presentacion">
+        <h2 class="text-center" data-lang="en" data-lang-es="Sobre mi">
+          About Me
+        </h2>
+        <p
+          data-lang="en"
+          data-lang-es="¡Hola! mi nombre Ivan Alexandro, hace poco me recibí como developer full stack en Java con la empresa Egg cooperation, ahí pude aprender HTML5, CSS, Java, JavaScript, Bootstrap, Git, Github, ReactJs, JPA, JDBC, Spring y MySQL. 
           Busco mi primer trabajo como IT Trainee en Front-end o Back-end, sin importar los lenguajes de programación que usen siempre y cuando me permitan el tiempo suficiente para aprenderlos a manejar correctamente.
-          Me fascina aprender y siempre estoy en constante aprendizaje de nuevas herramientas, métodos, prácticas, etc.">
-            ¡Hello! My name is Ivan Alexandro, and I recently graduated as a full
-            stack developer in Java from Egg Cooperation. There, I was able to
-            learn HTML5, CSS, Java, JavaScript, Bootstrap, Git, Github, ReactJs,
-            JPA, JDBC, Spring, and MySQL. I am looking for my first job as an IT
-            Trainee in Front-end or Back-end, regardless of the programming
-            languages they use, as long as they allow me enough time to learn
-            how to handle them correctly. I love to learn and I am always
-            constantly learning new tools, methods, practices, etc.
-          </p>
-        </div>
-
-        <br />
-       
-        <h2 id="skills" class="text-center" data-lang="en" data-lang-es="Habilidades">Skills</h2>
-        <div class="skills-container">
-          <div class="skill-item">
-            <i class="fab fa-java" style="color: #007396"></i>
-            <span>Java</span>
-          </div>
-          <div class="skill-item">
-            <i class="fas fa-cogs" style="color: #6db33f"></i>
-            <span>Spring Framework</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-html5" style="color: #e34f26"></i>
-            <span>HTML</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-css3" style="color: #1572b6"></i>
-            <span>CSS</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-bootstrap" style="color: #7952b3"></i>
-            <span>Bootstrap</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-js-square" style="color: #f7df1e"></i>
-            <span>JavaScript</span>
-          </div>
-          <div class="skill-item">
-            <i class="fab fa-react" style="color: #61dafb"></i>
-            <span>React</span>
-          </div>
-          <div class="skill-item">
-            <i class="fas fa-database" style="color: #4479a1"></i>
-            <span>JPA</span>
-          </div>
-          <div class="skill-item">
-            <i class="fas fa-database" style="color: #4479a1"></i>
-            <span>MySQL</span>
-          </div>
-        </div>
-        
-        <br />
-
-        <div id="certificates">
-          <h2 class="certificados text-center" data-lang="en" data-lang-es="Certificados">Certificates (only in Spanish)</h2>
-          <div class="certificate-grid">
-            <div class="image-container">
-              <img src="./Certificado_Curso_Programacin_FullStack.jpg" alt="Certificate 1">            
-            </div>
-            <div class="image-container">
-              <img src="./Certificado_de_Curso_Programacion_desde_Cero.jpg" alt="Certificate 2">           
-            </div>
-            <div class="image-container">
-              <img src="./argentina_programa_2023.jpg" alt="Certificate 3">
-            </div>
-            <div class="image-container">
-              <img src="./certificate-elements-of-ai-es.png" alt="Certificate 4">
-            </div>          
-          </div>
-        </div>
-        
-        
+          Me fascina aprender y siempre estoy en constante aprendizaje de nuevas herramientas, métodos, prácticas, etc."
+        >
+          ¡Hello! My name is Ivan Alexandro, and I recently graduated as a full
+          stack developer in Java from Egg Cooperation. There, I was able to
+          learn HTML5, CSS, Java, JavaScript, Bootstrap, Git, Github, ReactJs,
+          JPA, JDBC, Spring, and MySQL. I am looking for my first job as an IT
+          Trainee in Front-end or Back-end, regardless of the programming
+          languages they use, as long as they allow me enough time to learn how
+          to handle them correctly. I love to learn and I am always constantly
+          learning new tools, methods, practices, etc.
+        </p>
       </div>
+
+      <br />
+
+      <h2
+        id="skills"
+        class="text-center"
+        data-lang="en"
+        data-lang-es="Habilidades"
+      >
+        Skills
+      </h2>
+      <div class="skills-container">
+        <div class="skill-item">
+          <i class="fab fa-java" style="color: #007396"></i>
+          <span>Java</span>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-cogs" style="color: #6db33f"></i>
+          <span>Spring Framework</span>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-html5" style="color: #e34f26"></i>
+          <span>HTML</span>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-css3" style="color: #1572b6"></i>
+          <span>CSS</span>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-bootstrap" style="color: #7952b3"></i>
+          <span>Bootstrap</span>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-js-square" style="color: #f7df1e"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-react" style="color: #61dafb"></i>
+          <span>React</span>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-database" style="color: #4479a1"></i>
+          <span>JPA</span>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-database" style="color: #4479a1"></i>
+          <span>MySQL</span>
+        </div>
+      </div>
+
+      <br />
     </section>
+
+    <div id="certificates" class="container">
+      <h2
+        class="certificados text-center"
+        data-lang="en"
+        data-lang-es="Certificados"
+      >
+        Certificates (only in Spanish)
+      </h2>
+      <div class="certificate-grid">
+        <div class="image-container">
+          <img
+            src="./Certificado_Curso_Programacin_FullStack.jpg"
+            alt="Certificate 1"
+          />
+        </div>
+        <div class="image-container">
+          <img
+            src="./Certificado_de_Curso_Programacion_desde_Cero.jpg"
+            alt="Certificate 2"
+          />
+        </div>
+        <div class="image-container">
+          <img src="./argentina_programa_2023.jpg" alt="Certificate 3" />
+        </div>
+        <div class="image-container">
+          <img src="./certificate-elements-of-ai-es.png" alt="Certificate 4" />
+        </div>
+      </div>
+    </div>
 
     <br />
 
-    <section id="projects" >
+    <section id="projects">
       <div class="container">
-        <h2 class="text-center" data-lang="en" data-lang-es="Proyectos">Projects</h2>
+        <h2 class="text-center" data-lang="en" data-lang-es="Proyectos">
+          Projects
+        </h2>
         <div class="row d-flex align-items-center">
           <div class="col-lg-6">
             <div class="video-container">
               <div class="ratio ratio-16x9">
-                <iframe
-                  src=""
-                  title="YouTube video"
-                  allowfullscreen
-                ></iframe>
+                <iframe src="" title="YouTube video" allowfullscreen></iframe>
               </div>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="info">
-              <h5 class="text-center title" data-lang="en" data-lang-es="Página de noticias">News Website</h5>
-              <p class="text-center" data-lang="en" data-lang-es="Este proyecto fue creado por mi, es una
+              <h5
+                class="text-center title"
+                data-lang="en"
+                data-lang-es="Página de noticias"
+              >
+                News Website
+              </h5>
+              <p
+                class="text-center"
+                data-lang="en"
+                data-lang-es="Este proyecto fue creado por mi, es una
               práctica de un ejercicio propuesto en el curso de programación full stack, el ejercicio me pedia
               hacer una página web de noticias para la empresa EGG (es quien ofrece el curso full stack) en donde
               hay 3 roles, un usuario, un administrador y un periodista, el administrador tiene acceso a la lista
               de usuarios, puede darlos de baja, cambiar su salario y cambiarles el rol, el periodista puede crear
               noticias pero no darlas de baja y el usuario normal solamente puede ver las noticias.
               el diseño fue creado a mi gusto, le he dado un toque de simpleza e intenté hacer una interfaz
-               cómoda para el usuario.">
-                This project was created by me, it is a practice of an exercise proposed in the full stack
-                programming course, the exercise asked me to make a news web page for the company EGG
-                (it is the one that offers the full stack course) where there are 3 roles , a user,
-                an administrator and a journalist, the administrator has access to the list of users,
-                he can unsubscribe them, change journalist salary and change their role, the journalist can create
-                news but not unsubscribe them and the normal user can only view News.
-                the design was created to my liking, I have given it a touch of simplicity
-                and I tried to make a comfortable interface for the user.
+               cómoda para el usuario."
+              >
+                This project was created by me, it is a practice of an exercise
+                proposed in the full stack programming course, the exercise
+                asked me to make a news web page for the company EGG (it is the
+                one that offers the full stack course) where there are 3 roles ,
+                a user, an administrator and a journalist, the administrator has
+                access to the list of users, he can unsubscribe them, change
+                journalist salary and change their role, the journalist can
+                create news but not unsubscribe them and the normal user can
+                only view News. the design was created to my liking, I have
+                given it a touch of simplicity and I tried to make a comfortable
+                interface for the user.
               </p>
               <div class="text-center">
-                <a id="github" href="https://github.com/AlexandroMoroz/Pagina-de-noticias" target="_blank" class="btn btn-primary" data-lang="en" data-lang-es="Repositorio Github">GitHub Repository</a>
+                <a
+                  id="github"
+                  href="https://github.com/AlexandroMoroz/Pagina-de-noticias"
+                  target="_blank"
+                  class="btn btn-primary"
+                  data-lang="en"
+                  data-lang-es="Repositorio Github"
+                  >GitHub Repository</a
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
       <br />
-      <div class="container">      
+      <div class="container">
         <div class="row d-flex align-items-center">
           <div class="col-lg-6">
             <div class="image-container">
               <div class="image-grid">
-                <img src="./index.png" alt="Index" class="zoomable-image">
-                <img src="./perfil.png" alt="Perfil 1" class="zoomable-image">
-                <img src="./perfil2.png" alt="Perfil 2" class="zoomable-image">
-                <img src="./profesionales.png" alt="Lista profesionales" class="zoomable-image">
-                <img src="./reserva_turno.png" alt="Reservar un turno" class="zoomable-image">
-                <img src="./turnos.png" alt="Turnos reservados" class="zoomable-image">
-                <img src="./obras_sociales.png" alt="Lista de obras sociales" class="zoomable-image"> 
-                <img src="./usuarios.png" alt="Lista de usuarios para un administrador" class="zoomable-image">
+                <img src="./index.png" alt="Index" class="zoomable-image" />
+                <img src="./perfil.png" alt="Perfil 1" class="zoomable-image" />
+                <img
+                  src="./perfil2.png"
+                  alt="Perfil 2"
+                  class="zoomable-image"
+                />
+                <img
+                  src="./profesionales.png"
+                  alt="Lista profesionales"
+                  class="zoomable-image"
+                />
+                <img
+                  src="./reserva_turno.png"
+                  alt="Reservar un turno"
+                  class="zoomable-image"
+                />
+                <img
+                  src="./turnos.png"
+                  alt="Turnos reservados"
+                  class="zoomable-image"
+                />
+                <img
+                  src="./obras_sociales.png"
+                  alt="Lista de obras sociales"
+                  class="zoomable-image"
+                />
+                <img
+                  src="./usuarios.png"
+                  alt="Lista de usuarios para un administrador"
+                  class="zoomable-image"
+                />
               </div>
             </div>
           </div>
-          
+
           <div class="col-lg-6">
             <div class="info">
-              <h5 class="text-center title" data-lang="en" data-lang-es="Página de salud (Vitalidapp)">Health Website (Vitalidapp)</h5>
-              <p class="text-center" data-lang="en" data-lang-es="Este proyecto fue creado con un grupo de
+              <h5
+                class="text-center title"
+                data-lang="en"
+                data-lang-es="Página de salud (Vitalidapp)"
+              >
+                Health Website (Vitalidapp)
+              </h5>
+              <p
+                class="text-center"
+                data-lang="en"
+                data-lang-es="Este proyecto fue creado con un grupo de
               6 personas (incluyendome). Tiene como fin, ayudar a que los médicos autónomos puedan registrar
               y atender pacientes, mantener sus historiales médicos en una base de datos actualizada y guardar
               los diagnósticos. El problema actual en los hospitales es que se pierde muy seguido el historial
@@ -271,56 +386,83 @@
               problema. Mi trabajo acá fue principalmente BackEnd pero también he participado en FrontEnd sin
               mencionar las vinculaciones entre front y back y también las vinculaciones entre back y base de
               datos. Un pequeño agregado adicional, aprendí un poco sobre tres metodologías ágiles las cuales
-              son (Líder técnico, Scrum Master y Agile Delivery Manager).">
-              This project was created with a group of 6 people (including me).
-              Its purpose is to help self-employed doctors to register and care for patients, keep their medical
-              records in an updated database and save diagnoses.
-              The current problem in hospitals is that the medical history is lost very often and many times
-              there is no order, so this page would be helping to solve part of the problem.
-              My work here was mainly BackEnd but I've also been involved in FrontEnd not to mention Front to
-              Back bindings and also Back to DataBase bindings.
-              A little addition, I learned a little about three agile methodologies which are
-              (Technical Lead, Scrum Master and Agile Delivery Manager).
+              son (Líder técnico, Scrum Master y Agile Delivery Manager)."
+              >
+                This project was created with a group of 6 people (including
+                me). Its purpose is to help self-employed doctors to register
+                and care for patients, keep their medical records in an updated
+                database and save diagnoses. The current problem in hospitals is
+                that the medical history is lost very often and many times there
+                is no order, so this page would be helping to solve part of the
+                problem. My work here was mainly BackEnd but I've also been
+                involved in FrontEnd not to mention Front to Back bindings and
+                also Back to DataBase bindings. A little addition, I learned a
+                little about three agile methodologies which are (Technical
+                Lead, Scrum Master and Agile Delivery Manager).
               </p>
               <div class="text-center">
-                <a id="github" href="https://github.com/AlexandroMoroz/health-app" target="_blank" class="btn btn-primary" data-lang="en" data-lang-es="Repositorio Github">GitHub Repository</a>
+                <a
+                  id="github"
+                  href="https://github.com/AlexandroMoroz/health-app"
+                  target="_blank"
+                  class="btn btn-primary"
+                  data-lang="en"
+                  data-lang-es="Repositorio Github"
+                  >GitHub Repository</a
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
-    
-      
-  
 
     <br />
 
-    <section id="contact" >
+    <section id="contact">
       <div class="container icons">
-        <h2 class="ps-5" data-lang="en" data-lang-es="Contáctame">Contact me</h2>
+        <h2 class="ps-5" data-lang="en" data-lang-es="Contáctame">
+          Contact me
+        </h2>
         <ol>
           <ul>
-            <a href="https://www.linkedin.com/in/ivan-alexandro-moroz-java-developer-trainee/"  class="links" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/ivan-alexandro-moroz-java-developer-trainee/"
+              class="links"
+              target="_blank"
+            >
               <i class="fab fa-linkedin" style="color: #0a66c2"></i>
               Linkedin
             </a>
           </ul>
           <ul>
             <i class="fas fa-envelope" style="color: #d44638"></i>
-            <a href="#" onclick="revealEmail(event)"  class="links" data-lang="en" data-lang-es="Correo electronico (click para ver)">            
+            <a
+              href="#"
+              onclick="revealEmail(event)"
+              class="links"
+              data-lang="en"
+              data-lang-es="Correo electronico (click para ver)"
+            >
               Email (click to see)
             </a>
-          </ul>         
+          </ul>
           <ul>
-            <a href="https://github.com/AlexandroMoroz" target="_blank" class="links">
+            <a
+              href="https://github.com/AlexandroMoroz"
+              target="_blank"
+              class="links"
+            >
               <i class="fab fa-github git"></i>
               GitHub
             </a>
           </ul>
           <ul>
-            <a href="https://www.instagram.com/alex_moroz5/"  class="links" target="_blank">
+            <a
+              href="https://www.instagram.com/alex_moroz5/"
+              class="links"
+              target="_blank"
+            >
               <i class="fab fa-instagram" style="color: #e4405f"></i>
               Instagram
             </a>
@@ -333,14 +475,26 @@
 
     <section>
       <div class="container">
-        <div class="cv-link cv" id="cv" onclick="toggleCV()" data-lang="en" data-lang-es="Ver CV">View CV</div>
+        <div
+          class="cv-link cv"
+          id="cv"
+          onclick="toggleCV()"
+          data-lang="en"
+          data-lang-es="Ver CV"
+        >
+          View CV
+        </div>
         <br />
         <div id="cv-content" style="display: none">
-          <embed id="cv-embed" type="application/pdf" width="100%" height="600px" />
+          <embed
+            id="cv-embed"
+            type="application/pdf"
+            width="100%"
+            height="600px"
+          />
         </div>
       </div>
     </section>
-    
 
     <div class="b-example-divider"></div>
 
@@ -349,7 +503,11 @@
         class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 pie"
       >
         <div class="col-md-4 d-flex align-items-center">
-          <span id="footer-text" class="mb-3 mb-md-0" data-lang="en" data-lang-es="2023 / Hecho por Alexandro Ivan Moroz"
+          <span
+            id="footer-text"
+            class="mb-3 mb-md-0"
+            data-lang="en"
+            data-lang-es="2023 / Hecho por Alexandro Ivan Moroz"
             >2023 / made by Alexandro Ivan Moroz</span
           >
         </div>

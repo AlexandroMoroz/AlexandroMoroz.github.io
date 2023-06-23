@@ -44,6 +44,14 @@ function toggleZoom(image, index) {
   }
 }
 
+window.addEventListener('resize', function() {
+  var certificatesSection = document.getElementById('certificates');
+  if (window.innerWidth < 768) {
+    certificatesSection.classList.remove('container');
+  } else {
+    certificatesSection.classList.add('container');
+  }
+});
 
 function scrollToSection(sectionId) {
   const section = document.getElementById(sectionId);
