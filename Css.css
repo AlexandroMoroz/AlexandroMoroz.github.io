@@ -53,7 +53,6 @@ header {
 }
 
 .nav li {
-  margin: 0 10px;
   position: relative;
 }
 
@@ -484,10 +483,34 @@ a {
 }
 
 @media (max-width: 858px){
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar-brand {
+    margin-bottom: 10px;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-item {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .nav-link {
+    padding: 5px 0;
+  }
+
+
   .certificate-grid {
     display: block;
   }
-  
 
   .image-container {
     display: flex;
@@ -523,6 +546,7 @@ a {
 }
 
 @media (min-width: 859px) and (max-width: 991px){
+  
   .certificate-grid img {
     width: 100%;
     height: auto;
