@@ -94,30 +94,32 @@ header {
 }
 
 #language-toggle {
-  padding: 8px 12px;
+  padding: 12px;
   background-color: #1c1c1c;
   border: none;
   color: #fff;
   border-radius: 4px;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.7s ease-in-out, border-radius 0.7s ease-in-out;
 }
 
 #language-toggle:hover {
   background-color: #ffcc00;
+  border-radius: 30px;
 }
 
 .top {
-  padding: 8px 12px;
+  padding: 12px;
   background-color: #1c1c1c;
   border: none;
   color: #fff;
   border-radius: 4px;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.7s ease-in-out,  border-radius 0.7s ease-in-out;
   text-decoration: none;
 }
 
 .top:hover {
   background-color: #ffcc00;
+  border-radius: 30px;
 }
 
 body {
