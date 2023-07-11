@@ -82,11 +82,11 @@ function toggleLanguage() {
     }
   }
 
-  if (langButton.textContent === "Switch to Spanish") {
-    langButton.textContent = "Cambiar al Ingles";
+  if (langButton.textContent === "Cambiar al Ingles") {
+    langButton.textContent = "Switch to Spanish";
     replaceTextContent("en", "es");
   } else {
-    langButton.textContent = "Switch to Spanish";
+    langButton.textContent = "Cambiar al Ingles";
     replaceTextContent("es", "en");
   }
 }

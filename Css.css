@@ -351,6 +351,39 @@ h1 {
   text-align: center;
 }
 
+.dark-mode .blog {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.light-mode .blog {
+  background-color: rgba(255, 255, 255, 0.863);
+  border: 3px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.dark-mode .actualidad {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.light-mode .actualidad {
+  background-color: rgba(255, 255, 255, 0.863);
+  border: 3px solid #000000;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.texto {
+   text-align: center;
+  white-space: pre-line;
+}
+
 p {
   font-size: 18px;
   text-align: justify;
