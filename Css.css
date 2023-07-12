@@ -245,7 +245,7 @@ body {
   border: 3px solid #000000;
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100%;
   cursor: pointer;
   transition: transform 0.3s;
 }
@@ -256,6 +256,7 @@ body {
 }
 
 .zoomed-image {
+  object-fit: contain;
   position: fixed;
   top: 50%;
   left: 50%;
