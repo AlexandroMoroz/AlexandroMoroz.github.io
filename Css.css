@@ -256,12 +256,12 @@ body {
 }
 
 .zoomed-image {
-  object-fit: contain;
+  object-fit:contain;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 85%;
+  width:auto;
   max-height: 85%;
   z-index: 9999;
   pointer-events: none;
