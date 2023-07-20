@@ -561,9 +561,16 @@ a {
   .image-grid img {
     margin-bottom: 10px;
   }
+
+  .zoomable-image{
+    width: 100%;
+    height: auto;
+  }
+
   .zoomable-image:hover:not(.zoomed-image) {
     transform: unset;
     z-index: unset;
+    
   }
 
   .zoomed-image {
@@ -600,6 +607,11 @@ a {
 
   .image-grid img {
     margin-bottom: 10px;
+  }
+
+  .zoomable-image{
+    width: 100%;
+    height: auto;
   }
 
   .zoomed-image {
