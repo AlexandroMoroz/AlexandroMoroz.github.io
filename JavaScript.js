@@ -47,6 +47,25 @@ function toggleZoom(image, index) {
   }
 }
 
+let prevScrollPos = window.scrollY;
+const navbar = document.querySelector('.navbar');
+const isMobile = window.innerWidth <= 1100;
+
+if (isMobile) {
+  window.addEventListener('scroll', function() {
+    let currentScrollPos = window.scrollY;
+
+    if (prevScrollPos > currentScrollPos) {
+      navbar.style.transform = "translateY(0)";
+    } else {
+      navbar.style.transform = "translateY(-100%)";
+    }
+
+    prevScrollPos = currentScrollPos;
+  });
+}
+
+
 function scrollToSection(sectionId) {
   const section = document.getElementById(sectionId);
   let offset = -100;
@@ -66,7 +85,7 @@ function scrollToSection(sectionId) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  toggleLanguage(); 
+  toggleLanguage();
 });
 function toggleLanguage() {
   var langButton = document.getElementById("language-toggle");

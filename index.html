@@ -39,7 +39,7 @@
             <li>
               <a
                 onclick="scrollToSection('about')"
-                class="nav-link px-2 ms-1 text-white"
+                class="nav-link px-2 ms-1 text-white show-on-desktop"
                 data-lang="es"
                 data-lang-en="Sobre mi"
               >
@@ -58,18 +58,7 @@
                 Skills
               </a>
             </li>
-            <li>
-              <a
-                onclick="scrollToSection('certificates')"
-                class="nav-link px-2 ms-1 text-white"
-                data-lang="es"
-                data-lang-en="Certificados"
-              >
-                <span class="separator"></span>
-                Certificates
-              </a>
-            </li>
-            <li>
+             <li>
               <a
                 onclick="scrollToSection('projects')"
                 class="nav-link px-2 ms-1 text-white"
@@ -80,6 +69,17 @@
                 Projects
               </a>
             </li>
+            <li>
+              <a
+                onclick="scrollToSection('certificates')"
+                class="nav-link px-2 ms-1 text-white show-on-desktop"
+                data-lang="es"
+                data-lang-en="Certificados"
+              >
+                <span class="separator"></span>
+                Certificates
+              </a>
+            </li>   
             <li>
               <a
                 onclick="scrollToSection('Blog')"
@@ -94,7 +94,7 @@
             <li>
               <a
                 onclick="scrollToSection('contact')"
-                class="nav-link px-2 ms-1 text-white"
+                class="nav-link px-2 ms-1 text-white contacto"
                 data-lang="es"
                 data-lang-en="Contáctame"
               >
@@ -105,7 +105,7 @@
             <li>
               <a
                 onclick="scrollToSection('cv')"
-                class="nav-link px-2 ms-1 text-white"
+                class="nav-link px-2 ms-1 text-white show-on-desktop"
                 data-lang="es"
                 data-lang-en="CV"
               >
@@ -131,7 +131,7 @@
           </div>
           <a
             href="#"
-            class="text-white top"
+            class="text-white top show-on-desktop"
             data-lang="es"
             data-lang-en="Ir al top"
           >
@@ -233,39 +233,7 @@
       <br />
     </section>
 
-    <div id="certificates" class="container">
-      <h2
-        class="certificados text-center"
-        data-lang="es"
-        data-lang-en="Certificados"
-      >
-        Certificates (only in Spanish)
-      </h2>
-      <div class="certificate-grid">
-        <div class="image-container">
-          <img
-            src="./Certificado_Curso_Programacin_FullStack.jpg"
-            alt="Certificate 1"
-          />
-        </div>
-        <div class="image-container">
-          <img
-            src="./Certificado_de_Curso_Programacion_desde_Cero.jpg"
-            alt="Certificate 2"
-          />
-        </div>
-        <div class="image-container">
-          <img src="./argentina_programa_2023.jpg" alt="Certificate 3" />
-        </div>
-        <div class="image-container">
-          <img src="./certificate-elements-of-ai-es.png" alt="Certificate 4" />
-        </div>
-      </div>
-    </div>
-
-    <br />
-
-    <section id="projects">
+<section id="projects">
       <div class="container">
         <h2 class="text-center" data-lang="es" data-lang-en="Proyectos">
           Projects
@@ -333,13 +301,7 @@
             <div class="image-container">
               <div class="image-grid">
                 <img src="./index.png" alt="Index" class="zoomable-image" />
-                <img src="./perfil.png" alt="Perfil 1" class="zoomable-image" />
-                 <img
-                  src="./turnos.png"
-                  alt="Turnos reservados"
-                  class="zoomable-image"
-                />
-                <img src="./perfil2.png" alt="Perfil 2" class="zoomable-image" />
+                <img src="./perfil.png" alt="Perfil 1" class="zoomable-image" />              
                 <img
                   src="./profesionales.png"
                   alt="Lista profesionales"
@@ -416,7 +378,42 @@
       </div>
     </section>
 
-    <br />
+ <br>
+
+    <div id="certificates" class="container">
+      <h2
+        class="certificados text-center"
+        data-lang="es"
+        data-lang-en="Certificados"
+      >
+        Certificates (only in Spanish)
+      </h2>
+      <div class="certificate-grid">
+        <div class="image-container">
+          <img
+            src="./Certificado_Curso_Programacin_FullStack.jpg"
+            alt="Certificate 1"
+          />
+        </div>
+        <div class="image-container">
+          <img
+            src="./Certificado_de_Curso_Programacion_desde_Cero.jpg"
+            alt="Certificate 2"
+          />
+        </div>
+        <div class="image-container">
+          <img src="./argentina_programa_2023.jpg" alt="Certificate 3" />
+        </div>
+        <div class="image-container">
+          <img src="./certificate-elements-of-ai-es.png" alt="Certificate 4" />
+        </div>
+        <div class="image-container">
+          <img src="./Certificado_Proyecto_Final_Programacin_Full-Stack_page-0001.jpg" alt="Certificate 5" />
+        </div>
+      </div>
+    </div>
+
+    <br>
 
     <section id="Blog" class="container">
       <div class="blog">
@@ -446,11 +443,10 @@
         <p
           class="texto"
           data-lang="es"
-          data-lang-en='Hoy en día estoy trabajando en un proyecto nuevo a modo de práctica
-          y aprendizaje sobre varios elementos y herramientas, este proyecto estará disponible en mi GitHub
-          proximamente y su tema principal son huertas agroecológicas, será un proyecto de código abierto
-          para quienes estén interesados y quieran participar tambien, estará creado en Java utilizando Spring,
-          React, API Rest, JPA, HTML, CSS, Javascript y como base de datos MySQL.
+          data-lang-en='Hoy en día estoy trabajando en un proyecto nuevo a modo de práctica y aprendizaje sobre varios
+          elementos y herramientas, su tema principal son huertas agroecológicas, será un proyecto de código abierto
+          para quienes estén interesados y quieran participar tambien, estará creado en Java utilizando Spring, React,
+          API Rest, JPA, HTML, CSS, Javascript y como base de datos MySQL.
 
           A continuación voy a listar lo que queremos aprender y si es posible, implementar en el proyecto:
 
@@ -473,10 +469,10 @@
           
           Esto es todo en lo que estoy trabajando y estudiando actualmente, es posible que me tome unos meses
           para poder estar bien afianzado con el contenido. Podes acceder al repositorio del mismo clickeando el boton debajo.'
-        > Currently, I am working on a new project for practice and learning purposes. This project will soon
-          be available on my GitHub repository. Its main theme revolves around agroecological orchards. It will
-          be an open-source project, welcoming those who are interested and want to participate. The project is developed
-          in Java using Spring, React, RESTful APIs, JPA, HTML, CSS, JavaScript, and MySQL as the database.
+        > Currently, I am working on a new project for practice and learning purposes. Its main theme revolves
+          around agroecological orchards. It will be an open-source project, welcoming those who are interested
+          and want to participate. The project is developed in Java using Spring, React, RESTful APIs, JPA, HTML,
+          CSS, JavaScript, and MySQL as the database.
 
           Next, I will list what we want to learn and, if possible, implement in the project:
           

@@ -113,7 +113,7 @@ header {
   border: none;
   color: #fff;
   border-radius: 4px;
-  transition: background-color 0.7s ease-in-out,  border-radius 0.7s ease-in-out;
+  transition: background-color 0.7s ease-in-out, border-radius 0.7s ease-in-out;
   text-decoration: none;
 }
 
@@ -128,18 +128,22 @@ body {
 }
 
 .light-mode {
-  background-image: url("./mar.webp");
+  background-image: url("./fondo_claro.webp");
+  background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   background-attachment: fixed;
   color: black;
 }
 
 .dark-mode {
-  background-image: url("./espacio.webp");
-  background-size: contain;
-  background-repeat: repeat;
-  background-position: center;
+  background-image: url("./fondo_oscuro.webp");
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   color: white;
 }
 
@@ -256,12 +260,12 @@ body {
 }
 
 .zoomed-image {
-  object-fit:contain;
+  object-fit: contain;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width:auto;
+  width: auto;
   max-height: 85%;
   z-index: 9999;
   pointer-events: none;
@@ -381,7 +385,7 @@ h1 {
 }
 
 .texto {
-   text-align: center;
+  text-align: center;
   white-space: pre-line;
 }
 
@@ -518,11 +522,17 @@ a {
   padding: 20px;
 }
 
-@media (max-width: 858px){
+@media (max-width: 858px) {
+
+  .show-on-desktop {
+    display: none;
+  }
 
   .navbar {
     flex-wrap: wrap;
     justify-content: center;
+    position: fixed;
+    transition: transform 0.7s;
   }
 
   .navbar-brand {
@@ -543,7 +553,6 @@ a {
     padding: 5px 0;
   }
 
-
   .certificate-grid {
     display: block;
   }
@@ -554,7 +563,7 @@ a {
     margin-bottom: 20px;
   }
 
-  .image-grid{
+  .image-grid {
     display: block;
   }
 
@@ -562,7 +571,7 @@ a {
     margin-bottom: 10px;
   }
 
-  .zoomable-image{
+  .zoomable-image {
     width: 100%;
     height: auto;
   }
@@ -570,7 +579,6 @@ a {
   .zoomable-image:hover:not(.zoomed-image) {
     transform: unset;
     z-index: unset;
-    
   }
 
   .zoomed-image {
@@ -588,20 +596,27 @@ a {
   }
 }
 
-@media (min-width: 859px) and (max-width: 991px){
-  
+@media (min-width: 859px) and (max-width: 991px) {
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+    transition: transform 0.7s;
+  }
+
   .certificate-grid img {
     width: 100%;
     height: auto;
     border: 5px solid #000000;
-  } 
+  }
 
   .image-container {
     display: flex;
     justify-content: center;
   }
 
-  .image-grid{
+  .image-grid {
     display: block;
   }
 
@@ -609,7 +624,7 @@ a {
     margin-bottom: 10px;
   }
 
-  .zoomable-image{
+  .zoomable-image {
     width: 100%;
     height: auto;
   }
@@ -626,8 +641,15 @@ a {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1320px){
+@media (min-width: 992px) and (max-width: 1320px) {
 
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+    transition: transform 0.7s;
+  }
+  
   .image-container {
     display: flex;
     justify-content: center;
