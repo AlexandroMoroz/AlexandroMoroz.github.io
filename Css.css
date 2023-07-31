@@ -522,7 +522,7 @@ a {
   padding: 20px;
 }
 
-@media (max-width: 417){
+@media (max-width: 417px){
   .yo{
     margin-top: 200px;
   }
@@ -613,7 +613,7 @@ a {
   }
 }
 
-@media (min-width: 418) and (max-width: 858px) {
+@media (min-width: 418px) and (max-width: 858px) {
 
   .yo{
     margin-top: 150px;
