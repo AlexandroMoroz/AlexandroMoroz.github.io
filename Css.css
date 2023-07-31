@@ -522,12 +522,103 @@ a {
   padding: 20px;
 }
 
-@media (max-width: 858px) {
+@media (max-width: 417){
+  .yo{
+    margin-top: 200px;
+  }
+
+  #projects .container .row.first-project {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #projects .container .row.first-project .col-lg-6 {
+    order: 1;
+  }
+
+  #projects .container .row.first-project .col-lg-6:nth-child(2) {
+    order: 2;
+  }
+
+  .show-on-desktop {
+    display: none;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+    transition: transform 0.7s;
+  }
+
+  .navbar-brand {
+    margin-bottom: 10px;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-item {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .nav-link {
+    padding: 5px 0;
+  }
+
+  .certificate-grid {
+    display: block;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .image-grid {
+    display: block;
+  }
+
+  .image-grid img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .zoomable-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .zoomable-image:hover:not(.zoomed-image) {
+    transform: unset;
+    z-index: unset;
+  }
+
+  .zoomed-image {
+    position: unset;
+    top: unset;
+    left: unset;
+    transform: unset;
+    max-width: unset;
+    max-height: unset;
+    z-index: unset;
+    pointer-events: unset;
+  }
+  .certificate-grid img:hover {
+    transform: unset;
+  }
+}
+
+@media (min-width: 418) and (max-width: 858px) {
 
   .yo{
     margin-top: 150px;
   }
-  
+
   #projects .container .row.first-project {
     display: flex;
     flex-direction: column-reverse;
