@@ -47,6 +47,7 @@ header {
 .nav {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #1c1c1c;
   padding: 10px;
   border-radius: 20px;
@@ -523,8 +524,52 @@ a {
 }
 
 @media (max-width: 417px){
+
   .yo{
     margin-top: 200px;
+  }
+
+  .nav li:before {
+    content: unset;
+    position: unset;
+    top: unset;
+    right: unset;
+    transform: unset;
+    height: unset;
+    width: unset;
+    background-color: unset;
+    border-radius: unset;
+    opacity: unset;
+    transition: unset;
+  }
+  
+  .nav li:hover:before {
+    opacity: unset;
+    transform: unset;
+  }
+  
+  .nav a {
+    color: unset;
+    position: unset;
+    cursor: unset;
+  }
+  
+  .nav a:hover {
+    color: unset;
+  }
+  
+  .nav a:hover:before {
+    background-color: unset;
+  }
+  
+  #language-toggle:hover {
+    background-color: unset;
+    border-radius: unset;
+  }
+  
+  .top:hover {
+    background-color: unset;
+    border-radius: unset;
   }
 
   #projects .container .row.first-project {
@@ -544,9 +589,17 @@ a {
     display: none;
   }
 
+  .lista {
+    flex: 1;
+  }
+
+  .lista2 {
+    flex: 1;
+  }
+
   .navbar {
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     position: fixed;
     transition: transform 0.7s;
   }
@@ -637,8 +690,8 @@ a {
   }
 
   .navbar {
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     position: fixed;
     transition: transform 0.7s;
   }
@@ -725,7 +778,7 @@ a {
   }
 
   .navbar {
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
     position: fixed;
     transition: transform 0.7s;
@@ -775,7 +828,7 @@ a {
   }
 
   .navbar {
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
     position: fixed;
     transition: transform 0.7s;
