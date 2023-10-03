@@ -82,14 +82,6 @@ header {
   cursor: pointer;
 }
 
-.nav a:hover {
-  color: #ffcc00;
-}
-
-.nav a:hover:before {
-  background-color: #ffcc00;
-}
-
 .language-switch {
   margin-left: 20px;
 }
