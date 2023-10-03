@@ -141,14 +141,6 @@ toggleTextMutedClass();
 
 themeToggle.addEventListener("click", toggleTextMutedClass);
 
-function revealEmail(event) {
-  event.preventDefault();
-  var emailElement = event.target;
-  var emailAddress = "AlexandroMoroz5@gmail.com";
-  emailElement.href = "mailto:" + emailAddress;
-  emailElement.innerText = emailAddress;
-}
-
 function toggleCV() {
   var cvContent = document.getElementById("cv-content");
   var cvEmbed = document.getElementById("cv-embed");
