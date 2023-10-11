@@ -29,12 +29,7 @@
       <div class="container">
         <div
           class="d-flex flex-wrap align-items-center justify-content-between"
-        >
-          <a
-            href="/"
-            class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
-          ></a>
-
+        >        
           <ul class="nav lista">
             <li>
               <a
@@ -123,7 +118,7 @@
           <div class="language-switch">
             <button
               id="language-toggle"
-              class="ms-2"
+              class="ms-2 text-white"
               onclick="toggleLanguage()"
             >
               Cambiar al Ingles
@@ -140,22 +135,25 @@
         </ul>
       </div>
     </header>
-
-    <div class="container text-center yo">
-      <img
-        src="./cv semi profesional.jpg"
-        alt="Profile Picture"
-        class="rounded-circle img-thumbnail mt-3"
-        id="imagen"
-      />
-
-      <div class="nombreRol mt-1">
-        <h1>Ivan Alexandro Moroz</h1>
-        <p id="rol" data-lang="en" data-lang-es="Full Stack Web Developer - Java">
-          Full Stack Web Developer - Java
-        </p>
-      </div>
+   
+        <div class="container mt-3 yo">
+  <div class="nombreRol d-flex justify-content-center align-items-center">
+    <div class="px-3">
+      <h1 style="font-family: 'Playfair Display', serif;">Ivan Alexandro Moroz</h1>
+      <p id="rol" data-lang="en" data-lang-es="Full Stack Web Developer - Java"
+         >
+        Full Stack Web Developer - Java
+      </p>
     </div>
+    <img
+         src="https://alexandromoroz.github.io/cv%20semi%20profesional.jpg"
+         alt="Profile Picture"
+         class="rounded-circle img-thumbnail ml-3"
+         id="imagen"
+        
+         />
+  </div>
+</div>
 
     <br />
 
@@ -222,6 +220,7 @@ I am studying microservices, TypeScript, Angular, DTO patterns, API with advices
 
       <br />
 
+      <div class="global">
       <h2
         id="skills"
         class="text-center"
@@ -230,6 +229,7 @@ I am studying microservices, TypeScript, Angular, DTO patterns, API with advices
       >
         Skills
       </h2>
+      </div>
       <div class="skills-container">
         <div class="skill-item">
           <i class="fab fa-java" style="color: #007396"></i>
@@ -282,9 +282,11 @@ I am studying microservices, TypeScript, Angular, DTO patterns, API with advices
 
 <section id="projects">
       <div class="container">
+        <div class="global">
         <h2 class="text-center" data-lang="es" data-lang-en="Proyectos">
           Projects
         </h2>
+      </div>
         <div class="row d-flex align-items-center first-project">          
           <div class="col-lg-6">
             <div class="image-container">
@@ -462,6 +464,7 @@ I am studying microservices, TypeScript, Angular, DTO patterns, API with advices
  <br>
 
     <div id="certificates" class="container">
+      <div class="global">
       <h2
         class="certificados text-center"
         data-lang="es"
@@ -469,6 +472,7 @@ I am studying microservices, TypeScript, Angular, DTO patterns, API with advices
       >
         Certificates (only in Spanish)
       </h2>
+    </div>
       <div class="certificate-grid">
         <div class="image-container">
           <img
@@ -507,26 +511,21 @@ I am studying microservices, TypeScript, Angular, DTO patterns, API with advices
         <h2
           class="text-center"
           data-lang="es"
-          data-lang-en="Blog sobre lo que hago actualmente"
+          data-lang-en="¿Qué hago actualmente?"
         >
-          Blog about what i currently do
+          what i currently do?
         </h2>
         <h5
           data-lang="es"
-          data-lang-en='Bienvenido a mi sección "Blog" aquí encontraras todo lo en lo que estoy
-          trabajando actualmente, eso incluye estudios y prácticas. Acá es donde voy a estar actualizando
+          data-lang-en='Bienvenido a mi sección "Blog" aquí encontraras toda la información sobre lo que estoy
+          haciendo actualmente, eso incluye estudios y prácticas. Acá es donde voy a estar actualizando
           a tiempo real lo que esté haciendo.'
           class="text-center"
         >
-          Welcome to my news "Blog" Here you will find everything I am currently
-          working on, that includes studies and internships. Here is where I
-          will be updating in real time what I am doing.
+        Welcome to my news "Blog". Here, you will find all the information about what I am currently
+        working on, including studies and internships. This is where I will be updating
+        in real-time what I am doing.
         </h5>
-      </div>
-
-      <br />
-
-      <div class="actualidad">
         <p
           class="texto"
           data-lang="es"
@@ -591,11 +590,8 @@ I am studying microservices, TypeScript, Angular, DTO patterns, API with advices
             data-lang="es"
             data-lang-en="Repositorio Github"
             >GitHub Repository</a      >
-        </div>
-        
+        </div>      
         </p>
-        
-        
       </div>
     </section>
 
