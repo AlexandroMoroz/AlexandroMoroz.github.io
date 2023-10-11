@@ -6,6 +6,9 @@ body {
   margin: 0;
 }
 
+.yo {
+  margin-top: 1rem;
+}
 h2 { 
     font-family: 'Playfair Display', serif;
 }
@@ -534,7 +537,7 @@ a {
 
 @media (max-width: 417px) {
   .yo {
-    margin-top: 200px;
+    margin-top: 225px;
   }
 
   .nav li:before {
@@ -693,7 +696,7 @@ a {
 }
 
 
-@media  (max-width: 858px) {
+@media (min-width:491) and (max-width: 858px) {
 
   .top {
     padding: 12px;
