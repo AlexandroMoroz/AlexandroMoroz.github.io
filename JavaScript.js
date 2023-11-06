@@ -159,10 +159,10 @@ function toggleCV() {
 
   cvContent.style.display = "block";
   if (languageToggle.textContent === "Switch to Spanish") {
-    cvEmbed.src = "./Ivan_Alexandro_Moroz_CV_en.pdf";
+    cvEmbed.src = "./Ivan_Alexandro_Moroz_JavaDev_EN.pdf";
     cvLink.textContent = "Hide CV";
   } else {
-    cvEmbed.src = "./Ivan_Alexandro_Moroz_CV_es.pdf";
+    cvEmbed.src = "./Ivan_Alexandro_Moroz_JavaDev_ES.pdf";
     cvLink.textContent = "Esconder CV";
   }
 }

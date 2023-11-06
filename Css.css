@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@font-face {
+  font-family: 'GeistMono';
+  src: url('./GeistMono-Regular.otf');
+}
 
 body {
-  font-family: 'Playfair Display', serif;
+  font-family: 'GeistMono';
   margin: 0;
 }
 
