@@ -24,17 +24,30 @@
     <link rel="stylesheet" href="Css.css" />
   </head>
 
-  <body class="dark-mode">
+  <body class="dark-mode efecto">
+
+  <a
+  href="#"
+  class="scroll-to-top"
+  data-lang="es"
+  data-lang-en=""
+  alt="ir al inicio"
+  >
+  </a>
+
     <header class="text-bg-dark navbar">
-      <div class="container">
+      <a href="#">
+      <img src="./logo.png" alt="logo" style="width: 55px; height: 73px;" class="logo"/>
+      </a>
+      <div class="container" style="padding-left: 0%; margin-left: 30px; padding-right: 0%; margin-right: 95px;">
         <div
-          class="d-flex flex-wrap align-items-center justify-content-between"
+          class="d-flex flex-wrap align-items-center justify-content-between"      
         >        
           <ul class="nav lista">
             <li>
               <a
                 onclick="scrollToSection('about')"
-                class="nav-link px-2 ms-1 text-white show-on-desktop"
+                class="nav-link px-2 ms-1 text-white"
                 data-lang="es"
                 data-lang-en="Sobre mi"
               >
@@ -64,17 +77,6 @@
                 Projects
               </a>
             </li>
-            <!-- <li>
-              <a
-                onclick="scrollToSection('certificates')"
-                class="nav-link px-2 ms-1 text-white show-on-desktop"
-                data-lang="es"
-                data-lang-en="Certificados"
-              >
-                <span class="separator"></span>
-                Certificates
-              </a>
-            </li>    -->
             <li>
               <a
                 onclick="scrollToSection('Blog')"
@@ -89,7 +91,7 @@
             <li>
               <a
                 onclick="scrollToSection('contact')"
-                class="nav-link px-2 ms-1 text-white contacto"
+                class="nav-link px-2 ms-1 text-white"
                 data-lang="es"
                 data-lang-en="Contáctame"
               >
@@ -100,12 +102,12 @@
             <li>
               <a
                 onclick="scrollToSection('cv')"
-                class="nav-link px-2 ms-1 text-white show-on-desktop"
+                class="nav-link px-2 ms-1 text-white"
                 data-lang="es"
                 data-lang-en="CV"
               >
                 <span class="separator"></span>
-                CV
+                Resume
               </a>
             </li>
           </ul>
@@ -122,16 +124,24 @@
               onclick="toggleLanguage()"
             >
               Cambiar al Ingles
-            </button>
+            </button>                          
           </div>
-          <a
-            href="#"
-            class="text-white top fas fa-arrow-up"
-            data-lang="es"
-            data-lang-en=""
-          >
-            
-          </a>
+           <a
+                  href="https://www.linkedin.com/in/ivan-alexandro-moroz-java-developer-trainee/"
+                  class="links ms-2 me-2"
+                  target="_blank"
+                  style="font-size: 25px;"
+                >
+                  <i class="fab fa-linkedin" style="color: #0a66c2"></i>             
+                </a> 
+                <a
+                  href="https://github.com/AlexandroMoroz"
+                  target="_blank"
+                  class="ms-2 me-2"
+                  style="font-size: 25px;"
+                >
+                  <i class="fab fa-github"></i>                 
+                </a>     
         </ul>
       </div>
     </header>
@@ -219,78 +229,131 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
 
       <br />
 
-      <div class="global">
+      <div class="centrar">
       <h2
         id="skills"
-        class="text-center"
+        class="text-center global"
         data-lang="es"
         data-lang-en="Habilidades"
       >
         Skills
       </h2>
       </div>
-      <div class="skills-container">
-        <div class="skill-item">
+      <div class="skills-container slider">
+        <div class="slide-track">
+        <div class="skill-item slide">
           <i class="fab fa-java" style="color: #007396"></i>
           <span>Java</span>
         </div>
-        <div class="skill-item">
+        <div class="skill-item slide">
           <i class="fas fa-cogs" style="color: #6db33f"></i>
           <span>Spring Framework</span>
         </div>
-        <div class="skill-item">
+        <div class="skill-item slide">
           <i class="fab fa-html5" style="color: #e34f26"></i>
           <span>HTML</span>
         </div>
-        <div class="skill-item">
+        <div class="skill-item slide">
           <i class="fab fa-css3" style="color: #1572b6"></i>
           <span>CSS</span>
         </div>
-        <div class="skill-item">
+        <div class="skill-item slide">
           <i class="fab fa-bootstrap" style="color: #7952b3"></i>
           <span>Bootstrap</span>
         </div>
-        <div class="skill-item">
+        <div class="skill-item slide">
           <i class="fab fa-js-square" style="color: #f7df1e"></i>
           <span>JavaScript</span>
         </div>
-        <div class="skill-item">
+        <div class="skill-item slide">
           <i class="fab fa-react" style="color: #61dafb"></i>
           <span>React</span>
         </div>
-        <div class="skill-item">
+        <div class="skill-item slide">
           <i class="fab fa-angular" style="color: #dd0031"></i>
           <span>Angular</span>
         </div>
-         <div class="skill-item">
+         <div class="skill-item slide">
           <i class="fas fa-laptop-code" style="color: #007acc"></i>
           <span>TypeScript</span>
         </div>
-        <div class="skill-item">
+        <div class="skill-item slide">
           <i class="fas fa-database" style="color: #4479a1"></i>
           <span>JPA</span>
         </div>
-        <div class="skill-item">
+        <div class="skill-item slide">
           <i class="fas fa-database" style="color: #4479a1"></i>
           <span>MySQL</span>
         </div>
-        <div class="skill-item">
+        <div class="skill-item slide">
           <i class="fas fa-flask" style="color: #25a162"></i>
           <span>JUnit 5</span>
         </div>   
-        <div class="skill-item">
+        <div class="skill-item slide">
+          <i class="fas fa-vial" style="color: #2f6fad"></i>
+          <span>Mockito</span>
+        </div>    
+         <div class="skill-item slide">
+          <i class="fab fa-java" style="color: #007396"></i>
+          <span>Java</span>
+        </div>
+        <div class="skill-item slide">
+          <i class="fas fa-cogs" style="color: #6db33f"></i>
+          <span>Spring Framework</span>
+        </div>
+        <div class="skill-item slide">
+          <i class="fab fa-html5" style="color: #e34f26"></i>
+          <span>HTML</span>
+        </div>
+        <div class="skill-item slide">
+          <i class="fab fa-css3" style="color: #1572b6"></i>
+          <span>CSS</span>
+        </div>
+        <div class="skill-item slide">
+          <i class="fab fa-bootstrap" style="color: #7952b3"></i>
+          <span>Bootstrap</span>
+        </div>
+        <div class="skill-item slide">
+          <i class="fab fa-js-square" style="color: #f7df1e"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-item slide">
+          <i class="fab fa-react" style="color: #61dafb"></i>
+          <span>React</span>
+        </div>
+        <div class="skill-item slide">
+          <i class="fab fa-angular" style="color: #dd0031"></i>
+          <span>Angular</span>
+        </div>
+         <div class="skill-item slide">
+          <i class="fas fa-laptop-code" style="color: #007acc"></i>
+          <span>TypeScript</span>
+        </div>
+        <div class="skill-item slide">
+          <i class="fas fa-database" style="color: #4479a1"></i>
+          <span>JPA</span>
+        </div>
+        <div class="skill-item slide">
+          <i class="fas fa-database" style="color: #4479a1"></i>
+          <span>MySQL</span>
+        </div>
+        <div class="skill-item slide">
+          <i class="fas fa-flask" style="color: #25a162"></i>
+          <span>JUnit 5</span>
+        </div>   
+        <div class="skill-item slide">
           <i class="fas fa-vial" style="color: #2f6fad"></i>
           <span>Mockito</span>
         </div>    
       </div>
-
+    </div>
       <br />
     </section>
 
 <section id="projects">
       <div class="container">
-        <div class="global">
-        <h2 class="text-center" data-lang="es" data-lang-en="Proyectos">
+        <div class="centrar">
+        <h2 class="text-center global" data-lang="es" data-lang-en="Proyectos">
           Projects
         </h2>
       </div>
@@ -470,58 +533,6 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
 
  <br>
 
-    <!-- <div id="certificates" class="container">
-      <div class="global">
-      <h2
-        class="certificados text-center"
-        data-lang="es"
-        data-lang-en="Certificados"
-      >
-        Certificates (only in Spanish)
-      </h2>
-    </div>
-      <div class="certificate-grid">
-        <div class="image-container">
-          <img
-            src="./Certificado_Curso_Programacin_FullStack.jpg"
-            alt="Certificado full stack"
-          />
-        </div>
-        <div class="image-container">
-          <img
-            src="./Certificado_de_Curso_Programacion_desde_Cero.jpg"
-            alt="Certificado programación desde cero"
-          />
-        </div>
-        <div class="image-container">
-          <img src="./argentina_programa_2023.jpg" alt="Certificado Argentina programa primer tramo" />
-        </div>
-        <div class="image-container">
-          <img src="./certificate-elements-of-ai-es.png" alt="Certificado sobre elementos de la IA" />
-        </div>
-        <div class="image-container">
-          <img src="./Certificado_Proyecto_Final_Programacin_Full-Stack_page-0001.jpg" alt="Certificado Proyecto Final" />
-        </div>
-        <div class="image-container">
-          <img src="./Certificado_java_argPrograma.jpg" alt="Certificado Java de Argentina Programa" />
-        </div>
-        <div class="image-container">
-          <img src="./Certificado_Oficial_-_Argentina_4.0_-_Desarrollo_Web_Front-End.png" alt="Certificado primer etapa front end de Argentina programa" />
-        </div>
-        <div class="image-container">
-          <img src="./certificado_consultas_basicasSQL.png" alt="Certificado primer etapa front end de Argentina programa" />
-        </div>
-        <div class="image-container">
-          <img src="./certificado_consultas_datos_agrupadosSQL.png" alt="Certificado primer etapa front end de Argentina programa" />
-        </div>
-        <div class="image-container">
-          <img src="./certificado_subconsultasSQL.png" alt="Certificado primer etapa front end de Argentina programa" />
-        </div>
-      </div>
-    </div> -->
-
-    <br>
-
     <section id="Blog" class="container">
       <div class="blog">
         <h2
@@ -618,41 +629,39 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
         <h2 data-lang="es" data-lang-en="Contáctame">
           Contact me
         </h2>
-        <ol>
-          <ul>
-            <a
-              href="https://www.linkedin.com/in/ivan-alexandro-moroz-java-developer-trainee/"
-              class="links"
-              target="_blank"
-            >
-              <i class="fab fa-linkedin" style="color: #0a66c2"></i>
-              Linkedin
-            </a>
-          </ul>
-          <ul>
-            <i class="fas fa-envelope" style="color: #d44638"></i>
-            <a
-              href="mailto:AlexandroMoroz5@gmail.com"
-              class="links"
-              data-lang="es"
-              data-lang-en="Email"
-            >
-            Email
-            </a>
-          </ul>
-          <ul>
-            <a
-              href="https://github.com/AlexandroMoroz"
-              target="_blank"
-              class="links"
-            >
-              <i class="fab fa-github git"></i>
-              GitHub
-            </a>
-          </ul>
-        </ol>
+        <div class="contact-form">
+        <form id="contact-form" action="https://formspree.io/f/xyyqvvod" method="post">
+          <div class="mb-3 row">
+            <div class="col-md-6">
+              <label for="name" class="form-label" data-lang="es" data-lang-en="Nombre:">Name:</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label" data-lang="es" data-lang-en="Email:">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+          </div>
+    
+          <div class="mb-3">
+            <label for="subject" class="form-label" data-lang="es" data-lang-en="Asunto:">Affair:</label>
+            <input type="text" class="form-control" id="subject" name="subject" required>
+          </div>
+    
+          <div class="mb-3">
+            <label for="message" class="form-label" data-lang="es" data-lang-en="Mensaje:">Message:</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center ">
+          <button type="submit" class="btn btn-primary" data-lang="es" data-lang-en="Enviar">Submit</button>         
+       </div>
+      </form>
       </div>
+      </div>
+      
     </section>
+    
+    
+    
 
     <br />
 
@@ -665,7 +674,7 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
           data-lang="es"
           data-lang-en="Ver CV"
         >
-          View CV
+          View Resume     
         </div>
         <br />
         <div id="cv-content" style="display: none">
@@ -692,11 +701,29 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
             data-lang="es"
             data-lang-en="2023 / Hecho por Ivan Alexandro Moroz"
             >2023 / made by Ivan Alexandro Moroz</span
-          >
-        </div>
+          >       
+        </div>       
+                <a
+                  href="https://www.linkedin.com/in/ivan-alexandro-moroz-java-developer-trainee/"
+                  class="me-2 ms-2"
+                  target="_blank"
+                  style="font-size: 25px;"
+                >
+                  <i class="fab fa-linkedin" style="color: #0a66c2"></i>  
+                           
+                </a> 
+                <a
+                  href="https://github.com/AlexandroMoroz"
+                  target="_blank"
+                  class="me-2 ms-2"
+                  style="font-size: 25px;"
+                >
+                  <i class="fab fa-github git"></i>                 
+                </a>         
       </footer>
     </div>
 
+ 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

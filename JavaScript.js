@@ -95,7 +95,7 @@ function toggleLanguage() {
   if (cvContent.style.display === "block") {
     cvContent.style.display = "none";
     if (langButton.textContent === "Switch to Spanish") {
-      cvLink.textContent = "View CV";
+      cvLink.textContent = "View Resume";
     } else {
       cvLink.textContent = "Ver CV";
     }
@@ -150,7 +150,7 @@ function toggleCV() {
   if (cvContent.style.display === "block") {
     cvContent.style.display = "none";
     if (languageToggle.textContent === "Switch to Spanish") {
-      cvLink.textContent = "View CV";
+      cvLink.textContent = "View Resume";
     } else {
       cvLink.textContent = "Ver CV";
     }
@@ -160,7 +160,7 @@ function toggleCV() {
   cvContent.style.display = "block";
   if (languageToggle.textContent === "Switch to Spanish") {
     cvEmbed.src = "./Ivan_Alexandro_Moroz_JavaDev_EN.pdf";
-    cvLink.textContent = "Hide CV";
+    cvLink.textContent = "Hide Resume";
   } else {
     cvEmbed.src = "./Ivan_Alexandro_Moroz_JavaDev_ES.pdf";
     cvLink.textContent = "Esconder CV";
