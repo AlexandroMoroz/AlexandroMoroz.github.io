@@ -188,7 +188,7 @@ li a {
   background-position: center center;
   background-attachment: fixed;
   background-image: url("./fondo_claro.webp");
-  opacity: 45%;
+  opacity: 55%;
   z-index: -1;
 }
 .dark-mode {
@@ -1044,6 +1044,9 @@ a {
   -webkit-animation-play-state: unset;
 }
 
+.light-mode::before {
+  opacity: 75%; 
+}
 }
 
 @media (min-width: 992px) and (max-width: 1320px) {
