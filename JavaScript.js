@@ -51,27 +51,13 @@ let prevScrollPos = window.scrollY;
 const navbar = document.querySelector('.navbar');
 const isMobile = window.innerWidth <= 1100;
 
-if (isMobile) {
-  window.addEventListener('scroll', function() {
-    let currentScrollPos = window.scrollY;
-
-    if (prevScrollPos > currentScrollPos) {
-      navbar.style.transform = "translateY(0)";
-    } else {
-      navbar.style.transform = "translateY(-100%)";
-    }
-
-    prevScrollPos = currentScrollPos;
-  });
-}
-
 
 function scrollToSection(sectionId) {
   const section = document.getElementById(sectionId);
   let offset = -100;
 
   if (window.innerWidth < 768) {
-    offset = -175;
+    offset = -110;
   } else if (window.innerWidth < 1024) {
     offset = -200;
   }
@@ -130,7 +116,7 @@ function replaceTextContent(fromLanguage, toLanguage) {
 const footerText = document.getElementById("footer-text");
 
 function toggleTextMutedClass() {
-  if (document.body.classList.contains("dark-mode")) {
+  if (document.body.classList.contains("light-mode")) {
     footerText.classList.add("text-muted");
   } else {
     footerText.classList.remove("text-muted");

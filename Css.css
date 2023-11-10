@@ -111,16 +111,28 @@ body {
 
 .navbar {
   position: sticky;
-  background-color: #343a40; 
+  background-color: #343a40;
+  z-index: 1;
+  background: url('https://www.transparenttextures.com/patterns/stardust.png'); 
+  animation: starsFall 120s linear infinite;
+}
+
+@keyframes starsFall {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+     background-position: -100vw 100vh;
+  }
 }
 
 .navbar-brand,
 .navbar-nav .nav-link {
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 .navbar-toggler-icon {
-  background-color: #ffffff; 
+  background-color: #ffffff;
 }
 
 li a {
@@ -652,7 +664,52 @@ a {
   margin-right: 10px;
 }
 
+.navbar-toggler {
+  display: block;
+  border: none;
+  margin-right: 15px;
+}
+
+.navbar-collapse {
+  background-color: #343a40;
+  position: fixed;
+  top: 0%;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.navbar-collapse.show {
+  transform: translateX(0);
+}
+
+.navbar-nav {
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbar-nav .nav-item {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  background-color: rgba(82, 81, 81, 0.432);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.navbar-toggler-icon {
+  background-color: #343a40;
+}
+
 @media (max-width: 417px) {
+  .offcanvas {
+    width: 80% !important;
+  }
+
   .yo {
     margin-top: 120px;
   }
@@ -777,58 +834,12 @@ a {
   }
 }
 
-.navbar-toggler {
-  display: block;
-  border: none;
-  margin-right: 15px;
-}
-
-.navbar-collapse {
-  background-color: #343a40;
-  position: fixed;
-  top: 0%;
-  left: 0;
-  width: 80%;
-  height: 100%;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease-in-out;
-  border: 1px solid white;
-  border-radius: 10px;
-}
-
-.navbar-collapse.show {
-  transform: translateX(0);
-}
-
-.navbar-nav {
-  flex-direction: column;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.navbar-nav .nav-item {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  background-color: rgba(82, 81, 81, 0.432);
-  border-radius: 10px;
-  text-align: start;
-}
-
-.navbar-toggler-icon {
-  background-color: #343a40;
-}
-
-.navbar-nav .nav-link {
-  margin-left: 15px;
-}
-
 @media (min-width: 490px) {
   .icons h2 {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
 }
 
 @media (min-width: 491px) and (max-width: 858px) {
@@ -936,7 +947,6 @@ a {
     justify-content: center;
     align-items: center;
   }
-
 }
 
 @media (min-width: 859px) and (max-width: 991px) {
@@ -953,7 +963,7 @@ a {
     background-color: unset;
     border-radius: unset;
   }
- 
+
   .yo {
     margin-top: 120px;
   }
@@ -1046,7 +1056,7 @@ a {
     background-color: unset;
     border-radius: unset;
   }
- 
+
   .yo {
     margin-top: 120px;
   }
