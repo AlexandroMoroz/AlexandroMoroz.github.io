@@ -60,7 +60,7 @@ function scrollToSection(sectionId) {
   let offset = -100;
 
   if (window.innerWidth < 768) {
-    offset = -110;
+    offset = -75;
   } else if (window.innerWidth < 1024) {
     offset = -200;
   }
