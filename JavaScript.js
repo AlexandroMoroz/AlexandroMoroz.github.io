@@ -2,6 +2,7 @@ var themeToggle = document.getElementById("theme-toggle");
 var sunIcon = document.getElementById("sun-icon");
 var moonIcon = document.getElementById("moon-icon");
 var body = document.body;
+var offcanvas = new bootstrap.Offcanvas(document.getElementById('offcanvasDarkNavbar'));
 
 themeToggle.addEventListener("click", function () {
   if (body.classList.contains("light-mode")) {
@@ -9,11 +10,13 @@ themeToggle.addEventListener("click", function () {
     body.classList.add("dark-mode");
     sunIcon.style.display = "none";
     moonIcon.style.display = "inline-block";
+    offcanvas.hide();
   } else {
     body.classList.remove("dark-mode");
     body.classList.add("light-mode");
     sunIcon.style.display = "inline-block";
     moonIcon.style.display = "none";
+    offcanvas.hide();
   }
 });
 
@@ -90,9 +93,11 @@ function toggleLanguage() {
   if (langButton.textContent === "Cambiar al Ingles") {
     langButton.textContent = "Switch to Spanish";
     replaceTextContent("en", "es");
+    offcanvas.hide();
   } else {
     langButton.textContent = "Cambiar al Ingles";
     replaceTextContent("es", "en");
+    offcanvas.hide();
   }
 }
 
@@ -152,3 +157,14 @@ function toggleCV() {
     cvLink.textContent = "Esconder CV";
   }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  
+
+  var menuItems = document.querySelectorAll('.navbar-nav a');
+  menuItems.forEach(function (item) {
+    item.addEventListener('click', function () {
+      offcanvas.hide();
+    });
+  });
+});

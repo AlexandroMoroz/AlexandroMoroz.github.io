@@ -1025,13 +1025,6 @@ a {
   }
 }
 
-@media (max-width: 767.98px) {
-  #logo {
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
 @media (max-width: 991px) {
   #imagen {
     margin-left: 0% !important;
@@ -1039,6 +1032,11 @@ a {
 
   .cargo {
     padding: 0% !important;
+  }
+
+  #logo {
+    width: 35px !important;
+    height: 53px !important;
   }
 }
 
