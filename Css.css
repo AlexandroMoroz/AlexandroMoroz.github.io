@@ -746,10 +746,6 @@ a {
     width: 80% !important;
   }
 
-  .yo {
-    margin-top: 100px;
-  }
-
   .nav li:before {
     content: unset;
     position: unset;
@@ -893,10 +889,6 @@ a {
     border-radius: unset;
   }
 
-  .yo {
-    margin-top: 120px;
-  }
-
   #projects .container .row.first-project {
     display: flex;
     flex-direction: column-reverse;
@@ -1000,10 +992,6 @@ a {
     border-radius: unset;
   }
 
-  .yo {
-    margin-top: 120px;
-  }
-
   #projects .container .row.first-project {
     display: flex;
     flex-direction: column-reverse;
@@ -1083,6 +1071,10 @@ a {
 .light-mode::before {
   opacity: 75%; 
 }
+
+.light-mode #theme-toggle:hover{
+  background-color:rgba(46, 204, 112, 0.747);
+}
 }
 
 @media (min-width: 992px) and (max-width: 1320px) {
@@ -1098,10 +1090,6 @@ a {
   .top:hover {
     background-color: unset;
     border-radius: unset;
-  }
-
-  .yo {
-    margin-top: 120px;
   }
 
   .navbar {
