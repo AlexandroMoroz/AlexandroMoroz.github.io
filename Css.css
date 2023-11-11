@@ -109,7 +109,7 @@ body {
   grid-gap: 10px;
 }
 
-.navbar {
+.dark-mode .navbar {
   position: sticky;
   background-color: #343a40;
   z-index: 1;
@@ -126,13 +126,32 @@ body {
   }
 }
 
+.light-mode .navbar {
+  position: sticky;
+  z-index: 1;
+  background: url('./clouds.jpg'); 
+  background-size: cover;
+  animation: clouds 120s linear infinite;
+}
+
+
+
+@keyframes clouds {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+     background-position: 0vw -100vh;
+  }
+}
+
 .navbar-brand,
 .navbar-nav .nav-link {
   color: #ffffff;
 }
 
-.navbar-toggler-icon {
-  background-color: #ffffff;
+.light-mode #offcanvasDarkNavbar {
+  background-color: rgb(223, 222, 222) !important;
 }
 
 li a {
@@ -372,6 +391,14 @@ button#theme-toggle:hover {
   background-color: #777;
 }
 
+.light-mode #theme-toggle {
+  background-color:rgba(46, 204, 112, 0.747);
+  transition: 1s;
+}
+
+.light-mode #theme-toggle:hover {
+  background-color: darkgreen;
+}
 #sun-icon {
   display: none;
   font-size: 20px;
@@ -670,30 +697,13 @@ a {
   margin-right: 15px;
 }
 
-.navbar-collapse {
-  background-color: #343a40;
-  position: fixed;
-  top: 0%;
-  left: 0;
-  width: 80%;
-  height: 100%;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease-in-out;
-  border: 1px solid white;
-  border-radius: 10px;
-}
-
-.navbar-collapse.show {
-  transform: translateX(0);
-}
-
 .navbar-nav {
   flex-direction: column;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.navbar-nav .nav-item {
+.dark-mode .navbar-nav .nav-item {
   margin-top: 10px;
   margin-bottom: 5px;
   background-color: rgba(82, 81, 81, 0.432);
@@ -701,8 +711,34 @@ a {
   text-align: center;
 }
 
-.navbar-toggler-icon {
-  background-color: #343a40;
+.light-mode .navbar-nav .nav-item {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  background-color:rgba(46, 204, 112, 0.747);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.dark-mode #close {
+  position: absolute;
+  top: 7%;
+  right: 7%;
+  background-color: transparent;
+  border: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #fff !important;
+}
+
+.light-mode #close {
+  position: absolute;
+  top: 7%;
+  right: 7%;
+  background-color: transparent;
+  border: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #212529 !important;
 }
 
 @media (max-width: 417px) {

@@ -2,22 +2,28 @@ var themeToggle = document.getElementById("theme-toggle");
 var sunIcon = document.getElementById("sun-icon");
 var moonIcon = document.getElementById("moon-icon");
 var body = document.body;
-var offcanvas = new bootstrap.Offcanvas(document.getElementById('offcanvasDarkNavbar'));
+const logoImg = document.getElementById("logo-img");
+var offcanvas = new bootstrap.Offcanvas(
+  document.getElementById("offcanvasDarkNavbar")
+);
 
 themeToggle.addEventListener("click", function () {
-  if (body.classList.contains("light-mode")) {
+
+  if (body.classList.contains("light-mode")) {  
+    logoImg.src = "./logo.png";
     body.classList.remove("light-mode");
     body.classList.add("dark-mode");
     sunIcon.style.display = "none";
-    moonIcon.style.display = "inline-block";
-    offcanvas.hide();
-  } else {
+    moonIcon.style.display = "inline-block" ;
+  } else {   
+    logoImg.src = "./logo2.png";
     body.classList.remove("dark-mode");
     body.classList.add("light-mode");
     sunIcon.style.display = "inline-block";
-    moonIcon.style.display = "none";
-    offcanvas.hide();
+    moonIcon.style.display = "none"; 
   }
+
+ offcanvas.hide();
 });
 
 const images = document.querySelectorAll(".zoomable-image");
@@ -51,9 +57,8 @@ function toggleZoom(image, index) {
 }
 
 let prevScrollPos = window.scrollY;
-const navbar = document.querySelector('.navbar');
+const navbar = document.querySelector(".navbar");
 const isMobile = window.innerWidth <= 1100;
-
 
 function scrollToSection(sectionId) {
   const section = document.getElementById(sectionId);
@@ -158,13 +163,25 @@ function toggleCV() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-  
-
-  var menuItems = document.querySelectorAll('.navbar-nav a');
+document.addEventListener("DOMContentLoaded", function () {
+  var menuItems = document.querySelectorAll(".navbar-nav a, .navbar img, #top");
   menuItems.forEach(function (item) {
-    item.addEventListener('click', function () {
+    item.addEventListener("click", function () {
       offcanvas.hide();
     });
   });
 });
+
+function toggleMode() {
+  const body = document.body;
+  const logo = document.getElementById("logo");
+
+  body.classList.toggle("light-mode");
+  body.classList.toggle("dark-mode");
+
+  if (body.classList.contains("dark-mode")) {
+    logo.src = "./logo.png";
+  } else {
+    logo.src = "./logo2.png";
+  }
+}
