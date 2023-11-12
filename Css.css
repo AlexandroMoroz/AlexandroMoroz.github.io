@@ -240,7 +240,7 @@ li a {
   font-size: 28px;
   font-weight: bold;
   color: white;
-  text-shadow: 2px 2px 2px rgba(252, 248, 4, 0.877);
+  text-shadow: 2px 2px 2px #98fb98;
 }
 
 .light-mode h2 {
@@ -254,7 +254,7 @@ li a {
 .dark-mode .nombreRol {
   width: fit-content;
   margin: auto;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(49, 49, 49, 0.8);
   border: 2px solid #fff;
   border-radius: 40px 5px 40px 5px;
   padding: 10px;
@@ -281,7 +281,7 @@ li a {
 
 .dark-mode .global {
   width: 250px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(54, 53, 53, 0.863);
   border: 2px solid #fff;
   border-radius: 1px 25px 1px 25px;
   padding: 5px;
@@ -312,7 +312,7 @@ li a {
 }
 
 .dark-mode .presentacion {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(54, 53, 53, 0.863);
   border: 2px solid #fff;
   border-radius: 10px;
   padding: 20px;
@@ -358,7 +358,7 @@ li a {
 
 .dark-mode .skill-item {
   border-color: white;
-  background-color: black;
+  background-color: rgba(54, 53, 53, 0.863);
 }
 
 .light-mode .git {
@@ -437,7 +437,7 @@ h1 {
 }
 
 .dark-mode .blog {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(54, 53, 53, 0.863);
   border: 2px solid #fff;
   border-radius: 10px;
   padding: 20px;
@@ -538,7 +538,7 @@ a {
 }
 
 .dark-mode .info {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(54, 53, 53, 0.863);
   border: 2px solid #fff;
   border-radius: 10px;
   padding: 20px;
@@ -562,7 +562,7 @@ a {
 }
 
 .dark-mode .icons {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(54, 53, 53, 0.863);
   border: 2px solid #fff;
   border-radius: 10px;
   padding: 20px;
@@ -582,7 +582,7 @@ a {
 }
 
 .dark-mode .cv {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(54, 53, 53, 0.863);
   border: 2px solid #fff;
   border-radius: 10px;
   padding: 20px;
@@ -604,7 +604,7 @@ a {
 }
 
 .dark-mode .pie {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(54, 53, 53, 0.863);
   border: 2px solid #fff;
   border-radius: 10px;
   padding: 20px;
@@ -624,7 +624,7 @@ a {
 }
 
 .dark-mode .contact-form {
-  background-color: #000000;
+  background-color: rgba(54, 53, 53, 0.863);
   padding: 20px;
   border-radius: 8px;
   text-align: center;
