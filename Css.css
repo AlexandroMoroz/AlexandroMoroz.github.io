@@ -115,6 +115,7 @@ body {
   z-index: 1;
   background: url('https://www.transparenttextures.com/patterns/stardust.png'); 
   animation: starsFall 120s linear infinite;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.185);
 }
 
 @keyframes starsFall {
@@ -132,6 +133,7 @@ body {
   background: url('./clouds.jpg'); 
   background-size: cover;
   animation: clouds 120s linear infinite;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.432);
 }
 
 
@@ -254,8 +256,8 @@ li a {
 .dark-mode .nombreRol {
   width: fit-content;
   margin: auto;
-  background-color: rgba(49, 49, 49, 0.8);
-  border: 2px solid #fff;
+  background-color: rgba(49, 49, 49, 0.5);
+  border: 2px solid #ffffff9f;
   border-radius: 40px 5px 40px 5px;
   padding: 10px;
 }
@@ -269,20 +271,40 @@ li a {
   padding: 10px;
 }
 
-.light-mode #github {
-  border: 3px solid #000000;
+.light-mode .github {
+  border: 2px solid #000000;
   color: solid #fff;
 }
 
-.dark-mode #github {
+.dark-mode .github {
   border: 2px solid#fff;
   color: solid #000000;
 }
 
+.light-mode .btn-primary, .light-mode #btn-submit {
+  background-color: #5cb85c; 
+  color: black;
+}
+
+.light-mode .btn-primary:hover, .light-mode #btn-submit:hover{
+  background-color: #268326; 
+}
+
+.dark-mode .btn-primary, .dark-mode #btn-submit {
+  background-color: #4b0082;
+  color: #ffffff;
+}
+
+.dark-mode .btn-primary:hover, .dark-mode #btn-submit:hover{
+  background-color: #2d004e;
+}
+
+
+
 .dark-mode .global {
   width: 250px;
-  background-color: rgba(54, 53, 53, 0.863);
-  border: 2px solid #fff;
+  background-color: rgba(49, 49, 49, 0.5);
+  border: 2px solid #ffffff9f;
   border-radius: 1px 25px 1px 25px;
   padding: 5px;
   margin-bottom: 10px;
@@ -312,8 +334,8 @@ li a {
 }
 
 .dark-mode .presentacion {
-  background-color: rgba(54, 53, 53, 0.863);
-  border: 2px solid #fff;
+ background-color: rgba(49, 49, 49, 0.5);
+  border: 2px solid #ffffff9f;
   border-radius: 10px;
   padding: 20px;
 }
@@ -358,7 +380,7 @@ li a {
 
 .dark-mode .skill-item {
   border-color: white;
-  background-color: rgba(54, 53, 53, 0.863);
+ background-color: rgba(49, 49, 49, 0.5);
 }
 
 .light-mode .git {
@@ -437,8 +459,8 @@ h1 {
 }
 
 .dark-mode .blog {
-  background-color: rgba(54, 53, 53, 0.863);
-  border: 2px solid #fff;
+ background-color: rgba(49, 49, 49, 0.5);
+  border: 2px solid #ffffff9f;
   border-radius: 10px;
   padding: 20px;
 }
@@ -538,8 +560,8 @@ a {
 }
 
 .dark-mode .info {
-  background-color: rgba(54, 53, 53, 0.863);
-  border: 2px solid #fff;
+ background-color: rgba(49, 49, 49, 0.5);
+  border: 2px solid #ffffff9f;
   border-radius: 10px;
   padding: 20px;
   color: #fff;
@@ -562,8 +584,8 @@ a {
 }
 
 .dark-mode .icons {
-  background-color: rgba(54, 53, 53, 0.863);
-  border: 2px solid #fff;
+ background-color: rgba(49, 49, 49, 0.5);
+  border: 2px solid #ffffff9f;
   border-radius: 10px;
   padding: 20px;
 }
@@ -575,15 +597,11 @@ a {
   padding: 20px;
 }
 
-.btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
-  margin-top: 30px;
-}
+
 
 .dark-mode .cv {
-  background-color: rgba(54, 53, 53, 0.863);
-  border: 2px solid #fff;
+ background-color: rgba(49, 49, 49, 0.5);
+  border: 2px solid #ffffff9f;
   border-radius: 10px;
   padding: 20px;
   width: fit-content;
@@ -604,8 +622,8 @@ a {
 }
 
 .dark-mode .pie {
-  background-color: rgba(54, 53, 53, 0.863);
-  border: 2px solid #fff;
+ background-color: rgba(49, 49, 49, 0.5);
+  border: 2px solid #ffffff9f;
   border-radius: 10px;
   padding: 20px;
 }
@@ -624,7 +642,7 @@ a {
 }
 
 .dark-mode .contact-form {
-  background-color: rgba(54, 53, 53, 0.863);
+ background-color: rgba(49, 49, 49, 0.5);
   padding: 20px;
   border-radius: 8px;
   text-align: center;
@@ -663,7 +681,7 @@ a {
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff9f;
   border-radius: 10px;
   font-size: 18px;
   cursor: pointer;
