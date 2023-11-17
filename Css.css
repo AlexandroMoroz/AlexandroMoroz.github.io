@@ -3,6 +3,10 @@
   src: url("./GeistMono-Regular.otf");
 }
 
+html {
+scroll-behavior: smooth;
+}
+
 body {
   font-family: "GeistMono";
   margin: 0;
