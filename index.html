@@ -21,9 +21,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link rel="stylesheet" href="Css.css" />
+    <script src="scrollreveal.js"></script>
   </head>
 
-  <body class="dark-mode efecto">
+  <body class="dark-mode">
 
   <a
   href="#"
@@ -161,7 +162,7 @@
     </div>
 </nav>
 
-  <div class="container yo">
+  <div class="container yo ">
     <div class="nombreRol d-flex justify-content-center align-items-center">
       <div class="px-3 cargo">
         <h1 style="font-family: 'Playfair Display', serif;">Ivan Alexandro Moroz</h1>
@@ -179,8 +180,8 @@
 
     <br />
 
-    <section id="about" class="container">
-      <div class="presentacion">
+    <section id="about" class="container ">
+      <div class="presentacion bot-bot">
         <h2 class="text-center" data-lang="es" data-lang-en="Sobre mi">
           About Me
         </h2>
@@ -244,9 +245,9 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
 
       <br />
 
-      <div class="centrar">
+      <div class="centrar bot-bot" id="skills">
       <h2
-        id="skills"
+        
         class="text-center global"
         data-lang="es"
         data-lang-en="Habilidades"
@@ -254,7 +255,7 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
         Skills
       </h2>
       </div>
-      <div class="skills-container slider">
+      <div class="skills-container slider bot-bot">
         <div class="slide-track">
         <div class="skill-item slide">
           <i class="fab fa-java" style="color: #007396"></i>
@@ -367,12 +368,12 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
 
 <section id="projects">
       <div class="container">
-        <div class="centrar">
+        <div class="centrar bot-bot">
         <h2 class="text-center global" data-lang="es" data-lang-en="Proyectos">
           Projects
         </h2>
       </div>
-        <div class="row d-flex align-items-center first-project">          
+        <div class="row d-flex align-items-center first-project bot-right">          
           <div class="col-lg-6">
             <div class="image-container">
               <div class="image-grid">
@@ -416,6 +417,7 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
               >
                 News Website
               </h5>
+              <p class="text-center">Java - MySQL - HTML5 - CSS3 - Bootstrap - Thymeleaf - Spring - Spring Security - JPA - Maven</p>
               <p
                 class="text-center"
                 data-lang="es"
@@ -445,7 +447,7 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
                   
                   href="https://github.com/AlexandroMoroz/Pagina-de-noticias"
                   target="_blank"
-                  class="btn btn-primary github"
+                  class="btn btn-primary github rep1"
                   data-lang="es"
                   data-lang-en="Repositorio Github"
                   >GitHub Repository</a
@@ -456,7 +458,7 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
           
       </div>
       <br />
-      <div class="container">
+      <div class="container bot-left">
         <div class="row d-flex align-items-center">
          
           <div class="col-lg-6">
@@ -468,6 +470,7 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
               >
                 Health Website "Vitalidapp"
               </h5>
+              <p class="text-center">Java - MySQL - HTML5 - CSS3 - Javascript - Bootstrap - Thymeleaf - Spring Framework - Spring Security - JPA - Maven</p>
               <p
                 class="text-center"
                 data-lang="es"
@@ -498,7 +501,7 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
                   
                   href="https://github.com/AlexandroMoroz/health-app"
                   target="_blank"
-                  class="btn btn-primary github"
+                  class="btn btn-primary github rep2"
                   data-lang="es"
                   data-lang-en="Repositorio Github"
                   >GitHub Repository</a
@@ -548,7 +551,7 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
 
  <br>
 
-    <section id="Blog" class="container">
+    <section id="Blog" class="container bot-bot">
       <div class="blog">
         <h2
           class="text-center"
@@ -628,7 +631,7 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
             
             href="https://github.com/davichuder/huertas_agroecologicas"
             target="_blank"
-            class="btn btn-primary github"
+            class="btn btn-primary github rep3"
             data-lang="es"
             data-lang-en="Repositorio Github"
             >GitHub Repository</a>
@@ -639,7 +642,7 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
 
     <br />
 
-    <section id="contact" class="container">
+    <section id="contact" class="container bot-bot">
       <div class="icons">
         <div class="d-flex align-items-center justify-content-center">
         <h2 data-lang="es" data-lang-en="Contáctame">
@@ -669,7 +672,7 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
             <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
           </div>
           <div>
-          <button type="submit" id="btn-submit" class="btn btn-primary" data-lang="es" data-lang-en="Enviar">Submit</button>         
+          <button type="submit" id="btn-submit" class="btn btn-primary rep3" data-lang="es" data-lang-en="Enviar">Submit</button>         
        </div>
       </form>
       </div>
@@ -741,12 +744,13 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
     </div>
 
  
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-    <script src="./JavaScript.js"></script>
+   crossorigin="anonymous"></script>
+  <script src="./JavaScript.js"></script>
+  <script src="./index.js"></script>
   </body>
 </html>

@@ -4,7 +4,7 @@
 }
 
 html {
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -117,7 +117,7 @@ body {
   position: sticky;
   background-color: #343a40;
   z-index: 1;
-  background: url('https://www.transparenttextures.com/patterns/stardust.png'); 
+  background: url("https://www.transparenttextures.com/patterns/stardust.png");
   animation: starsFall 120s linear infinite;
   border-bottom: 2px solid rgba(255, 255, 255, 0.185);
 }
@@ -127,27 +127,25 @@ body {
     background-position: 0 0;
   }
   100% {
-     background-position: -100vw 100vh;
+    background-position: -100vw 100vh;
   }
 }
 
 .light-mode .navbar {
   position: sticky;
   z-index: 1;
-  background: url('./clouds.jpg'); 
+  background: url("./clouds.jpg");
   background-size: cover;
   animation: clouds 120s linear infinite;
   border-bottom: 2px solid rgba(0, 0, 0, 0.432);
 }
-
-
 
 @keyframes clouds {
   0% {
     background-position: 0 0;
   }
   100% {
-     background-position: 0vw -100vh;
+    background-position: 0vw -100vh;
   }
 }
 
@@ -285,25 +283,27 @@ li a {
   color: solid #000000;
 }
 
-.light-mode .btn-primary, .light-mode #btn-submit {
-  background-color: #5cb85c; 
+.light-mode .btn-primary,
+.light-mode #btn-submit {
+  background-color: #5cb85c;
   color: black;
 }
 
-.light-mode .btn-primary:hover, .light-mode #btn-submit:hover{
-  background-color: #268326; 
+.light-mode .btn-primary:hover,
+.light-mode #btn-submit:hover {
+  background-color: #268326;
 }
 
-.dark-mode .btn-primary, .dark-mode #btn-submit {
+.dark-mode .btn-primary,
+.dark-mode #btn-submit {
   background-color: #4b0082;
   color: #ffffff;
 }
 
-.dark-mode .btn-primary:hover, .dark-mode #btn-submit:hover{
+.dark-mode .btn-primary:hover,
+.dark-mode #btn-submit:hover {
   background-color: #2d004e;
 }
-
-
 
 .dark-mode .global {
   width: 250px;
@@ -338,7 +338,7 @@ li a {
 }
 
 .dark-mode .presentacion {
- background-color: rgba(49, 49, 49, 0.5);
+  background-color: rgba(49, 49, 49, 0.5);
   border: 2px solid #ffffff9f;
   border-radius: 10px;
   padding: 20px;
@@ -384,7 +384,7 @@ li a {
 
 .dark-mode .skill-item {
   border-color: #ffffff9f;
- background-color: rgba(49, 49, 49, 0.5);
+  background-color: rgba(49, 49, 49, 0.5);
 }
 
 .light-mode .git {
@@ -418,7 +418,7 @@ button#theme-toggle:hover {
 }
 
 .light-mode #theme-toggle {
-  background-color:rgba(46, 204, 112, 0.747);
+  background-color: rgba(46, 204, 112, 0.747);
   transition: 1s;
 }
 
@@ -463,7 +463,7 @@ h1 {
 }
 
 .dark-mode .blog {
- background-color: rgba(49, 49, 49, 0.5);
+  background-color: rgba(49, 49, 49, 0.5);
   border: 2px solid #ffffff9f;
   border-radius: 10px;
   padding: 20px;
@@ -564,7 +564,7 @@ a {
 }
 
 .dark-mode .info {
- background-color: rgba(49, 49, 49, 0.5);
+  background-color: rgba(49, 49, 49, 0.5);
   border: 2px solid #ffffff9f;
   border-radius: 10px;
   padding: 20px;
@@ -588,7 +588,7 @@ a {
 }
 
 .dark-mode .icons {
- background-color: rgba(49, 49, 49, 0.5);
+  background-color: rgba(49, 49, 49, 0.5);
   border: 2px solid #ffffff9f;
   border-radius: 10px;
   padding: 20px;
@@ -601,10 +601,8 @@ a {
   padding: 20px;
 }
 
-
-
 .dark-mode .cv {
- background-color: rgba(49, 49, 49, 0.5);
+  background-color: rgba(49, 49, 49, 0.5);
   border: 2px solid #ffffff9f;
   border-radius: 10px;
   padding: 20px;
@@ -626,7 +624,7 @@ a {
 }
 
 .dark-mode .pie {
- background-color: rgba(49, 49, 49, 0.5);
+  background-color: rgba(49, 49, 49, 0.5);
   border: 2px solid #ffffff9f;
   border-radius: 10px;
   padding: 20px;
@@ -646,7 +644,7 @@ a {
 }
 
 .dark-mode .contact-form {
- background-color: rgba(49, 49, 49, 0.5);
+  background-color: rgba(49, 49, 49, 0.5);
   padding: 20px;
   border-radius: 8px;
   text-align: center;
@@ -709,10 +707,6 @@ a {
   background-color: #0056b3;
 }
 
-.contact-form button[type="submit"] {
-  margin-right: 10px;
-}
-
 .navbar-toggler {
   display: block;
   border: none;
@@ -736,7 +730,7 @@ a {
 .light-mode .navbar-nav .nav-item {
   margin-top: 10px;
   margin-bottom: 5px;
-  background-color:rgba(46, 204, 112, 0.747);
+  background-color: rgba(46, 204, 112, 0.747);
   border-radius: 10px;
   text-align: center;
 }
@@ -1086,17 +1080,17 @@ a {
   }
 
   .slider .slide-track:hover {
-  animation-play-state: unset;
-  -webkit-animation-play-state: unset;
-}
+    animation-play-state: unset;
+    -webkit-animation-play-state: unset;
+  }
 
-.light-mode::before {
-  opacity: 75%; 
-}
+  .light-mode::before {
+    opacity: 75%;
+  }
 
-.light-mode #theme-toggle:hover{
-  background-color:rgba(46, 204, 112, 0.747);
-}
+  .light-mode #theme-toggle:hover {
+    background-color: rgba(46, 204, 112, 0.747);
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1320px) {
