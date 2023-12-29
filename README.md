@@ -27,4 +27,6 @@ Se ha seleccionado una paleta de colores que abarca desde el gris hasta el negro
 1. Clona este repositorio.
 2. Abre el archivo `index.html` en tu navegador.
 
+![Imagen de la propuesta](https://diegudeveloper.github.io/AlexandroMoroz.github.io/)
+
 ¡Disfruta explorando el portafolio de Alexandro!
