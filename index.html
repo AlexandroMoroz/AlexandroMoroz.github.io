@@ -1,756 +1,231 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <title>Alexandro Moroz</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-     rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-     crossorigin="anonymous">    
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-BOHCQsbvBn/qnxBxQ2wLOtlvJRqNz1QF5aG8m/07VdauZy0zk+I2B3qjR1T8DZ9nv7aCOzsz7fHzcM+DpVJjLg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link rel="stylesheet" href="Css.css" />
-    <script src="scrollreveal.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./styles.css/style.css">
+    <title>Alexandromoroz</title>
   </head>
-
-  <body class="dark-mode">
-
-  <a
-  href="#"
-  class="scroll-to-top"
-  data-lang="es"
-  data-lang-en=""
-  alt="ir al inicio"
-  id="top"
-  >
-  </a>
-
-  <nav class="navbar navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-      <a href="#">
-        <img src="./logo.png" alt="logo" style="width: 55px; height: 73px;" id="logo"/>
-      </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon "></span>
-        </button>
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <a href="#">
-                <img src="./logo.png" alt="logo" style="width: 55px; height: 73px;" id="logo-img"/>
-              </a>
-                <button type="button" class="me-2" id="close" data-bs-dismiss="offcanvas" aria-label="Close">X</button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav">
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="logoMenu" src="/asset/logoMenu.png"></a>
+            <button class="navbar-toggler btnTogglerBorder" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: rgb(255, 254, 254);transform: ;msFilter:;"><path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path></svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <a
-                      onclick="scrollToSection('about')"
-                      class="nav-link"
-                      data-lang="es"
-                      data-lang-en="Sobre mi"
-                    >
-                      <span></span>
-                      About me
-                    </a>
+                        <a class="nav-link active text-light text-light" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a
-                      onclick="scrollToSection('skills')"
-                      class="nav-link"
-                      data-lang="es"
-                      data-lang-en="Habilidades"
-                    >
-                      <span></span>
-                      Skills
-                    </a>
+                        <a class="nav-link text-light" href="#">Sobre mi</a>
                     </li>
                     <li class="nav-item">
-                      <a
-                      onclick="scrollToSection('projects')"
-                      class="nav-link px-2 ms-1 text-white"
-                      data-lang="es"
-                      data-lang-en="Proyectos"
-                    >
-                      <span  ></span>
-                      Projects
-                    </a>
+                        <a class="nav-link text-light" href="#">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                      <a
-                      onclick="scrollToSection('Blog')"
-                      class="nav-link px-2 ms-1 text-white"
-                      data-lang="es"
-                      data-lang-en="Blog"
-                    >
-                      <span  ></span>
-                      Blog
-                    </a>
-                    </li>
-                    <li class="nav-item">
-                      <a
-                      onclick="scrollToSection('contact')"
-                      class="nav-link px-2 ms-1 text-white"
-                      data-lang="es"
-                      data-lang-en="Contáctame"
-                    >
-                      <span  ></span>
-                      Contact me
-                    </a>
-                    </li>
-                    <li class="nav-item">
-                      <a
-                      onclick="scrollToSection('cv')"
-                      class="nav-link px-2 ms-1 text-white"
-                      data-lang="es"
-                      data-lang-en="CV"
-                    >
-                      <span  ></span>
-                      Resume
-                    </a>
+                        <a class="nav-link text-light" href="#">Contactame</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav ml-auto">      
-                  <li class="nav-item">
-                    <div class="language-switch">
-                      <button
-                        id="language-toggle"
-                        class="text-white"
-                        onclick="toggleLanguage()"
-                      >
-                        Switch to English
-                      </button>                          
+            </div>
+        </div>
+    </nav>
+    <div class="row sectionHero d-flex justify-content-center align-items-center">
+        <article class=" textArticle text-center">
+            <h1>Ivan Alexandro Moroz</h1>
+            <h4>Full Stack Web Developer - Java</h4>
+            <p> Hola 🖐 soy Alex! <br> Desarrollador web & Gamer 👾
+                <br>3... 2... 1... Dale al START!
+            </p>
+            <button class="btn btn-dark mt-4">Descarga CV</button>
+            <button class="btn btn-light border border-dark mt-4">Escribeme</button>
+            <div class="containerIcons d-flex justify-content-center pt-3">
+                <div class="icon1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                </div>
+                <div class="icon2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg>
+                </div>
+            </div>
+        </article>
+    </div>
+    <main>
+        <section class="sobreMi container">
+            <div class="row align-items-center justify-content-center pt-5 pb-5">
+                <div class="col-sm-4 col-md-6 col-lg-4">
+                    <article class="sobreMiPicture">
+                        <div class="authorImg mb-5">
+                            <img src="/asset/picture.png" class="img-fluid imgAuthor" alt="...">
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-8">
+                    <article class="sobreMiText">
+                        <h3 class="border-bottom border-dark border-0.5 pb-2 textSobreMi">Sobre Mi</h3>
+                        <p>Mi vida está marcada por una pasión inquebrantable por la tecnología, la inteligencia artificial y, sobre todo, los videojuegos. Como jugador profesional de League of Legends, encuentro la misma emoción y desafíos en el mundo virtual que en la realidad.</p>
+                        <p>Mi filosofía de vida se resume en una sola palabra: movimiento. Actualmente, estoy inmerso en un apasionante proyecto junto a un amigo, siempre enfocado en evolucionar y vivir en versión beta. Al igual que el software, creo en la constante actualización para añadir nuevas características y convertirnos en la mejor versión de nosotros mismos. Aunque, claro, admito que en ocasiones podemos encontrar actualizaciones que desafían nuestro sistema, pero la clave está en actualizar rápidamente para corregir cualquier fallo.
+                        </p>
+                        <p>LAS PERSONAS PRIMERO, SIEMPRE" es mi lema inquebrantable. Creo profundamente en la importancia de la empatía, las relaciones interpersonales y la conexión genuina con los demás. Entiendo que, en última instancia, lo más valioso en la vida es comprender, ponerse en el lugar del otro, empoderarlo y acompañarlo en su viaje. En un mundo donde la tecnología avanza rápidamente, sostengo que la humanidad y la empatía deben ser la base de cualquier avance.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="tecnologias ">
+            <div class="herramientas container pt-4 pb-4">
+                <h5 class="tecnologiasTexto text-center mb-5">Tecnologias</h5>
+                <div class="row justify-content-center">
+                    <div class="col col-lg-3 col-md-2 col-sm-12 colImagen pb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill: #212529;transform: ;msFilter:;"><path d="M4.136 3.012h15.729l-1.431 16.15-6.451 1.826-6.414-1.826-1.433-16.15zm5.266 7.302-.173-2.035 7.533.002.173-1.963-9.87-.002.522 5.998h6.835l-.243 2.566-2.179.602-2.214-.605-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08.558-6.111H9.402v-.001z"></path></svg>
                     </div>
-                  </li>
-                  <div class="d-flex justify-content-center align-items-center mb-2 mt-2">
-                    <button id="theme-toggle">
-                      <span id="moon-icon">&#x263D;</span>
-                      <span id="sun-icon">&#x2600;</span>
-                    </button>
-                  </div>
-                  <div class="d-flex flex-row justify-content-center align-items-center">
-                  <a
-                            href="https://www.linkedin.com/in/ivan-alexandro-moroz-java-developer-trainee/"
-                            class="links ms-2 me-2"
-                            target="_blank"
-                            style="font-size: 25px;"
-                          >
-                            <i class="fab fa-linkedin" style="color: #0a66c2"></i>             
-                          </a> 
-                          <a
-                            href="https://github.com/AlexandroMoroz"
-                            target="_blank"
-                            class=" ms-2 me-2"
-                            style="font-size: 25px; color:white"
-                          >
-                            <i class="fab fa-github git"></i>                 
-                          </a>  
-                       </div>   
-                </ul>
+                    <div class="col col-lg-3 col-md-2 col-sm-12 colImagen pb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill: #212529;transform: ;msFilter:;"><path d="M4.192 3.143h15.615l-1.42 16.034-6.404 1.812-6.369-1.813L4.192 3.143zM16.9 6.424l-9.8-.002.158 1.949 7.529.002-.189 2.02H9.66l.179 1.913h4.597l-.272 2.62-2.164.598-2.197-.603-.141-1.569h-1.94l.216 2.867L12 17.484l3.995-1.137.905-9.923z"></path></svg>
+                    </div>
+                    <div class="col col-lg-3 col-md-2 col-sm-12 colImagen pb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill: #212529;transform: ;msFilter:;"><path d="M3 3h18v18H3V3zm16.525 13.707c-.131-.821-.666-1.511-2.252-2.155-.552-.259-1.165-.438-1.349-.854-.068-.248-.078-.382-.034-.529.113-.484.687-.629 1.137-.495.293.09.563.315.732.676.775-.507.775-.507 1.316-.844-.203-.314-.304-.451-.439-.586-.473-.528-1.103-.798-2.126-.775l-.528.067c-.507.124-.991.395-1.283.754-.855.968-.608 2.655.427 3.354 1.023.765 2.521.933 2.712 1.653.18.878-.652 1.159-1.475 1.058-.607-.136-.945-.439-1.316-1.002l-1.372.788c.157.359.337.517.607.832 1.305 1.316 4.568 1.249 5.153-.754.021-.067.18-.528.056-1.237l.034.049zm-6.737-5.434h-1.686c0 1.453-.007 2.898-.007 4.354 0 .924.047 1.772-.104 2.033-.247.517-.886.451-1.175.359-.297-.146-.448-.349-.623-.641-.047-.078-.082-.146-.095-.146l-1.368.844c.229.473.563.879.994 1.137.641.383 1.502.507 2.404.305.588-.17 1.095-.519 1.358-1.059.384-.697.302-1.553.299-2.509.008-1.541 0-3.083 0-4.635l.003-.042z"></path></svg>
+                    </div>
+                    <div class="col col-lg-3 col-md-2 col-sm-12 colImagen pb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill: #212529;transform: ;msFilter:;"><path d="M18.002 2.997H5.999A3.011 3.011 0 0 0 2.997 6v12.002a3.012 3.012 0 0 0 3.002 3.001h12.003a3.012 3.012 0 0 0 3.001-3.001V6a3.012 3.012 0 0 0-3.001-3.003zm-1.64 12.647c-.152.36-.389.68-.693.927a3.594 3.594 0 0 1-1.206.614c-.49.151-1.074.229-1.75.229H7.888V6.909h5.103c.943 0 1.7.213 2.267.646.569.436.854 1.082.854 1.958 0 .528-.13.983-.389 1.357-.259.373-.63.664-1.111.868v.034c.642.135 1.137.438 1.464.912.327.473.493 1.069.493 1.789 0 .405-.078.788-.225 1.147l.02.021v.003zm-2.084-2.589c-.309-.282-.739-.419-1.297-.419H9.737v3.276h3.253c.554 0 .991-.144 1.298-.435.308-.289.464-.701.464-1.229-.005-.518-.156-.919-.464-1.193h-.014.004zm-.451-2.119c.299-.251.444-.613.444-1.084 0-.526-.131-.902-.397-1.116-.264-.214-.646-.326-1.146-.326H9.727v2.898h3.001c.436.001.81-.127 1.099-.372z"></path></svg>
+                    </div>
+                    <div class="col col-lg-3 col-md-2 col-sm-12 colImagen pb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill: #212529;transform: ;msFilter:;"><circle cx="12" cy="11.245" r="1.785"></circle><path d="m7.002 14.794-.395-.101c-2.934-.741-4.617-2.001-4.617-3.452 0-1.452 1.684-2.711 4.617-3.452l.395-.1.111.391a19.507 19.507 0 0 0 1.136 2.983l.085.178-.085.178c-.46.963-.841 1.961-1.136 2.985l-.111.39zm-.577-6.095c-2.229.628-3.598 1.586-3.598 2.542 0 .954 1.368 1.913 3.598 2.54.273-.868.603-1.717.985-2.54a20.356 20.356 0 0 1-.985-2.542zm10.572 6.095-.11-.392a19.628 19.628 0 0 0-1.137-2.984l-.085-.177.085-.179c.46-.961.839-1.96 1.137-2.984l.11-.39.395.1c2.935.741 4.617 2 4.617 3.453 0 1.452-1.683 2.711-4.617 3.452l-.395.101zm-.41-3.553c.4.866.733 1.718.987 2.54 2.23-.627 3.599-1.586 3.599-2.54 0-.956-1.368-1.913-3.599-2.542a20.683 20.683 0 0 1-.987 2.542z"></path><path d="m6.419 8.695-.11-.39c-.826-2.908-.576-4.991.687-5.717 1.235-.715 3.222.13 5.303 2.265l.284.292-.284.291a19.718 19.718 0 0 0-2.02 2.474l-.113.162-.196.016a19.646 19.646 0 0 0-3.157.509l-.394.098zm1.582-5.529c-.224 0-.422.049-.589.145-.828.477-.974 2.138-.404 4.38.891-.197 1.79-.338 2.696-.417a21.058 21.058 0 0 1 1.713-2.123c-1.303-1.267-2.533-1.985-3.416-1.985zm7.997 16.984c-1.188 0-2.714-.896-4.298-2.522l-.283-.291.283-.29a19.827 19.827 0 0 0 2.021-2.477l.112-.16.194-.019a19.473 19.473 0 0 0 3.158-.507l.395-.1.111.391c.822 2.906.573 4.992-.688 5.718a1.978 1.978 0 0 1-1.005.257zm-3.415-2.82c1.302 1.267 2.533 1.986 3.415 1.986.225 0 .423-.05.589-.145.829-.478.976-2.142.404-4.384-.89.198-1.79.34-2.698.419a20.526 20.526 0 0 1-1.71 2.124z"></path><path d="m17.58 8.695-.395-.099a19.477 19.477 0 0 0-3.158-.509l-.194-.017-.112-.162A19.551 19.551 0 0 0 11.7 5.434l-.283-.291.283-.29c2.08-2.134 4.066-2.979 5.303-2.265 1.262.727 1.513 2.81.688 5.717l-.111.39zm-3.287-1.421c.954.085 1.858.228 2.698.417.571-2.242.425-3.903-.404-4.381-.824-.477-2.375.253-4.004 1.841.616.67 1.188 1.378 1.71 2.123zM8.001 20.15a1.983 1.983 0 0 1-1.005-.257c-1.263-.726-1.513-2.811-.688-5.718l.108-.391.395.1c.964.243 2.026.414 3.158.507l.194.019.113.16c.604.878 1.28 1.707 2.02 2.477l.284.29-.284.291c-1.583 1.627-3.109 2.522-4.295 2.522zm-.993-5.362c-.57 2.242-.424 3.906.404 4.384.825.47 2.371-.255 4.005-1.842a21.17 21.17 0 0 1-1.713-2.123 20.692 20.692 0 0 1-2.696-.419z"></path><path d="M12 15.313c-.687 0-1.392-.029-2.1-.088l-.196-.017-.113-.162a25.697 25.697 0 0 1-1.126-1.769 26.028 26.028 0 0 1-.971-1.859l-.084-.177.084-.179c.299-.632.622-1.252.971-1.858.347-.596.726-1.192 1.126-1.77l.113-.16.196-.018a25.148 25.148 0 0 1 4.198 0l.194.019.113.16a25.136 25.136 0 0 1 2.1 3.628l.083.179-.083.177a24.742 24.742 0 0 1-2.1 3.628l-.113.162-.194.017c-.706.057-1.412.087-2.098.087zm-1.834-.904c1.235.093 2.433.093 3.667 0a24.469 24.469 0 0 0 1.832-3.168 23.916 23.916 0 0 0-1.832-3.168 23.877 23.877 0 0 0-3.667 0 23.743 23.743 0 0 0-1.832 3.168 24.82 24.82 0 0 0 1.832 3.168z"></path></svg>
+                    </div>
+                    <div class="col col-lg-3 col-md-2 col-sm-12 colImagen pb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill: #212529;transform: ;msFilter:;"><path d="M10.483 12.482h3.034L12 8.831z"></path><path d="M12 3.074 3.689 6.038l1.268 10.987 7.043 3.9 7.043-3.9 1.268-10.987L12 3.074zm5.187 13.621H15.25l-1.045-2.606h-4.41L8.75 16.695H6.813L12 5.047l5.187 11.648z"></path></svg>
+                    </div>
+                    <div class="col col-lg-3 col-md-3 col-sm-12 colImagen pb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill: #212529;transform: ;msFilter:;"><path d="M19.24 3H4.76A1.76 1.76 0 0 0 3 4.76v14.48A1.76 1.76 0 0 0 4.76 21h14.48A1.76 1.76 0 0 0 21 19.24V4.76A1.76 1.76 0 0 0 19.24 3zm-5.8 10h-2.25v6.44H9.4V13H7.15v-1.46h6.29zm5.8 5.28a1.71 1.71 0 0 1-.67.74 3 3 0 0 1-1 .39 5.81 5.81 0 0 1-1.2.12 7 7 0 0 1-1.23-.11 4.52 4.52 0 0 1-1-.33v-1.71l-.06-.06h.06v.07a3.41 3.41 0 0 0 1 .54 3.06 3.06 0 0 0 1.13.2 2.58 2.58 0 0 0 .6-.06 1.47 1.47 0 0 0 .42-.17.75.75 0 0 0 .25-.25.69.69 0 0 0-.06-.74 1.24 1.24 0 0 0-.35-.33 3.12 3.12 0 0 0-.53-.3l-.67-.28a3.57 3.57 0 0 1-1.37-1 2 2 0 0 1-.46-1.33 2.16 2.16 0 0 1 .24-1.06 2.09 2.09 0 0 1 .66-.71 2.88 2.88 0 0 1 1-.42 5.11 5.11 0 0 1 1.19-.13 7 7 0 0 1 1.09.07 4.53 4.53 0 0 1 .88.23v1.65a2.42 2.42 0 0 0-.42-.24 3.58 3.58 0 0 0-.49-.17 3 3 0 0 0-.49-.1 2.45 2.45 0 0 0-.46 0 2.29 2.29 0 0 0-.56.06 1.54 1.54 0 0 0-.43.16.78.78 0 0 0-.26.25.63.63 0 0 0-.09.33.62.62 0 0 0 .1.35 1.19 1.19 0 0 0 .3.29 2.15 2.15 0 0 0 .46.28l.63.28a6.56 6.56 0 0 1 .84.42 2.65 2.65 0 0 1 .64.49 1.79 1.79 0 0 1 .42.63 2.48 2.48 0 0 1 .14.85 2.68 2.68 0 0 1-.25 1.08z"></path></svg>
+                    </div>
+                    <div class="col col-lg-3 col-md-3 col-sm-12 colImagen pb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill: #212529;transform: ;msFilter:;"><path d="M9.37 17.51c-3.09.86 1.87 2.64 5.8 1a7.18 7.18 0 0 1-1.1-.54 11.59 11.59 0 0 1-4.16.18c-1.31-.15-.54-.64-.54-.64zm5.33-1.68a16.27 16.27 0 0 1-5.36.26c-1.31-.14-.45-.77-.45-.77-3.4 1.12 1.89 2.4 6.64 1a2.25 2.25 0 0 1-.83-.49zm1.82-9.73s-6.87 1.71-3.59 5.49a1.47 1.47 0 0 1-.25 2.12s2.46-1.27 1.33-2.86-1.86-2.22 2.51-4.75z"></path><path d="M18.13 19.14s.56.46-.63.82c-2.27.69-9.43.9-11.42 0-.72-.31.62-.74 1-.83a2.54 2.54 0 0 1 .69-.08c-.8-.56-5.15 1.1-2.21 1.58 8.05 1.37 14.64-.56 12.57-1.49zm-2.76-4.88a7 7 0 0 1 .92-.49s-1.51.27-3 .4a28.11 28.11 0 0 1-4.82.05C6.09 13.91 9.74 13 9.74 13a6.81 6.81 0 0 0-3.16.75c-2.06 1.03 5.09 1.48 8.79.51zm.91 2.44a.39.39 0 0 1-.08.09c5-1.32 3.18-4.65.78-3.81a.71.71 0 0 0-.33.25s.14-.05.43-.12c1.22-.25 2.92 1.63-.8 3.59zM12 13c-.74-1.67-3.26-3.14 0-5.71C16.09 4.08 14 2 14 2c.84 3.31-3 4.31-4.34 6.37-.93 1.41.47 2.92 2.34 4.63z"></path><path d="M16.41 21.32a29.75 29.75 0 0 1-9.14.14s.46.38 2.84.53c3.61.23 9.15-.12 9.29-1.83 0 0-.26.64-2.99 1.16z"></path></svg>
+                    </div>
+                    <div class="col col-lg-3 col-md-3 col-sm-12 colImagen pb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill: #212529;transform: ;msFilter:;"><path d="M20 17V7c0-2.168-3.663-4-8-4S4 4.832 4 7v10c0 2.168 3.663 4 8 4s8-1.832 8-4zM12 5c3.691 0 5.931 1.507 6 1.994C17.931 7.493 15.691 9 12 9S6.069 7.493 6 7.006C6.069 6.507 8.309 5 12 5zM6 9.607C7.479 10.454 9.637 11 12 11s4.521-.546 6-1.393v2.387c-.069.499-2.309 2.006-6 2.006s-5.931-1.507-6-2V9.607zM6 17v-2.393C7.479 15.454 9.637 16 12 16s4.521-.546 6-1.393v2.387c-.069.499-2.309 2.006-6 2.006s-5.931-1.507-6-2z"></path></svg>
+                    </div>
+                    <div class="col col-lg-3 col-md-3 col-sm-12 colImagen pb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" style="fill: #212529"; class="bi bi-filetype-sql" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM0 14.841a1.129 1.129 0 0 0 .401.823c.13.108.288.192.478.252s.411.091.665.091c.338 0 .624-.053.858-.158.237-.106.416-.252.54-.44a1.17 1.17 0 0 0 .187-.656c0-.224-.045-.41-.135-.56a1 1 0 0 0-.375-.357 2.027 2.027 0 0 0-.565-.21l-.621-.144a.97.97 0 0 1-.405-.176.369.369 0 0 1-.143-.299c0-.156.061-.284.184-.384.125-.101.296-.152.513-.152.143 0 .266.022.37.068a.624.624 0 0 1 .245.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.199-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.552.05-.776.15-.225.099-.4.24-.528.421-.127.182-.19.395-.19.639 0 .201.04.376.123.524.082.149.199.27.351.367.153.095.332.167.54.213l.618.144c.207.049.36.113.462.193a.387.387 0 0 1 .153.325c0 .11-.029.207-.085.29A.558.558 0 0 1 2 15.31c-.111.047-.249.07-.413.07-.117 0-.224-.013-.32-.04a.835.835 0 0 1-.248-.115.579.579 0 0 1-.255-.384H0Zm6.878 1.489-.507-.739c.176-.162.31-.362.401-.6.092-.239.138-.507.138-.806v-.501c0-.371-.07-.693-.208-.967a1.495 1.495 0 0 0-.589-.636c-.256-.15-.561-.225-.917-.225-.351 0-.656.075-.914.225-.256.149-.453.36-.592.636a2.138 2.138 0 0 0-.205.967v.5c0 .37.069.691.205.965.139.273.336.485.592.636a1.8 1.8 0 0 0 .914.222 1.8 1.8 0 0 0 .6-.1l.294.422h.788ZM4.262 14.2v-.522c0-.246.038-.456.114-.63a.91.91 0 0 1 .325-.398.885.885 0 0 1 .495-.138c.192 0 .357.046.495.138a.88.88 0 0 1 .325.398c.077.174.115.384.115.63v.522c0 .164-.018.312-.053.445-.035.13-.087.244-.155.34l-.106-.14-.105-.147h-.733l.451.65a.638.638 0 0 1-.251.047.872.872 0 0 1-.487-.147.916.916 0 0 1-.32-.404 1.67 1.67 0 0 1-.11-.644Zm3.986 1.057h1.696v.674H7.457v-3.999h.79v3.325Z"/>
+                        </svg>
+                    </div> 
+                </div>
             </div>
-        </div>
-    </div>
-</nav>
-
-  <div class="container yo ">
-    <div class="nombreRol d-flex justify-content-center align-items-center">
-      <div class="px-3 cargo">
-        <h1 style="font-family: 'Playfair Display', serif;">Ivan Alexandro Moroz</h1>
-        <p id="rol" data-lang="en" data-lang-es="Full Stack Web Developer - Java">
-        Full Stack Web Developer - Java
-        </p>
-      </div>
-        <img
-         src="https://alexandromoroz.github.io/cv%20semi%20profesional.jpg"
-         alt="Profile Picture"
-         class="rounded-circle img-thumbnail ml-3"
-         id="imagen"/>
-    </div>
-  </div>
-
-    <br />
-
-    <section id="about" class="container ">
-      <div class="presentacion bot-bot">
-        <h2 class="text-center" data-lang="es" data-lang-en="Sobre mi">
-          About Me
-        </h2>
-        <p
-          class="texto"
-          data-lang="es"
-          data-lang-en='Hola 🖐, soy Alex!
-Desarrollador web & Gamer 👾
-
-3... 2... 1... Dale al START!
-
-<<<<< VIVIR A LO BETA >>>>>
-
-¿Qué me apasiona y a dónde voy?
-
-Me apasiona la tecnología, la inteligencia artificial, los videojuegos. Soy jugador profesional de League of Legends. No me gusta quedarme quieto, en la actualidad estoy trabajando en un proyecto con un amigo, siempre digo que tenemos que estar en movimiento, y vivir en BETA, como el software, actualizarnos para añadir características y ser siempre la mejor versión
--obviamente, podemos tener un update que rompa el sistema, pero bueno, en esos casos hay que actualizar rápido para corregirlo- 😅
-
-<<<<< LAS PERSONAS PRIMERO, SIEMPRE >>>>>
-
-¿Qué creo que es lo más importante?
-
-Hay mucho para contar, para hablar, pero seguramente coincidimos en lo súper importante que es la empatía, las relaciones interpersonales, conectar de verdad con el otro, comprenderlo, ponerse en su lugar, empoderarlo, acompañarlo.
-
-<<<<< TECNOLOGÍAS >>>>>
-
-¿Qué conozco hoy?
-
-Hoy en día manejo Java, HTML, CSS, Javascript, React, Angular, Typescript, Bootstrap, Visual studio code, JPA, Junit 5, Mockito, MySQL, Thymeleaf, API RESTful, Lombok y Migraciones en MySQL con Flyway.
-Estoy estudiando sobre microservicios, patrones DTO, API con advices, JWT token, Springdoc, swagger, test de aceptación con serenity y mappers.
-
-Si llegaron hasta acá les agradezco el interés, los invito a contactarme! ^-^'
-        >Hi 🖐, I'm Alex!
-Web Developer & Gamer 👾
-
-3... 2... 1... Hit the START!
-
-<<<<< LIVING BETA >>>>>
-
-What am I passionate about and where am I going?
-
-I am passionate about technology, artificial intelligence, videogames. I am a professional League of Legends player. I don't like to sit still, currently I'm working on a project with a friend, I always say that we have to be on the move, and live in BETA, like software, update to add features and always be the best version
--Obviously, we can have an update that breaks the system, but hey, in those cases you have to update quickly to correct it- 😅
-
-<<<<< PEOPLE FIRST, ALWAYS >>>>>
-
-What do I think is the most important?
-
-There is a lot to tell, to talk about, but surely we agree on how super important empathy is, interpersonal relationships, truly connecting with the other, understanding them, putting yourself in their place, empowering them, accompanying them.
-
-<<<<< TECHNOLOGIES >>>>>
-
-What do i know today?
-
-Today I handle Java, HTML, CSS, Javascript, React, Angular, Typescript, Bootstrap, Visual studio code, JPA, Junit 5, Mockito, MySQL, Thymeleaf, RESTful API, Lombok and MySQL Migrations with Flyway.
-I am studying microservices, DTO patterns, API with advices, JWT token, Springdoc, swagger, acceptance testing with serenity and mappers.
-    
-        If you've made it this far, I appreciate your interest and invite you to contact me! ^-^
-        </p>
-      </div>
-
-      <br />
-
-      <div class="centrar bot-bot" id="skills">
-      <h2
-        
-        class="text-center global"
-        data-lang="es"
-        data-lang-en="Habilidades"
-      >
-        Skills
-      </h2>
-      </div>
-      <div class="skills-container slider bot-bot">
-        <div class="slide-track">
-        <div class="skill-item slide">
-          <i class="fab fa-java" style="color: #007396"></i>
-          <span>Java</span>
-        </div>
-        <div class="skill-item slide">
-          <i class="fas fa-cogs" style="color: #6db33f"></i>
-          <span>Spring Framework</span>
-        </div>
-        <div class="skill-item slide">
-          <i class="fab fa-html5" style="color: #e34f26"></i>
-          <span>HTML</span>
-        </div>
-        <div class="skill-item slide">
-          <i class="fab fa-css3" style="color: #1572b6"></i>
-          <span>CSS</span>
-        </div>
-        <div class="skill-item slide">
-          <i class="fab fa-bootstrap" style="color: #7952b3"></i>
-          <span>Bootstrap</span>
-        </div>
-        <div class="skill-item slide">
-          <i class="fab fa-js-square" style="color: #f7df1e"></i>
-          <span>JavaScript</span>
-        </div>
-        <div class="skill-item slide">
-          <i class="fab fa-react" style="color: #61dafb"></i>
-          <span>React</span>
-        </div>
-        <div class="skill-item slide">
-          <i class="fab fa-angular" style="color: #dd0031"></i>
-          <span>Angular</span>
-        </div>
-         <div class="skill-item slide">
-          <i class="fas fa-laptop-code" style="color: #007acc"></i>
-          <span>TypeScript</span>
-        </div>
-        <div class="skill-item slide">
-          <i class="fas fa-database" style="color: #4479a1"></i>
-          <span>JPA</span>
-        </div>
-        <div class="skill-item slide">
-          <i class="fas fa-database" style="color: #4479a1"></i>
-          <span>MySQL</span>
-        </div>
-        <div class="skill-item slide">
-          <i class="fas fa-flask" style="color: #25a162"></i>
-          <span>JUnit 5</span>
-        </div>   
-        <div class="skill-item slide">
-          <i class="fas fa-vial" style="color: #2f6fad"></i>
-          <span>Mockito</span>
-        </div>    
-         <div class="skill-item slide">
-          <i class="fab fa-java" style="color: #007396"></i>
-          <span>Java</span>
-        </div>
-        <div class="skill-item slide">
-          <i class="fas fa-cogs" style="color: #6db33f"></i>
-          <span>Spring Framework</span>
-        </div>
-        <div class="skill-item slide">
-          <i class="fab fa-html5" style="color: #e34f26"></i>
-          <span>HTML</span>
-        </div>
-        <div class="skill-item slide">
-          <i class="fab fa-css3" style="color: #1572b6"></i>
-          <span>CSS</span>
-        </div>
-        <div class="skill-item slide">
-          <i class="fab fa-bootstrap" style="color: #7952b3"></i>
-          <span>Bootstrap</span>
-        </div>
-        <div class="skill-item slide">
-          <i class="fab fa-js-square" style="color: #f7df1e"></i>
-          <span>JavaScript</span>
-        </div>
-        <div class="skill-item slide">
-          <i class="fab fa-react" style="color: #61dafb"></i>
-          <span>React</span>
-        </div>
-        <div class="skill-item slide">
-          <i class="fab fa-angular" style="color: #dd0031"></i>
-          <span>Angular</span>
-        </div>
-         <div class="skill-item slide">
-          <i class="fas fa-laptop-code" style="color: #007acc"></i>
-          <span>TypeScript</span>
-        </div>
-        <div class="skill-item slide">
-          <i class="fas fa-database" style="color: #4479a1"></i>
-          <span>JPA</span>
-        </div>
-        <div class="skill-item slide">
-          <i class="fas fa-database" style="color: #4479a1"></i>
-          <span>MySQL</span>
-        </div>
-        <div class="skill-item slide">
-          <i class="fas fa-flask" style="color: #25a162"></i>
-          <span>JUnit 5</span>
-        </div>   
-        <div class="skill-item slide">
-          <i class="fas fa-vial" style="color: #2f6fad"></i>
-          <span>Mockito</span>
-        </div>    
-      </div>
-    </div>
-      <br />
-    </section>
-
-<section id="projects">
-      <div class="container">
-        <div class="centrar bot-bot">
-        <h2 class="text-center global" data-lang="es" data-lang-en="Proyectos">
-          Projects
-        </h2>
-      </div>
-        <div class="row d-flex align-items-center first-project bot-right">          
-          <div class="col-lg-6">
-            <div class="image-container">
-              <div class="image-grid">
-                <img 
-                  src="./registro.png"
-                  alt="Registro de un usuario"
-                  class="zoomable-image" />
-                <img
-                  src="./Noticias.png"
-                  alt="Lista de noticias"
-                  class="zoomable-image"
-                />  
-                <img
-                  src="./vistaNoticia.png"
-                  alt="Vista de las noticias" 
-                  class="zoomable-image" />              
-                <img
-                  src="./ModificarNoticia.png"
-                  alt="Modificar una noticia"
-                  class="zoomable-image"
-                />
-                <img
-                  src="./Error.png"
-                  alt="Vista de un error"
-                  class="zoomable-image"
-                />              
-                <img
-                  src="./UsuariosNoticias.png"
-                  alt="Lista de usuarios o dashboard de un admin"
-                  class="zoomable-image"
-                />               
-              </div>
-          </div>
-        </div>
-        <div class="col-lg-6"> 
-            <div class="info">
-              <h5
-                class="text-center title"
-                data-lang="es"
-                data-lang-en="Página de noticias"
-              >
-                News Website
-              </h5>
-              <p class="text-center">Java - MySQL - HTML5 - CSS3 - Bootstrap - Thymeleaf - Spring - Spring Security - JPA - Maven</p>
-              <p
-                class="text-center"
-                data-lang="es"
-                data-lang-en="Este proyecto fue creado por mi, es una
-              práctica de un ejercicio propuesto en el curso de programación full stack, el ejercicio me pedia
-              hacer una página web de noticias para la empresa EGG (es quien ofrece el curso full stack) en donde
-              hay 3 roles, un usuario, un administrador y un periodista, el administrador tiene acceso a la lista
-              de usuarios, puede darlos de baja, cambiar su salario y cambiarles el rol, el periodista puede crear
-              noticias pero no darlas de baja y el usuario normal solamente puede ver las noticias.
-              el diseño fue creado a mi gusto, le he dado un toque de simpleza e intenté hacer una interfaz
-               cómoda para el usuario."
-              >
-                This project was created by me, it is a practice of an exercise
-                proposed in the full stack programming course, the exercise
-                asked me to make a news web page for the company EGG (it is the
-                one that offers the full stack course) where there are 3 roles ,
-                a user, an administrator and a journalist, the administrator has
-                access to the list of users, he can unsubscribe them, change
-                journalist salary and change their role, the journalist can
-                create news but not unsubscribe them and the normal user can
-                only view News. the design was created to my liking, I have
-                given it a touch of simplicity and I tried to make a comfortable
-                interface for the user.
-              </p>
-              <div class="text-center">
-                <a
-                  
-                  href="https://github.com/AlexandroMoroz/Pagina-de-noticias"
-                  target="_blank"
-                  class="btn btn-primary github rep1"
-                  data-lang="es"
-                  data-lang-en="Repositorio Github"
-                  >GitHub Repository</a
-                >
-              </div>
+        </section>
+        <section class="proyectos">
+            <div class="proyectosBox container pt-4">
+                <h5 class="proyectosText text-center mb-5">Proyectos</h5>
+                <div class="row justify-content-evenly">
+                    <div class="card mb-5" style="width: 18rem;">
+                        <img src="/asset/proyectos/proyecto01.png" class="card-img-top" alt="...">
+                        <div class="card-body border-top">
+                          <h5 class="card-title">Noticias EGG</h5>
+                          <p class="card-text">página web de noticias para la empresa EGG (es quien ofrece el curso full stack) en donde hay 3 roles, un usuario, un administrador y un periodista.</p>
+                          <a href="#" class="btn btn-dark d-flex justify-content-evenly align-items-center">Github <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg></a>
+                        </div>
+                    </div>
+                    <div class="card mb-5" style="width: 18rem;">
+                        <img src="/asset/proyectos/proyecto02.png" class="card-img-top" alt="...">
+                        <div class="card-body border-top">
+                          <h5 class="card-title">Vitalidapp</h5>
+                          <p class="card-text">Optimizando la atención médica independiente: Solucionando la pérdida de historiales médicos con una plataforma ágil y centralizada.</p>
+                          <a href="#" class="btn btn-dark d-flex justify-content-evenly align-items-center">Github <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          
-      </div>
-      <br />
-      <div class="container bot-left">
-        <div class="row d-flex align-items-center">
-         
-          <div class="col-lg-6">
-            <div class="info">
-              <h5
-                class="text-center title"
-                data-lang="es"
-                data-lang-en='Página de salud "Vitalidapp"'
-              >
-                Health Website "Vitalidapp"
-              </h5>
-              <p class="text-center">Java - MySQL - HTML5 - CSS3 - Javascript - Bootstrap - Thymeleaf - Spring Framework - Spring Security - JPA - Maven</p>
-              <p
-                class="text-center"
-                data-lang="es"
-                data-lang-en="Este proyecto fue creado con un grupo de
-              6 personas (incluyendome). Tiene como fin, ayudar a que los médicos autónomos puedan registrar
-              y atender pacientes, mantener sus historiales médicos en una base de datos actualizada y guardar
-              los diagnósticos. El problema actual en los hospitales es que se pierde muy seguido el historial
-              médico y muchas veces no hay orden por lo que esta página estaría ayudando a resolver parte del
-              problema. Mi trabajo acá fue principalmente BackEnd pero también he participado en FrontEnd sin
-              mencionar las vinculaciones entre front y back y también las vinculaciones entre back y base de
-              datos. Un pequeño agregado adicional, aprendí un poco sobre tres metodologías ágiles las cuales
-              son (Líder técnico, Scrum Master y Agile Delivery Manager)."
-              >
-                This project was created with a group of 6 people (including
-                me). Its purpose is to help self-employed doctors to register
-                and care for patients, keep their medical records in an updated
-                database and save diagnoses. The current problem in hospitals is
-                that the medical history is lost very often and many times there
-                is no order, so this page would be helping to solve part of the
-                problem. My work here was mainly BackEnd but I've also been
-                involved in FrontEnd not to mention Front to Back bindings and
-                also Back to DataBase bindings. A little addition, I learned a
-                little about three agile methodologies which are (Technical
-                Lead, Scrum Master and Agile Delivery Manager).
-              </p>
-              <div class="text-center">
-                <a
-                  
-                  href="https://github.com/AlexandroMoroz/health-app"
-                  target="_blank"
-                  class="btn btn-primary github rep2"
-                  data-lang="es"
-                  data-lang-en="Repositorio Github"
-                  >GitHub Repository</a
-                >
-              </div>
+        </section>
+        <section class="blog">
+            <div class="blogBox container pt-4 pb-5">
+                <h5 class="blogText text-center mb-3">Blog</h5>
+                <div class="row justify-content-evenly">
+                    <div class="col-lg-8 text-center">
+                        <p><span class="spanBlog">Bienvenido a mi sección de "Blog"!</span> <br><br> Aqui podrás seguir de cerca mi viaje de aprendizaje y práctica. Actualmente, estoy inmerso en un emocionante proyecto centrado en huertas agroecológicas. <br><br>Este proyecto de código abierto, desarrollado en Java con Spring, React, API Rest, JPA, HTML, CSS, Javascript y MySQL, representa mi compromiso con la diversidad de herramientas y tecnologías.
+                            <br><br>En un futuro proximo estaré compartiendo actualizaciones detalladas sobre mis avances y descubrimientos en esta nueva sección de mi portafolio. Estoy emocionado por lo que está por venir y ansioso por explorar nuevos conocimientos.
+                            <br><br>Pronto estarán disponibles mis próximos posts, donde compartiré experiencias, aprendizajes y los desafíos superados en este fascinante proyecto. ¡Permanece atento y no te pierdas ninguna actualización! ¡Gracias por ser parte de mi viaje.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card-group justify-content-center">
+                        <div class="card mx-3 carZise">
+                          <img src="/asset/blog/writing.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                        <div class="card mx-3 carZise">
+                          <img src="/asset/blog/writing.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
             </div>
-          </div> 
-          <div class="col-lg-6">
-            <div class="image-container">
-              <div class="image-grid">
-                <img 
-                  src="./index.png"
-                  alt="Index"
-                  class="zoomable-image" />
-                <img
-                  src="./perfil.png"
-                  alt="Perfil del usuario" 
-                  class="zoomable-image" />              
-                <img
-                  src="./profesionales.png"
-                  alt="Lista profesionales"
-                  class="zoomable-image"
-                />
-                <img
-                  src="./reserva_turno.png"
-                  alt="Reservar un turno"
-                  class="zoomable-image"
-                />
-               
-                <img
-                  src="./obras_sociales.png"
-                  alt="Lista de obras sociales"
-                  class="zoomable-image"
-                />
-                <img
-                  src="./usuarios.png"
-                  alt="Lista de usuarios para un administrador"
-                  class="zoomable-image"
-                />
-              </div>
+        </section>
+        <section class="Contactame">
+            <div class="contactameBox container pt-4">
+                <h5 class="contactameText text-center mb-5">Contactame</h5>
+                <div class="row justify-content-evenly">
+                    <div class="col-sm-4 col-md-6 col-lg-4">
+                        <h3>¡Conectémos!</h3>
+                        <p>Actualmente, estoy en busca de nuevas oportunidades y mi bandeja de entrada siempre está abierta. Ya sea que tengas una pregunta o simplemente quieras saludar, estaré encantada de responderte. ¡No dudes en ponerte en contacto conmigo!</p>
+                        <img class="iconContacto me-3 mb-4" src="data:image/png;base64,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"/>
+                        <img class="iconContacto mb-4" src="data:image/png;base64,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"/>
+                    </div>
+                    <div class="col-sm-8 col-md-6 col-lg-8">
+                        <form>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tu nombre">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Correo</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="tuemail@exampel.com">
+                            </div>
+                              <label for="exampleInputPassword1" class="form-label">Mensaje</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1" style="height: 150px;" placeholder="Escribe tu mensaje">
+                              <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-dark mt-3 w-full border">Enviar</button>
+                              </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
- <br>
-
-    <section id="Blog" class="container bot-bot">
-      <div class="blog">
-        <h2
-          class="text-center"
-          data-lang="es"
-          data-lang-en="¿Qué hago actualmente?"
-        >
-          what i currently do?
-        </h2>
-        <h5
-          data-lang="es"
-          data-lang-en='Bienvenido a mi sección "Blog" aquí encontraras toda la información sobre lo que estoy
-          haciendo actualmente, eso incluye estudios y prácticas. Acá es donde voy a estar actualizando
-          a tiempo real lo que esté haciendo.'
-          class="text-center"
-        >
-        Welcome to my news "Blog". Here, you will find all the information about what I am currently
-        working on, including studies and internships. This is where I will be updating
-        in real-time what I am doing.
-        </h5>
-        <p
-          class="texto"
-          data-lang="es"
-          data-lang-en='Hoy en día estoy trabajando en un proyecto nuevo a modo de práctica y aprendizaje sobre varios
-          elementos y herramientas, su tema principal son huertas agroecológicas, será un proyecto de código abierto
-          para quienes estén interesados y quieran participar tambien, estará creado en Java utilizando Spring, React,
-          API Rest, JPA, HTML, CSS, Javascript y como base de datos MySQL.
-
-          A continuación voy a listar lo que queremos aprender y si es posible, implementar en el proyecto:
-
-          1- Profundizar el manejo de Git y aprender comandos "nuevos" que se usan generalmente
-          en las industrias. 
-
-          2- Qué es API Rest, cómo implementarlo en Spring boot.
-
-          3- Qué son proyectos monolito y los microservicios. 
-       
-          4- Aprender sobre tests unitarios usando JUnit 5 y Mockito.
-
-          5- Incorporar patrones DTO, mapper, libreria Lombok, etc.
-
-          6- Crear indices en tablas de MySQL.
-
-          7- Profundizar en Spring Security.
-
-          8- Aprender sobre programación funcional.
-          
-          Esto es todo en lo que estoy trabajando y estudiando actualmente, es posible que me tome unos meses
-          para poder estar bien afianzado con el contenido. Podes acceder al repositorio del mismo clickeando el boton debajo.'
-        > Currently, I am working on a new project for practice and learning purposes. Its main theme revolves
-          around agroecological orchards. It will be an open-source project, welcoming those who are interested
-          and want to participate. The project is developed in Java using Spring, React, RESTful APIs, JPA, HTML,
-          CSS, JavaScript, and MySQL as the database.
-
-          Next, I will list what we want to learn and, if possible, implement in the project:
-          
-          1- Deepen my understanding of Git and learn "new" commands commonly used in the industry.
-          
-          2- Understand what REST APIs are and how to implement them in Spring Boot.
-          
-          3- Explore monolithic projects and microservices.
-          
-          4- Gain knowledge in writing unit tests using JUnit 5 and Mockito.
-          
-          5- Incorporate patterns such as DTO, mapper, Lombok library, etc.
-          
-          6- Create indexes in MySQL database tables.
-          
-          7- Dive deeper into Spring Security.
-          
-          8- Learn about functional programming.
-          
-          This encompasses my current work and study focus. It may take me a few months to become
-          well-versed in the content. you can check the repository by clicking the button below.
-
-          <div class="text-center">
-          <a
-            
-            href="https://github.com/davichuder/huertas_agroecologicas"
-            target="_blank"
-            class="btn btn-primary github rep3"
-            data-lang="es"
-            data-lang-en="Repositorio Github"
-            >GitHub Repository</a>
-        </div>      
-        </p>
-      </div>
-    </section>
-
-    <br />
-
-    <section id="contact" class="container bot-bot">
-      <div class="icons">
-        <div class="d-flex align-items-center justify-content-center">
-        <h2 data-lang="es" data-lang-en="Contáctame">
-          Contact me
-        </h2>
-        </div>
-        <div class="contact-form">
-        <form id="contact-form" action="https://formspree.io/f/xyyqvvod" method="post">
-          <div class="mb-3 row">
-            <div class="col-md-6">
-              <label for="name" class="form-label" data-lang="es" data-lang-en="Nombre:">Name:</label>
-              <input type="text" class="form-control" id="name" name="name" required>
+        </section>
+        <footer>
+            <div class="container-fluid mt-5 border-top">
+                <div class="row">
+                    <div class="col footerText">
+                        <p>© 2023 <a class="diegu" target="_blank" href="https://www.diegugutierrez.com/">diegu</a> Casi todos los derechos reservados</p>
+                    </div>
+                    <div class="col footerText justify-content-center">
+                        <a class="footerNav me-2" href="#">Home</a>
+                        <a class="footerNav ms-2" href="#">Sobre Mi</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-              <label for="email" class="form-label" data-lang="es" data-lang-en="Email:">Email:</label>
-              <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-          </div>
-    
-          <div class="mb-3">
-            <label for="subject" class="form-label" data-lang="es" data-lang-en="Asunto:">Affair:</label>
-            <input type="text" class="form-control" id="subject" name="subject" required>
-          </div>
-    
-          <div class="mb-3">
-            <label for="message" class="form-label" data-lang="es" data-lang-en="Mensaje:">Message:</label>
-            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-          </div>
-          <div>
-          <button type="submit" id="btn-submit" class="btn btn-primary rep3" data-lang="es" data-lang-en="Enviar">Submit</button>         
-       </div>
-      </form>
-      </div>
-      </div>
-      
-    </section>
-    
-    
-    
+        </footer>
+    </main>
+    <!-- Optional JavaScript; choose one of the two! -->
 
-    <br />
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <section>
-      <div class="container">
-        <div
-          class="cv-link cv"
-          id="cv"
-          onclick="toggleCV()"
-          data-lang="es"
-          data-lang-en="Ver CV"
-        >
-          View Resume     
-        </div>
-        <br />
-        <div id="cv-content" style="display: none">
-          <embed
-            id="cv-embed"
-            type="application/pdf"
-            width="100%"
-            height="600px"
-          />
-        </div>
-      </div>
-    </section>
-
-    <div class="b-example-divider"></div>
-
-    <div class="container">
-      <footer
-        class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 pie"
-      >
-        <div class="col-md-12 d-flex align-items-center justify-content-center text-center">
-          <span
-            id="footer-text"
-            class="mb-3 mb-md-0"
-            data-lang="es"
-            data-lang-en="2023 / Hecho por Ivan Alexandro Moroz"
-            >2023 / made by Ivan Alexandro Moroz</span
-          >       
-        </div>       
-                <a
-                  href="https://www.linkedin.com/in/ivan-alexandro-moroz-java-developer-trainee/"
-                  class="me-2 ms-2"
-                  target="_blank"
-                  style="font-size: 25px;"
-                >
-                  <i class="fab fa-linkedin" style="color: #0a66c2"></i>  
-                           
-                </a> 
-                <a
-                  href="https://github.com/AlexandroMoroz"
-                  target="_blank"
-                  class="me-2 ms-2"
-                  style="font-size: 25px;"
-                >
-                  <i class="fab fa-github git"></i>                 
-                </a>         
-      </footer>
-    </div>
-
- 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-   crossorigin="anonymous"></script>
-  <script src="./JavaScript.js"></script>
-  <script src="./index.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
   </body>
 </html>

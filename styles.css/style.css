@@ -1,0 +1,136 @@
+.btnTogglerBorder {
+    border: none;
+}
+
+.btnTogglerBorder:focus {
+    box-shadow: none;
+}
+
+nav .logoMenu {
+    width: 15%;
+}
+
+.sectionHero {
+    width: 100%;
+    height: calc(100vh - 62px);
+    background-image: url(/asset/fondoHero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 12vmin;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 5vmin;
+    color: #969696;
+}
+
+main {
+    background-color: #212529;
+}
+
+.authorImg {
+    position: relative;
+    z-index: 1;
+}
+
+.imgHero {
+    position: relative;
+}
+
+.imgHero {
+    position: relative;
+    z-index: 1;
+}
+
+.imgAuthor {
+    border-radius: 14%;
+}
+
+.textSobreMi {
+    color: #c5c5c5 ;
+
+}
+
+.sobreMiText p {
+    color: #a1a1a1;
+}
+
+.tecnologias, .blog {
+    color: #c5c5c5;
+    font-size: 3rem;
+    background: linear-gradient(to left, #EDEEF0, #C1C3C3);
+}
+
+.colImagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tecnologiasTexto {
+    font-size: 3rem;
+    color: #212529;
+}
+
+.proyectosText, .contactameText{
+    color: #c5c5c5;
+    font-size: 3rem;
+}
+
+.blogText {
+    color: #212529;
+    font-size: 3rem;
+}
+
+.blogBox p {
+    color: #212529;
+    font-size: 14px;
+}
+
+.carZise {
+    max-width: 275px;
+}
+
+.spanBlog {
+    font-size: 20px;
+}
+
+.contactameBox p, h3, label {
+    color: #c5c5c5;
+}
+
+.iconContacto {
+    width: 12%;
+    background-color: #c5c5c5;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+footer .container {
+    margin-top: 60px;
+    border-top: 1px solid #c5c5c5;
+}
+
+footer p {
+    color: #c5c5c5;
+    margin-top: 1rem;
+}
+
+.footerText {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.diegu {
+    color: #fbb038;
+}
+
+.footerNav {
+    color: #c5c5c5;
+    text-decoration: none;
+}
