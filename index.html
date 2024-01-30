@@ -28,17 +28,16 @@
 
   <a
   href="#"
-  class="scroll-to-top"
+  class="scroll-to-top click"
   data-lang="es"
   data-lang-en=""
   alt="ir al inicio"
   id="top"
   >
   </a>
-
-  <nav class="navbar navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-dark bg-dark fixed-top" id="nav">
     <div class="container-fluid">
-      <a href="#">
+      <a href="#" class="click">
         <img src="./logo.png" alt="logo" style="width: 55px; height: 73px;" id="logo"/>
       </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
@@ -46,14 +45,15 @@
         </button>
         <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
             <div class="offcanvas-header">
-              <a href="#">
+              <a href="#" class="click">
                 <img src="./logo.png" alt="logo" style="width: 55px; height: 73px;" id="logo-img"/>
               </a>
                 <button type="button" class="me-2" id="close" data-bs-dismiss="offcanvas" aria-label="Close">X</button>
             </div>
+
             <div class="offcanvas-body">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
+                    <li class="nav-item click">
                       <a
                       onclick="scrollToSection('about')"
                       class="nav-link"
@@ -64,18 +64,8 @@
                       About me
                     </a>
                     </li>
-                    <li class="nav-item">
-                      <a
-                      onclick="scrollToSection('skills')"
-                      class="nav-link"
-                      data-lang="es"
-                      data-lang-en="Habilidades"
-                    >
-                      <span></span>
-                      Skills
-                    </a>
-                    </li>
-                    <li class="nav-item">
+                    
+                    <li class="nav-item click">
                       <a
                       onclick="scrollToSection('projects')"
                       class="nav-link px-2 ms-1 text-white"
@@ -85,19 +75,19 @@
                       <span  ></span>
                       Projects
                     </a>
-                    </li>
-                    <li class="nav-item">
+                    </li> 
+                      <li class="nav-item click">
                       <a
-                      onclick="scrollToSection('Blog')"
-                      class="nav-link px-2 ms-1 text-white"
+                      onclick="scrollToSection('skills')"
+                      class="nav-link"
                       data-lang="es"
-                      data-lang-en="Blog"
+                      data-lang-en="Habilidades"
                     >
-                      <span  ></span>
-                      Blog
+                      <span></span>
+                      Skills
                     </a>
-                    </li>
-                    <li class="nav-item">
+                    </li>             
+                    <li class="nav-item click">
                       <a
                       onclick="scrollToSection('contact')"
                       class="nav-link px-2 ms-1 text-white"
@@ -108,7 +98,7 @@
                       Contact me
                     </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item click">
                       <a
                       onclick="scrollToSection('cv')"
                       class="nav-link px-2 ms-1 text-white"
@@ -119,9 +109,10 @@
                       Resume
                     </a>
                     </li>
+                   
                 </ul>
                 <ul class="navbar-nav ml-auto">      
-                  <li class="nav-item">
+                  <li class="nav-item click">
                     <div class="language-switch">
                       <button
                         id="language-toggle"
@@ -141,7 +132,7 @@
                   <div class="d-flex flex-row justify-content-center align-items-center">
                   <a
                             href="https://www.linkedin.com/in/ivan-alexandro-moroz-java-developer-trainee/"
-                            class="links ms-2 me-2"
+                            class="links ms-2 me-2 click"
                             target="_blank"
                             style="font-size: 25px;"
                           >
@@ -150,7 +141,7 @@
                           <a
                             href="https://github.com/AlexandroMoroz"
                             target="_blank"
-                            class=" ms-2 me-2"
+                            class=" ms-2 me-2 click"
                             style="font-size: 25px; color:white"
                           >
                             <i class="fab fa-github git"></i>                 
@@ -162,12 +153,13 @@
     </div>
 </nav>
 
+<main>
   <div class="container yo ">
     <div class="nombreRol d-flex justify-content-center align-items-center">
       <div class="px-3 cargo">
         <h1 style="font-family: 'Playfair Display', serif;">Ivan Alexandro Moroz</h1>
-        <p id="rol" data-lang="en" data-lang-es="Full Stack Web Developer - Java">
-        Full Stack Web Developer - Java
+        <p id="rol" data-lang="en" data-lang-es="Web Developer - Java">
+        Desarrollador Web - Java
         </p>
       </div>
         <img
@@ -188,66 +180,326 @@
         <p
           class="texto"
           data-lang="es"
-          data-lang-en='Hola 🖐, soy Alex!
-Desarrollador web & Gamer 👾
+          data-lang-en='¡Hola! soy Alex, (también tuvo apodos como "Morita" o "Rusito") un desarrollador web en formación, estudié 7 años en un colegio técnico la rama de electromecánica y luego terminé en un bachiller con orientación en bellas artes.
 
-3... 2... 1... Dale al START!
+          comencé en la programación meses después de terminar mis estudios secundarios, estudié en el curso de Argentina programa 4.0 y en un curso fullstack con la empresa EGG COOPERATION, a día de hoy tengo más de 1 año estudiando al respecto.
 
-<<<<< VIVIR A LO BETA >>>>>
+          a lo largo de mi vida trabajé en muchos sectores, tales como metalúrgica, carpintería, call centers, correos, logísticas, etc. Gracias a esta experiencia, hoy en día pienso de una forma completamente distinta.
 
-¿Qué me apasiona y a dónde voy?
+          soy una persona muy tranquila y me encanta trabajar en equipos, soy muy dedicado a lo que hago y me es muy difícil dejar a la mitad un problema, generalmente no descanso hasta encontrar la solución.
+                   '
+        >Hello! I'm Alex, (also had nicknames like "Morita" or "Rusito") a web developer in training, I studied 7 years in a technical school in the electromechanical branch and then finished high school with a focus on fine arts.
 
-Me apasiona la tecnología, la inteligencia artificial, los videojuegos. Soy jugador profesional de League of Legends. No me gusta quedarme quieto, en la actualidad estoy trabajando en un proyecto con un amigo, siempre digo que tenemos que estar en movimiento, y vivir en BETA, como el software, actualizarnos para añadir características y ser siempre la mejor versión
--obviamente, podemos tener un update que rompa el sistema, pero bueno, en esos casos hay que actualizar rápido para corregirlo- 😅
-
-<<<<< LAS PERSONAS PRIMERO, SIEMPRE >>>>>
-
-¿Qué creo que es lo más importante?
-
-Hay mucho para contar, para hablar, pero seguramente coincidimos en lo súper importante que es la empatía, las relaciones interpersonales, conectar de verdad con el otro, comprenderlo, ponerse en su lugar, empoderarlo, acompañarlo.
-
-<<<<< TECNOLOGÍAS >>>>>
-
-¿Qué conozco hoy?
-
-Hoy en día manejo Java, HTML, CSS, Javascript, React, Angular, Typescript, Bootstrap, Visual studio code, JPA, Junit 5, Mockito, MySQL, Thymeleaf, API RESTful, Lombok y Migraciones en MySQL con Flyway.
-Estoy estudiando sobre microservicios, patrones DTO, API con advices, JWT token, Springdoc, swagger, test de aceptación con serenity y mappers.
-
-Si llegaron hasta acá les agradezco el interés, los invito a contactarme! ^-^'
-        >Hi 🖐, I'm Alex!
-Web Developer & Gamer 👾
-
-3... 2... 1... Hit the START!
-
-<<<<< LIVING BETA >>>>>
-
-What am I passionate about and where am I going?
-
-I am passionate about technology, artificial intelligence, videogames. I am a professional League of Legends player. I don't like to sit still, currently I'm working on a project with a friend, I always say that we have to be on the move, and live in BETA, like software, update to add features and always be the best version
--Obviously, we can have an update that breaks the system, but hey, in those cases you have to update quickly to correct it- 😅
-
-<<<<< PEOPLE FIRST, ALWAYS >>>>>
-
-What do I think is the most important?
-
-There is a lot to tell, to talk about, but surely we agree on how super important empathy is, interpersonal relationships, truly connecting with the other, understanding them, putting yourself in their place, empowering them, accompanying them.
-
-<<<<< TECHNOLOGIES >>>>>
-
-What do i know today?
-
-Today I handle Java, HTML, CSS, Javascript, React, Angular, Typescript, Bootstrap, Visual studio code, JPA, Junit 5, Mockito, MySQL, Thymeleaf, RESTful API, Lombok and MySQL Migrations with Flyway.
-I am studying microservices, DTO patterns, API with advices, JWT token, Springdoc, swagger, acceptance testing with serenity and mappers.
-    
-        If you've made it this far, I appreciate your interest and invite you to contact me! ^-^
+        I started in programming months after finishing my high school studies, I studied in the Argentina Program 4.0 course and in a full-stack course with the company EGG COOPERATION, to this day I have been studying in this field for over 1 year.
+              
+        Throughout my life, I have worked in many sectors, such as metallurgy, carpentry, call centers, postal services, logistics, etc. Thanks to this experience, nowadays I think in a completely different way.
+               
+        I am a very calm person and I love working in teams, I am very dedicated to what I do and it is very difficult for me to leave a problem halfway, I generally do not rest until I find the solution.
         </p>
+      </div>   
+      
+    </section>
+
+    <br/>
+
+<section id="projects">
+      <div class="container">
+        <div class="centrar bot-bot">
+        <h2 class="text-center global" data-lang="es" data-lang-en="Proyectos">
+          Projects
+        </h2>
+      </div>
+        <div class="row d-flex align-items-center first-project bot-right">          
+          <div class="col-lg-6">
+            <div class="image-container">
+              <div class="image-grid">
+                <img 
+                  src="./registro.png"
+                  alt="Registro de un usuario"
+                  class="zoomable-image"
+                  onclick="toggleScale(this)"
+                />
+                <img
+                  src="./Noticias.png"
+                  alt="Lista de noticias"
+                  class="zoomable-image"
+                  onclick="toggleScale(this)"
+                />  
+                <img
+                  src="./vistaNoticia.png"
+                  alt="Vista de las noticias" 
+                  class="zoomable-image"
+                  onclick="toggleScale(this)"
+                />              
+                <img
+                  src="./ModificarNoticia.png"
+                  alt="Modificar una noticia"
+                  class="zoomable-image"
+                  onclick="toggleScale(this)"
+                />
+                <img
+                  src="./Error.png"
+                  alt="Vista de un error"
+                  class="zoomable-image"
+                  onclick="toggleScale(this)"
+                />              
+                <img
+                  src="./UsuariosNoticias.png"
+                  alt="Lista de usuarios o dashboard de un admin"
+                  class="zoomable-image"
+                  onclick="toggleScale(this)"
+                />               
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-6"> 
+            <div class="info">
+              <h5
+                class="text-center title"
+                data-lang="es"
+                data-lang-en="Página de noticias"
+              >
+                News Website
+              </h5>
+              <p class="text-center">Java - MySQL - HTML5 - CSS3 - Bootstrap - Thymeleaf - Spring - Spring Security - JPA - Maven</p>
+              <p
+                class="text-center"
+                data-lang="es"
+                data-lang-en="Este proyecto fue creado por mi, es una
+              práctica de un ejercicio propuesto en el curso de programación full stack, el ejercicio me pedia
+              hacer una página web de noticias para la empresa EGG (es quien ofrece el curso full stack) en donde
+              hay 3 roles, un usuario, un administrador y un periodista, el administrador tiene acceso a la lista
+              de usuarios, puede darlos de baja, cambiar su salario y cambiarles el rol, el periodista puede crear
+              noticias pero no darlas de baja y el usuario normal solamente puede ver las noticias.
+              el diseño fue creado a mi gusto, le he dado un toque de simpleza e intenté hacer una interfaz
+               cómoda para el usuario."
+              >
+                This project was created by me, it is a practice of an exercise
+                proposed in the full stack programming course, the exercise
+                asked me to make a news web page for the company EGG (it is the
+                one that offers the full stack course) where there are 3 roles ,
+                a user, an administrator and a journalist, the administrator has
+                access to the list of users, he can unsubscribe them, change
+                journalist salary and change their role, the journalist can
+                create news but not unsubscribe them and the normal user can
+                only view News. the design was created to my liking, I have
+                given it a touch of simplicity and I tried to make a comfortable
+                interface for the user.
+              </p>
+              <div class="text-center">
+                <a
+                  
+                  href="https://github.com/AlexandroMoroz/Pagina-de-noticias"
+                  target="_blank"
+                  class="btn btn-primary github rep1"
+                  data-lang="es"
+                  data-lang-en="Repositorio Github"
+                  >GitHub Repository</a
+                >
+              </div>
+            </div>
+          </div>
+          
       </div>
 
-      <br />
+      <br/>
 
-      <div class="centrar bot-bot" id="skills">
+      <div class="container bot-left">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-6">
+            <div class="info">
+              <h5
+                class="text-center title"
+                data-lang="es"
+                data-lang-en='Página de salud "Vitalidapp"'
+              >
+                Health Website "Vitalidapp"
+              </h5>
+              <p class="text-center">Java - MySQL - HTML5 - CSS3 - Javascript - Bootstrap - Thymeleaf - Spring Framework - Spring Security - JPA - Maven</p>
+              <p
+                class="text-center"
+                data-lang="es"
+                data-lang-en="Este proyecto fue creado con un grupo de
+              6 personas (incluyendome). Tiene como fin, ayudar a que los médicos autónomos puedan registrar
+              y atender pacientes, mantener sus historiales médicos en una base de datos actualizada y guardar
+              los diagnósticos. El problema actual en los hospitales es que se pierde muy seguido el historial
+              médico y muchas veces no hay orden por lo que esta página estaría ayudando a resolver parte del
+              problema. Mi trabajo acá fue principalmente BackEnd pero también he participado en FrontEnd sin
+              mencionar las vinculaciones entre front y back y también las vinculaciones entre back y base de
+              datos. Un pequeño agregado adicional, aprendí un poco sobre tres metodologías ágiles las cuales
+              son (Líder técnico, Scrum Master y Agile Delivery Manager)."
+              >
+                This project was created with a group of 6 people (including
+                me). Its purpose is to help self-employed doctors to register
+                and care for patients, keep their medical records in an updated
+                database and save diagnoses. The current problem in hospitals is
+                that the medical history is lost very often and many times there
+                is no order, so this page would be helping to solve part of the
+                problem. My work here was mainly BackEnd but I've also been
+                involved in FrontEnd not to mention Front to Back bindings and
+                also Back to DataBase bindings. A little addition, I learned a
+                little about three agile methodologies which are (Technical
+                Lead, Scrum Master and Agile Delivery Manager).
+              </p>
+              <div class="text-center">
+                <a
+                  
+                  href="https://github.com/AlexandroMoroz/health-app"
+                  target="_blank"
+                  class="btn btn-primary github rep2"
+                  data-lang="es"
+                  data-lang-en="Repositorio Github"
+                  >GitHub Repository</a
+                >
+              </div>
+            </div>
+          </div> 
+          <div class="col-lg-6">
+            <div class="image-container">
+              <div class="image-grid">
+                <img 
+                  src="./index.png"
+                  alt="Index"
+                  class="zoomable-image"
+                  onclick="toggleScale(this)"
+                />
+                <img
+                  src="./perfil.png"
+                  alt="Perfil del usuario" 
+                  class="zoomable-image"
+                  onclick="toggleScale(this)"
+                />              
+                <img
+                  src="./profesionales.png"
+                  alt="Lista profesionales"
+                  class="zoomable-image"
+                  onclick="toggleScale(this)"
+                />
+                <img
+                  src="./reserva_turno.png"
+                  alt="Reservar un turno"
+                  class="zoomable-image"
+                  onclick="toggleScale(this)"
+                />              
+                <img
+                  src="./obras_sociales.png"
+                  alt="Lista de obras sociales"
+                  class="zoomable-image"
+                  onclick="toggleScale(this)"
+                />
+                <img
+                  src="./usuarios.png"
+                  alt="Lista de usuarios para un administrador"
+                  class="zoomable-image"
+                  onclick="toggleScale(this)"
+                />
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <br/>
+
+       <div class="row d-flex align-items-center first-project bot-right">          
+          <div class="col-lg-6">
+            <div class="image-container">
+              <div class="image-grid">
+                <img 
+                  src="./Captura de pantalla (62).png"
+                  alt="Imagen mostrando funcionalidades"
+                  class="zoomable-image"
+                  onclick="toggleScale(this)"
+                />
+                <img
+                  src="./Captura de pantalla (63).png"
+                  alt="Imagen mostrando funcionalidades"
+                  class="zoomable-image"
+                  onclick="toggleScale(this)"
+                />  
+                <img
+                  src="./Captura de pantalla (64).png"
+                  alt="Imagen mostrando funcionalidades" 
+                  class="zoomable-image"
+                  onclick="toggleScale(this)"
+                />              
+                <img
+                  src="./Captura de pantalla (65).png"
+                  alt="Imagen mostrando funcionalidades"
+                  class="zoomable-image"
+                  onclick="toggleScale(this)"
+                />
+                <img
+                  src="./Captura de pantalla (66).png"
+                  alt="Imagen mostrando funcionalidades"
+                  class="zoomable-image"
+                  onclick="toggleScale(this)"
+                />              
+                <img
+                  src="./Captura de pantalla (67).png"
+                  alt="Imagen mostrando funcionalidades"
+                  class="zoomable-image"
+                  onclick="toggleScale(this)"
+                />               
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-6"> 
+            <div class="info">
+              <h5
+                class="text-center title"
+                data-lang="es"
+                data-lang-en="JavaCrypter"
+              >
+                JavaCrypter
+              </h5>
+              <p class="text-center">HTML5 - CSS3 - Bootstrap - Javascript</p>
+              <p
+                class="text-center"
+                data-lang="es"
+                data-lang-en='Este es un challenge proporcionado por el programa "ONE" de Alura en conjunto de Oracle, la idea del challenge
+                es poner en práctica lo aprendido durante el programa y crear un encriptador más "normal" en donde el usuario debe poder
+                ingresar un texto y encriptarlo o en caso de ya estar encriptado, desencriptarlo, me plantee darle un diseño estéticamente
+                agradable para el ojo humano con una paleta de colores única y además cumplir con ciertos requisitos como por ejemplo, que
+                el usuario no pueda ingresar textos con caracteres especiales o acentos, o, el botón que copia el texto retornado.'
+              >
+              This is a challenge provided by Alura's "ONE" program in collaboration with Oracle. The idea behind the challenge is to put
+              into practice what has been learned during the program and create a more "normal" encryptor where the user should be able to
+              enter a text and encrypt it, or if it is already encrypted, decrypt it. I aimed to give it an aesthetically pleasing design
+              for the human eye with a unique color palette while also meeting certain requirements. For instance, users should not be
+              able to input texts with special characters or accents. Additionally, the button that copies the returned text should also
+              be considered.
+              </p>
+              <div class="text-center">
+                <a                 
+                  href="https://github.com/AlexandroMoroz/Encriptador-Challenge-Alura"
+                  target="_blank"
+                  class="btn btn-primary github rep1 mt-2"
+                  data-lang="es"
+                  data-lang-en="Repositorio Github"
+                  >GitHub Repository</a
+                >
+                <a
+                href="https://alexandromoroz.github.io/Encriptador-Challenge-Alura/"
+                target="_blank"
+                class="btn btn-primary github rep1 mt-2"
+                data-lang="es"
+                data-lang-en="Web online">
+                Online web 
+              </a>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+    </section>
+
+    <br/>
+
+<section class="container" id="skills">
+ <div class="centrar bot-bot" >
       <h2
-        
         class="text-center global"
         data-lang="es"
         data-lang-en="Habilidades"
@@ -363,372 +615,9 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
         </div>    
       </div>
     </div>
-      <br />
-    </section>
+ </section>
 
-<section id="projects">
-      <div class="container">
-        <div class="centrar bot-bot">
-        <h2 class="text-center global" data-lang="es" data-lang-en="Proyectos">
-          Projects
-        </h2>
-      </div>
-        <div class="row d-flex align-items-center first-project bot-right">          
-          <div class="col-lg-6">
-            <div class="image-container">
-              <div class="image-grid">
-                <img 
-                  src="./registro.png"
-                  alt="Registro de un usuario"
-                  class="zoomable-image"
-                />
-                <img
-                  src="./Noticias.png"
-                  alt="Lista de noticias"
-                  class="zoomable-image"
-                />  
-                <img
-                  src="./vistaNoticia.png"
-                  alt="Vista de las noticias" 
-                  class="zoomable-image"
-                />              
-                <img
-                  src="./ModificarNoticia.png"
-                  alt="Modificar una noticia"
-                  class="zoomable-image"
-                />
-                <img
-                  src="./Error.png"
-                  alt="Vista de un error"
-                  class="zoomable-image"
-                />              
-                <img
-                  src="./UsuariosNoticias.png"
-                  alt="Lista de usuarios o dashboard de un admin"
-                  class="zoomable-image"
-                />               
-              </div>
-          </div>
-        </div>
-        <div class="col-lg-6"> 
-            <div class="info">
-              <h5
-                class="text-center title"
-                data-lang="es"
-                data-lang-en="Página de noticias"
-              >
-                News Website
-              </h5>
-              <p class="text-center">Java - MySQL - HTML5 - CSS3 - Bootstrap - Thymeleaf - Spring - Spring Security - JPA - Maven</p>
-              <p
-                class="text-center"
-                data-lang="es"
-                data-lang-en="Este proyecto fue creado por mi, es una
-              práctica de un ejercicio propuesto en el curso de programación full stack, el ejercicio me pedia
-              hacer una página web de noticias para la empresa EGG (es quien ofrece el curso full stack) en donde
-              hay 3 roles, un usuario, un administrador y un periodista, el administrador tiene acceso a la lista
-              de usuarios, puede darlos de baja, cambiar su salario y cambiarles el rol, el periodista puede crear
-              noticias pero no darlas de baja y el usuario normal solamente puede ver las noticias.
-              el diseño fue creado a mi gusto, le he dado un toque de simpleza e intenté hacer una interfaz
-               cómoda para el usuario."
-              >
-                This project was created by me, it is a practice of an exercise
-                proposed in the full stack programming course, the exercise
-                asked me to make a news web page for the company EGG (it is the
-                one that offers the full stack course) where there are 3 roles ,
-                a user, an administrator and a journalist, the administrator has
-                access to the list of users, he can unsubscribe them, change
-                journalist salary and change their role, the journalist can
-                create news but not unsubscribe them and the normal user can
-                only view News. the design was created to my liking, I have
-                given it a touch of simplicity and I tried to make a comfortable
-                interface for the user.
-              </p>
-              <div class="text-center">
-                <a
-                  
-                  href="https://github.com/AlexandroMoroz/Pagina-de-noticias"
-                  target="_blank"
-                  class="btn btn-primary github rep1"
-                  data-lang="es"
-                  data-lang-en="Repositorio Github"
-                  >GitHub Repository</a
-                >
-              </div>
-            </div>
-          </div>
-          
-      </div>
-      <br />
-      <div class="container bot-left">
-        <div class="row d-flex align-items-center">
-         
-          <div class="col-lg-6">
-            <div class="info">
-              <h5
-                class="text-center title"
-                data-lang="es"
-                data-lang-en='Página de salud "Vitalidapp"'
-              >
-                Health Website "Vitalidapp"
-              </h5>
-              <p class="text-center">Java - MySQL - HTML5 - CSS3 - Javascript - Bootstrap - Thymeleaf - Spring Framework - Spring Security - JPA - Maven</p>
-              <p
-                class="text-center"
-                data-lang="es"
-                data-lang-en="Este proyecto fue creado con un grupo de
-              6 personas (incluyendome). Tiene como fin, ayudar a que los médicos autónomos puedan registrar
-              y atender pacientes, mantener sus historiales médicos en una base de datos actualizada y guardar
-              los diagnósticos. El problema actual en los hospitales es que se pierde muy seguido el historial
-              médico y muchas veces no hay orden por lo que esta página estaría ayudando a resolver parte del
-              problema. Mi trabajo acá fue principalmente BackEnd pero también he participado en FrontEnd sin
-              mencionar las vinculaciones entre front y back y también las vinculaciones entre back y base de
-              datos. Un pequeño agregado adicional, aprendí un poco sobre tres metodologías ágiles las cuales
-              son (Líder técnico, Scrum Master y Agile Delivery Manager)."
-              >
-                This project was created with a group of 6 people (including
-                me). Its purpose is to help self-employed doctors to register
-                and care for patients, keep their medical records in an updated
-                database and save diagnoses. The current problem in hospitals is
-                that the medical history is lost very often and many times there
-                is no order, so this page would be helping to solve part of the
-                problem. My work here was mainly BackEnd but I've also been
-                involved in FrontEnd not to mention Front to Back bindings and
-                also Back to DataBase bindings. A little addition, I learned a
-                little about three agile methodologies which are (Technical
-                Lead, Scrum Master and Agile Delivery Manager).
-              </p>
-              <div class="text-center">
-                <a
-                  
-                  href="https://github.com/AlexandroMoroz/health-app"
-                  target="_blank"
-                  class="btn btn-primary github rep2"
-                  data-lang="es"
-                  data-lang-en="Repositorio Github"
-                  >GitHub Repository</a
-                >
-              </div>
-            </div>
-          </div> 
-          <div class="col-lg-6">
-            <div class="image-container">
-              <div class="image-grid">
-                <img 
-                  src="./index.png"
-                  alt="Index"
-                  class="zoomable-image" />
-                <img
-                  src="./perfil.png"
-                  alt="Perfil del usuario" 
-                  class="zoomable-image" />              
-                <img
-                  src="./profesionales.png"
-                  alt="Lista profesionales"
-                  class="zoomable-image"
-                />
-                <img
-                  src="./reserva_turno.png"
-                  alt="Reservar un turno"
-                  class="zoomable-image"
-                />
-               
-                <img
-                  src="./obras_sociales.png"
-                  alt="Lista de obras sociales"
-                  class="zoomable-image"
-                />
-                <img
-                  src="./usuarios.png"
-                  alt="Lista de usuarios para un administrador"
-                  class="zoomable-image"
-                />
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <br>
-       <div class="row d-flex align-items-center first-project bot-right">          
-          <div class="col-lg-6">
-            <div class="image-container">
-              <div class="image-grid">
-                <img 
-                  src="./Captura de pantalla (62).png"
-                  alt="Imagen mostrando funcionalidades"
-                  class="zoomable-image"
-                />
-                <img
-                  src="./Captura de pantalla (63).png"
-                  alt="Imagen mostrando funcionalidades"
-                  class="zoomable-image"
-                />  
-                <img
-                  src="./Captura de pantalla (64).png"
-                  alt="Imagen mostrando funcionalidades" 
-                  class="zoomable-image"
-                />              
-                <img
-                  src="./Captura de pantalla (65).png"
-                  alt="Imagen mostrando funcionalidades"
-                  class="zoomable-image"
-                />
-                <img
-                  src="./Captura de pantalla (66).png"
-                  alt="Imagen mostrando funcionalidades"
-                  class="zoomable-image"
-                />              
-                <img
-                  src="./Captura de pantalla (67).png"
-                  alt="Imagen mostrando funcionalidades"
-                  class="zoomable-image"
-                />               
-              </div>
-          </div>
-        </div>
-        <div class="col-lg-6"> 
-            <div class="info">
-              <h5
-                class="text-center title"
-                data-lang="es"
-                data-lang-en="JavaCrypter"
-              >
-                JavaCrypter
-              </h5>
-              <p class="text-center">HTML5 - CSS3 - Bootstrap - Javascript</p>
-              <p
-                class="text-center"
-                data-lang="es"
-                data-lang-en='Este es un challenge proporcionado por el programa "ONE" de Alura en conjunto de Oracle, la idea del challenge
-                es poner en práctica lo aprendido durante el programa y crear un encriptador más "normal" en donde el usuario debe poder
-                ingresar un texto y encriptarlo o en caso de ya estar encriptado, desencriptarlo, me plantee darle un diseño esteticamente
-                agradable para el ojo humano con una paleta de colores única y además cumplir con ciertos requisitos como por ejemplo, que
-                el usuario no pueda ingresar textos con caracteres especiales o acentos, o, el botón que copia el texto retornado.'
-              >
-              This is a challenge provided by Alura's "ONE" program in collaboration with Oracle. The idea behind the challenge is to put
-              into practice what has been learned during the program and create a more "normal" encryptor where the user should be able to
-              enter a text and encrypt it, or if it is already encrypted, decrypt it. I aimed to give it an aesthetically pleasing design
-              for the human eye with a unique color palette while also meeting certain requirements. For instance, users should not be
-              able to input texts with special characters or accents. Additionally, the button that copies the returned text should also
-              be considered.
-              </p>
-              <div class="text-center">
-                <a                 
-                  href="https://github.com/AlexandroMoroz/Encriptador-Challenge-Alura"
-                  target="_blank"
-                  class="btn btn-primary github rep1 mt-2"
-                  data-lang="es"
-                  data-lang-en="Repositorio Github"
-                  >GitHub Repository</a
-                >
-                <a
-                href="https://alexandromoroz.github.io/Encriptador-Challenge-Alura/"
-                target="_blank"
-                class="btn btn-primary github rep1 mt-2"
-                data-lang="es"
-                data-lang-en="Web online">
-                Online web 
-              </a>
-              </div>
-            </div>
-          </div>
-          
-      </div>
-    </section>
-
- <br>
-
-    <section id="Blog" class="container bot-bot">
-      <div class="blog">
-        <h2
-          class="text-center"
-          data-lang="es"
-          data-lang-en="¿Qué hago actualmente?"
-        >
-          what i currently do?
-        </h2>
-        <h5
-          data-lang="es"
-          data-lang-en='Bienvenido a mi sección "Blog" aquí encontraras toda la información sobre lo que estoy
-          haciendo actualmente, eso incluye estudios y prácticas. Acá es donde voy a estar actualizando
-          a tiempo real lo que esté haciendo.'
-          class="text-center"
-        >
-        Welcome to my news "Blog". Here, you will find all the information about what I am currently
-        working on, including studies and internships. This is where I will be updating
-        in real-time what I am doing.
-        </h5>
-        <p
-          class="texto"
-          data-lang="es"
-          data-lang-en='Hoy en día estoy trabajando en un proyecto nuevo a modo de práctica y aprendizaje sobre varios
-          elementos y herramientas, su tema principal son huertas agroecológicas, será un proyecto de código abierto
-          para quienes estén interesados y quieran participar tambien, estará creado en Java utilizando Spring, React,
-          API Rest, JPA, HTML, CSS, Javascript y como base de datos MySQL.
-
-          A continuación voy a listar lo que queremos aprender y si es posible, implementar en el proyecto:
-
-          1- Profundizar el manejo de Git y aprender comandos "nuevos" que se usan generalmente
-          en las industrias. 
-
-          2- Qué es API Rest, cómo implementarlo en Spring boot.
-
-          3- Qué son proyectos monolito y los microservicios. 
-       
-          4- Aprender sobre tests unitarios usando JUnit 5 y Mockito.
-
-          5- Incorporar patrones DTO, mapper, libreria Lombok, etc.
-
-          6- Crear indices en tablas de MySQL.
-
-          7- Profundizar en Spring Security.
-
-          8- Aprender sobre programación funcional.
-          
-          Esto es todo en lo que estoy trabajando y estudiando actualmente, es posible que me tome unos meses
-          para poder estar bien afianzado con el contenido. Podes acceder al repositorio del mismo clickeando el boton debajo.'
-        > Currently, I am working on a new project for practice and learning purposes. Its main theme revolves
-          around agroecological orchards. It will be an open-source project, welcoming those who are interested
-          and want to participate. The project is developed in Java using Spring, React, RESTful APIs, JPA, HTML,
-          CSS, JavaScript, and MySQL as the database.
-
-          Next, I will list what we want to learn and, if possible, implement in the project:
-          
-          1- Deepen my understanding of Git and learn "new" commands commonly used in the industry.
-          
-          2- Understand what REST APIs are and how to implement them in Spring Boot.
-          
-          3- Explore monolithic projects and microservices.
-          
-          4- Gain knowledge in writing unit tests using JUnit 5 and Mockito.
-          
-          5- Incorporate patterns such as DTO, mapper, Lombok library, etc.
-          
-          6- Create indexes in MySQL database tables.
-          
-          7- Dive deeper into Spring Security.
-          
-          8- Learn about functional programming.
-          
-          This encompasses my current work and study focus. It may take me a few months to become
-          well-versed in the content. you can check the repository by clicking the button below.
-
-          <div class="text-center">
-          <a
-            
-            href="https://github.com/davichuder/huertas_agroecologicas"
-            target="_blank"
-            class="btn btn-primary github rep3"
-            data-lang="es"
-            data-lang-en="Repositorio Github"
-            >GitHub Repository</a>
-        </div>      
-        </p>
-      </div>
-    </section>
-
-    <br />
+    <br/>
 
     <section id="contact" class="container bot-bot">
       <div class="icons">
@@ -771,7 +660,7 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
     
     
 
-    <br />
+    <br/>
 
     <section>
       <div class="container">
@@ -784,23 +673,25 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
         >
           View Resume     
         </div>
-        <br />
-        <div id="cv-content" style="display: none">
+        <br/>
+        <div id="cv-content" style="display: none" class="mb-3">
           <embed
             id="cv-embed"
             type="application/pdf"
             width="100%"
-            height="600px"
+            height="910px"
           />
         </div>
       </div>
     </section>
 
+</main>
+
     <div class="b-example-divider"></div>
 
-    <div class="container">
+    
       <footer
-        class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 pie"
+        class="d-flex flex-wrap justify-content-center align-items-center py-3 pie"
       >
         <div class="col-md-12 d-flex align-items-center justify-content-center text-center">
           <span
@@ -808,8 +699,7 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
             class="mb-3 mb-md-0"
             data-lang="es"
             data-lang-en="Copyright © 2023 Ivan Alexandro Moroz. Todos los derechos reservados."
-            >Copyright © 2023 Ivan Alexandro Moroz. All rights are reserved.</span
-          >       
+            >Copyright © 2023 Ivan Alexandro Moroz. All rights are reserved.</span>       
         </div>       
                 <a
                   href="https://www.linkedin.com/in/ivan-alexandro-moroz-java-developer-trainee/"
@@ -817,8 +707,7 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
                   target="_blank"
                   style="font-size: 25px;"
                 >
-                  <i class="fab fa-linkedin" style="color: #0a66c2"></i>  
-                           
+                  <i class="fab fa-linkedin" style="color: #0a66c2"></i>                            
                 </a> 
                 <a
                   href="https://github.com/AlexandroMoroz"
@@ -829,7 +718,7 @@ I am studying microservices, DTO patterns, API with advices, JWT token, Springdo
                   <i class="fab fa-github git"></i>                 
                 </a>         
       </footer>
-    </div>
+    
 
  
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>

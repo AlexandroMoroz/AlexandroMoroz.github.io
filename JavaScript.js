@@ -26,55 +26,46 @@ themeToggle.addEventListener("click", function () {
  offcanvas.hide();
 });
 
-const images = document.querySelectorAll(".zoomable-image");
-let zoomedIndex = -1;
+let isScaled = false;
 
-images.forEach((image, index) => {
-  image.addEventListener("click", () => {
-    toggleZoom(image, index);
-  });
-});
-
-function toggleZoom(image, index) {
-  if (index === zoomedIndex) {
-    image.classList.remove("zoomed-image");
-    image.style.pointerEvents = "auto";
-    zoomedIndex = -1;
+function toggleScale(image) {
+  if (isScaled) {   
+    image.style.transform = '';
+    image.style.transformOrigin = 'initial'; 
+    image.style.filter = ''; 
+    image.style.border = '3px solid #000000'; 
+    image.style.zIndex = '';
+    document.body.style.overflow = 'auto'; 
+    document.body.style.paddingRight = '';
   } else {
-    images.forEach((otherImage, otherIndex) => {
-      if (
-        otherIndex !== index &&
-        otherImage.classList.contains("zoomed-image")
-      ) {
-        otherImage.classList.remove("zoomed-image");
-        otherImage.style.pointerEvents = "auto";
-      }
-    });
-    image.classList.add("zoomed-image");
-    image.style.pointerEvents = "auto";
-    zoomedIndex = index;
+    const imgRect = image.getBoundingClientRect();
+    const imgCenterX = imgRect.left + imgRect.width / 2;
+    const imgCenterY = imgRect.top + imgRect.height / 2;
+    const vwpX = window.innerWidth / 2;
+    const vwpY = window.innerHeight / 2;
+
+    const translateX = vwpX - imgCenterX;
+    const translateY = vwpY - imgCenterY;
+
+    image.style.transformOrigin = 'center';
+    image.style.transform = `translate(${translateX}px, ${translateY + 15}px) scale(3.7)`;
+    image.style.filter = 'blur(0)'; 
+    image.style.border = 'none'; 
+    image.style.zIndex = '2';
+    document.body.style.overflow = 'hidden';
+    document.body.style.paddingRight = '8px';
   }
+  isScaled = !isScaled;
 }
 
-let prevScrollPos = window.scrollY;
-const navbar = document.querySelector(".navbar");
-const isMobile = window.innerWidth <= 1100;
-
 function scrollToSection(sectionId) {
-  const section = document.getElementById(sectionId);
-  let offset = -100;
-
-  if (window.innerWidth < 768) {
-    offset = -75;
-  } else if (window.innerWidth < 1024) {
-    offset = -200;
-  }
-
-  const sectionOffsetTop = section.offsetTop + offset;
+  const element = document.getElementById(sectionId);
+  const navbarHeight = document.getElementById("nav").offsetHeight;
+  const elementPosition = element.getBoundingClientRect().top;
+  const scroll = elementPosition - navbarHeight + window.scrollY;
 
   window.scrollTo({
-    top: sectionOffsetTop,
-    behavior: "smooth",
+    top: scroll,
   });
 }
 
