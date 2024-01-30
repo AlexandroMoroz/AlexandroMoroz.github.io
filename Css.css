@@ -1091,6 +1091,18 @@ a {
     z-index: unset;
     filter: blur(0px);
   }
+
+  .pie .col-md-6:nth-child(1){
+    text-align: center;
+  }
+
+  .pie {
+    flex-direction: column !important;
+  }
+
+  #footerIcon {
+    margin-right: 0 !important;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1320px) {
