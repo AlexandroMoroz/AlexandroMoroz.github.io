@@ -882,21 +882,10 @@ a {
     filter: blur(0px);
   }
 
-  .zoomable-image:hover:not(.zoomed-image) {
+  .zoomable-image:hover {
     transform: unset;
     z-index: unset;
     filter: blur(0px);
-  }
-
-  .zoomed-image {
-    position: unset;
-    top: unset;
-    left: unset;
-    transform: unset;
-    max-width: unset;
-    max-height: unset;
-    z-index: unset;
-    pointer-events: unset;
   }
 
   .certificate-grid img:hover {
@@ -990,21 +979,10 @@ a {
     filter: blur(0px);
   }
 
-  .zoomable-image:hover:not(.zoomed-image) {
+  .zoomable-image:hover {
     transform: unset;
     z-index: unset;
     filter: blur(0px);
-  }
-
-  .zoomed-image {
-    position: unset;
-    top: unset;
-    left: unset;
-    transform: unset;
-    max-width: unset;
-    max-height: unset;
-    z-index: unset;
-    pointer-events: unset;
   }
 
   .certificate-grid img:hover {
@@ -1079,16 +1057,6 @@ a {
     filter: blur(0px);
   }
 
-  .zoomed-image {
-    position: unset;
-    top: unset;
-    left: unset;
-    transform: unset;
-    max-width: unset;
-    max-height: unset;
-    z-index: unset;
-    pointer-events: unset;
-  }
 }
 
 @media (max-width: 991px) {
@@ -1116,6 +1084,12 @@ a {
 
   .light-mode #theme-toggle:hover {
     background-color: rgba(46, 204, 112, 0.747);
+  }
+
+  .zoomable-image:hover {
+    transform: unset;
+    z-index: unset;
+    filter: blur(0px);
   }
 }
 
