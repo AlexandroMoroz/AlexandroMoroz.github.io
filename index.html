@@ -97,19 +97,7 @@
                       <span  ></span>
                       Contact me
                     </a>
-                    </li>
-                    <li class="nav-item click">
-                      <a
-                      onclick="scrollToSection('cv')"
-                      class="nav-link px-2 ms-1 text-white"
-                      data-lang="es"
-                      data-lang-en="CV"
-                    >
-                      <span  ></span>
-                      Resume
-                    </a>
-                    </li>
-                   
+                    </li>                  
                 </ul>
                 <ul class="navbar-nav ml-auto">      
                   <li class="nav-item click">
@@ -153,14 +141,26 @@
     </div>
 </nav>
 
-<main>
+<main> 
   <div class="container yo ">
     <div class="nombreRol d-flex justify-content-center align-items-center">
       <div class="px-3 cargo">
         <h1 style="font-family: 'Playfair Display', serif;">Ivan Alexandro Moroz</h1>
         <p id="rol" data-lang="en" data-lang-es="Web Developer - Java">
         Desarrollador Web - Java
-        </p>
+        </p>            
+          <a
+            class="btn btn-primary github"
+            id="cv"
+            data-lang="es"
+            data-lang-en="Descargar CV"
+            onclick="downloadCV()"
+            
+            href="./Ivan-Alexandro-Moroz-EN.pdf"
+            download="Ivan-Alexandro-Moroz-EN.pdf"
+            type="application/pdf">
+             Download Resume
+          </a>       
       </div>
         <img
          src="https://alexandromoroz.github.io/cv%20semi%20profesional.jpg"
@@ -639,29 +639,6 @@
     
 
     <br/>
-
-    <section>
-      <div class="container">
-        <div
-          class="cv-link cv"
-          id="cv"
-          onclick="toggleCV()"
-          data-lang="es"
-          data-lang-en="Ver CV"
-        >
-          View Resume     
-        </div>
-        <br/>
-        <div id="cv-content" style="display: none" class="mb-3">
-          <embed
-            id="cv-embed"
-            type="application/pdf"
-            width="100%"
-            height="910px"
-          />
-        </div>
-      </div>
-    </section>
 
 </main>
 

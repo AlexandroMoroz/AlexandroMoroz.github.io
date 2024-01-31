@@ -80,17 +80,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 function toggleLanguage() {
   var langButton = document.getElementById("language-toggle");
-  var cvContent = document.getElementById("cv-content");
   var cvLink = document.getElementById("cv");
 
-  if (cvContent.style.display === "block") {
-    cvContent.style.display = "none";
     if (langButton.textContent === "Cambiar al Español") {
-      cvLink.textContent = "View Resume";
-    } else {
-      cvLink.textContent = "Ver CV";
+      cvLink.textContent = "Download Resume";
+    } else if (langButton.textContent === "Switch to English"){
+      cvLink.textContent = "Descargar CV";
     }
-  }
+  
 
   if (langButton.textContent === "Switch to English") {
     langButton.textContent = "Cambiar al Español";
@@ -134,31 +131,18 @@ toggleTextMutedClass();
 
 themeToggle.addEventListener("click", toggleTextMutedClass);
 
-function toggleCV() {
-  var cvContent = document.getElementById("cv-content");
-  var cvEmbed = document.getElementById("cv-embed");
-  var cvLink = document.getElementById("cv");
-  var languageToggle = document.getElementById("language-toggle");
+function downloadCV() {
+  const languageToggle = document.getElementById("language-toggle");
+  const cvFilename = languageToggle.textContent === "Cambiar al Español" ? "Ivan-Alexandro-Moroz-EN.pdf" : "Ivan-Alexandro-Moroz-ES.pdf";
 
-  if (cvContent.style.display === "block") {
-    cvContent.style.display = "none";
-    if (languageToggle.textContent === "Cambiar al Español") {
-      cvLink.textContent = "View Resume";
-    } else {
-      cvLink.textContent = "Ver CV";
-    }
-    return;
-  }
-
-  cvContent.style.display = "block";
-  if (languageToggle.textContent === "Cambiar al Español") {
-    cvEmbed.src = "./Ivan_Alexandro_Moroz_JavaDev_EN.pdf";
-    cvLink.textContent = "Hide Resume";
-  } else {
-    cvEmbed.src = "./Ivan_Alexandro_Moroz_JavaDev_ES.pdf";
-    cvLink.textContent = "Esconder CV";
-  }
+  const downloadLink = document.getElementById("cv");
+  downloadLink.setAttribute("href", "./" + cvFilename);
+  downloadLink.setAttribute("download", cvFilename);
+  downloadLink.setAttribute("type", "application/pdf");
+  downloadLink.click;
 }
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
   var menuItems = document.querySelectorAll(".navbar-nav a, .navbar img, #top");
