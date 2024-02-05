@@ -25,45 +25,6 @@ themeToggle.addEventListener("click", function () {
   offcanvas.hide();
 });
 
-let isScaled = false;
-
-function toggleScale(image) {
-  const vwp = window.innerWidth;
-  const arrow = document.getElementById("top");
-  if (vwp > 1000) {
-    if (isScaled) {
-      image.style.transform = "";
-      image.style.transformOrigin = "initial";
-      image.style.filter = "";
-      image.style.border = "3px solid #000000";
-      image.style.zIndex = "";
-      document.body.style.overflow = "auto";
-      document.body.style.paddingRight = "";
-      arrow.style.marginRight = "";
-    } else {
-      const imgRect = image.getBoundingClientRect();
-      const imgCenterX = imgRect.left + imgRect.width / 2;
-      const imgCenterY = imgRect.top + imgRect.height / 2;
-      const vwpX = window.innerWidth / 2;
-      const vwpY = window.innerHeight / 2;
-
-      const translateX = vwpX - imgCenterX;
-      const translateY = vwpY - imgCenterY;
-
-      image.style.transformOrigin = "center";
-      image.style.transform = `translate(${translateX}px, ${translateY + 15}px) scale(3.7)`;
-      image.style.filter = "blur(0)";
-      image.style.border = "none";
-      image.style.zIndex = "999";
-      document.body.style.overflow = "hidden";
-      document.body.style.paddingRight = "8px";
-
-      arrow.style.marginRight = "8px";
-    }
-  }
-  isScaled = !isScaled;
-}
-
 function scrollToSection(sectionId) {
   const element = document.getElementById(sectionId);
   const navbarHeight = document.getElementById("nav").offsetHeight;
