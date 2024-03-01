@@ -1,0 +1,441 @@
+[33mcommit 561859009da4ff8d3ee6a6c7c154a22571ec43f2[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Mon Feb 5 02:08:26 2024 -0300
+
+    feat: :zap: added modals
+    
+    bootstrap modals added to all images
+
+[33mcommit ebecc744710aea8b6e82bffc6d0a03db8dfc2f40[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Wed Jan 31 03:40:08 2024 -0300
+
+    fix:
+
+[33mcommit 6d21e7782c6f603422f8f5124fa6f35870180c84[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Tue Jan 30 20:14:35 2024 -0300
+
+    fix:
+
+[33mcommit 680dcb7482bbb7f29b671504f7567b413bbb0252[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Tue Jan 30 03:45:40 2024 -0300
+
+    fix: :bug: hotfix for images on smaller devices
+
+[33mcommit 0289d1648f6fc51a3042c86f9c1d4597467517f2[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Tue Jan 30 03:14:27 2024 -0300
+
+    feat: :construction: multiple changes
+
+[33mcommit a0b08408e69986090e1b06e47afc55440c846de1[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Thu Jan 25 03:16:43 2024 -0300
+
+    feat: :construction: added a new project and blur for images
+
+[33mcommit 66a7611fff263ae98da05cf50f24b6ac0c56b094[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Sat Jan 13 21:11:26 2024 -0300
+
+    feat:
+
+[33mcommit be69eb8dcc8ef463735971d6ea24dd12a89dac22[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Tue Dec 19 01:32:53 2023 -0300
+
+    CV Changed
+
+[33mcommit 022953ce991a80b15ae76c10cf48380c05e3342e[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Thu Dec 7 16:24:36 2023 -0300
+
+    fix:
+
+[33mcommit cc24a7790dfcf1fdbb955e4c0742a6384adcceed[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Thu Dec 7 16:17:32 2023 -0300
+
+    feat: :sparkles: new animations
+    
+    all the sections are animated with scroll
+
+[33mcommit 1f0a090d25ec8e2bb51d4e39dbf2bc0d7cebbe77[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Sun Nov 19 18:53:28 2023 -0300
+
+    cambio de cv's
+
+[33mcommit 3c5b777c21b8688adc446a727a4ff4372b32136e[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Fri Nov 17 03:09:35 2023 -0300
+
+    feat:
+
+[33mcommit 35c96aad27716cd1498bc1696ecfdfe206ab5b55[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Thu Nov 16 22:26:16 2023 -0300
+
+    fix: :bug: quick border color fix
+
+[33mcommit 85e7240d370594cd37c2176d0ea99b225239075e[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Thu Nov 16 17:54:52 2023 -0300
+
+    feat: :sparkles: quick fixes
+    
+    better backgrounds and some color changes
+
+[33mcommit 4775ec7dfcb3463fd54f6b540ff00693bc95fb72[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Sun Nov 12 17:01:37 2023 -0300
+
+    feat: :zap: changed background color and language button
+    
+    the background of containers was changed to another color in the dark mode and the button to switch language got some improvements
+
+[33mcommit e93f62ced94bb95c4daf0b01e5fc1fb46bb9e3c1[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Sat Nov 11 03:57:46 2023 -0300
+
+    fix: :bug: fixed logo
+
+[33mcommit 17362ab27538001e3e748321efcff6b954b73176[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Sat Nov 11 03:31:08 2023 -0300
+
+    feat:
+
+[33mcommit 8a8c43fea76b02e68655fb3cdad691c6748ff943[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Fri Nov 10 04:17:56 2023 -0300
+
+    feat: :art:
+
+[33mcommit fab1db62c4c2a623c4cabc7e579a61448c5cf5a1[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Fri Nov 10 04:02:44 2023 -0300
+
+    feat:
+
+[33mcommit 22c11886268b5b3e045e0e5534bd43b10c5938af[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Fri Nov 10 03:56:46 2023 -0300
+
+    feat:
+
+[33mcommit 8aec45686babd0a6b1ca302a6531ab862a50ab72[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Fri Nov 10 03:03:37 2023 -0300
+
+    fix: :bug: quick fix
+    
+    removed a div that makes the navbar to not be sticky
+
+[33mcommit 8e3aa2a77a367f8df7f0d9e2a644c8bba5a62a2c[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Fri Nov 10 02:49:37 2023 -0300
+
+    fix: :bug: fixed offcanvas
+    
+    fixed the offcanvas problem and also added a background to the navbar
+
+[33mcommit a6ba3569ce60561cad2212acc363ddec6685ca01[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Fri Nov 10 00:38:56 2023 -0300
+
+    feat: :fire: removed some lines of code and improved a new reactive navbar
+
+[33mcommit 2da45f286b39d4a349d52494e7b32cbfc50b88f1[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Thu Nov 9 03:32:25 2023 -0300
+
+    feat: :sparkles: a lot of new things
+    
+    added a logo, added a "go to top" button on the corner, changed the scroll bar, deleted certificates, added icons of github and linkedin to navbar and footer, added a form to contact me, added animation to skills, changed the "box" of presentation and some h2 titles
+
+[33mcommit d54e0c4019b16562261e35f90ed259a572752be2[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Tue Nov 7 13:23:53 2023 -0300
+
+    refactor: :fire: removed certificates
+
+[33mcommit 56cefdccbaeb69fe88321d43446b35e1c0ae9274[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Mon Nov 6 22:06:43 2023 -0300
+
+    fix: :zap: reduced the resolution of black background
+
+[33mcommit 3e58260bf0f551de30c846b936b689bcbb0a66ed[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Mon Nov 6 20:55:49 2023 -0300
+
+    feat: new font and certificates
+    
+    a new font for the text and 3 new certificates
+
+[33mcommit cbab258d864754c19b9a934696cd50184c06dcc1[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Tue Oct 17 14:47:45 2023 -0300
+
+    feat: :sparkles: two new icons in skills
+
+[33mcommit 4bcfabbc60bff8f5559997da472fdb3a56ed47d6[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Wed Oct 11 15:42:43 2023 -0300
+
+    fix: :bug:
+
+[33mcommit 974d52b35ec99ed558462f7e1b1fe87fcab5a8f2[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Wed Oct 11 02:44:26 2023 -0300
+
+    style: :lipstick: font change
+
+[33mcommit 0a5bd186a415517c53a9511135deb61995eef5c0[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Wed Oct 11 01:53:42 2023 -0300
+
+    fix:
+
+[33mcommit cfaf1c982c8865fbf82782d8edf0c587e4a8e092[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Wed Oct 11 01:50:09 2023 -0300
+
+    fix: :bug: quick fix
+
+[33mcommit 0d9799bd86035041faf66521750a5adcc3e7ce66[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Wed Oct 11 01:33:27 2023 -0300
+
+    feat: :art: style change
+
+[33mcommit e7980dea7ea6e7d3422405d1eeb51226b542a012[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Fri Oct 6 21:56:21 2023 -0300
+
+    fix: :fire: fix
+
+[33mcommit 78279b9c4dac7dfeebbc476ebbb9ab8c122c8264[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Thu Oct 5 02:57:58 2023 -0300
+
+    feat: :sparkles: new certificate
+
+[33mcommit 9c2171512cf7aab84d8e61058eb888f4384ae166[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Tue Oct 3 00:42:07 2023 -0300
+
+    fix: :zap: mejoras visuales
+
+[33mcommit b0e426e849c3dd27925fec8f11c8cb1a1f0a3fbf[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Mon Oct 2 21:23:11 2023 -0300
+
+    cambios generales
+
+[33mcommit aa55caa2b84949fb712714f1270fddb0d66623ac[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Tue Aug 29 04:54:11 2023 -0300
+
+    a few changes
+
+[33mcommit 00c218d679b30a726dfe2db6fb0a11cdfacfa2dd[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Wed Aug 23 15:46:36 2023 -0300
+
+    .
+
+[33mcommit 2d595a38fda7e579d5e83646dff2cebf39e78117[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Wed Aug 23 03:07:34 2023 -0300
+
+    changed section about me
+
+[33mcommit 5533dcb7ba2bbfa8a393f077167a05bfda95e00f[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Fri Aug 11 17:48:10 2023 -0300
+
+    changed description of section 'about me'
+
+[33mcommit af5a6635c0e582da362f98eabafe0f4530f1e7b1[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Fri Aug 11 03:51:11 2023 -0300
+
+    added a new certificate
+
+[33mcommit e918ca4f614247bdcea667efe1d885862173ef57[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Tue Aug 8 01:33:56 2023 -0300
+
+    about me section changed
+
+[33mcommit 9b4ff58d2c8da10661ebe4b18cf164c9dfb20b0c[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Mon Aug 7 20:32:24 2023 -0300
+
+    cv/resume changed
+
+[33mcommit fd2bdb0e79509c59c8d519d6f54af0436fb42476[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Tue Aug 1 09:11:51 2023 -0300
+
+    cv changed
+
+[33mcommit f9a43356a46157426bf0c0df4a758dec6eac7cdf[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Mon Jul 31 16:47:23 2023 -0300
+
+    fixed bug with media query's
+
+[33mcommit b86b9bb29ef72268939df318696a0b1d2eedb650[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Mon Jul 31 05:27:38 2023 -0300
+
+    .
+
+[33mcommit a96a6f7468e2bf34e072e85a46d3853fe274a636[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Mon Jul 31 03:32:32 2023 -0300
+
+    fixed margin top for self photo, added images for the first project and worked on the display of projects on cellphones and tablets
+
+[33mcommit 4e31a62985081c4f488237a35156aeca5785a418[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Fri Jul 28 17:49:54 2023 -0300
+
+    changes to the navbar on cellphones to be displayed or hidden when user scrolls, changed the position of the certificates and projects, removed two images from one project, changed background image in dark and light mode
+
+[33mcommit f9c350cf564eb1c8e8cd273be5394416bb25bf0d[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Thu Jul 20 14:59:39 2023 -0300
+
+    fixed images in media query's
+
+[33mcommit e0a00c98b49548e372191d1f67e328448546a13b[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Sat Jul 15 15:49:40 2023 -0300
+
+    image border fix
+
+[33mcommit a794d1f4345cd4db1eec3071d188980fb15edf1e[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Tue Jul 11 23:25:34 2023 -0300
+
+    added a link to the repository of my actual project and some few changes to images of projects
+
+[33mcommit 4dd0e88d11288e5b4f961324651d4741c69473a3[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Tue Jul 11 20:11:45 2023 -0300
+
+    added blog section and changed the display language to spanish
+
+[33mcommit 95044156d89520d6d5903e518e3fe16d34d81624[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Wed Jul 5 04:07:41 2023 -0300
+
+    some changes
+
+[33mcommit 577d26cdebab44ae69a9e27b8be4cc6154cca7b5[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Sat Jun 24 00:07:21 2023 -0300
+
+    adjust for the navbar when slides to the selected section
+
+[33mcommit da76e26af934d2178d1c484f527ff74b3772ff8b[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Fri Jun 23 23:48:41 2023 -0300
+
+    fixed navbar and images grid
+
+[33mcommit fb87a10e83ed1dc6605c07163f69b5d40045b161[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Fri Jun 23 20:39:47 2023 -0300
+
+    fix again the media query's
+
+[33mcommit b431164045ceb132e49133bd825c9be4a94fd5ce[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Fri Jun 23 20:03:35 2023 -0300
+
+    certificate hover fix
+
+[33mcommit 59fe5be23f6c0c5e61c69a5ef600f312df18f991[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Fri Jun 23 19:55:05 2023 -0300
+
+    changes for a better user experience
+
+[33mcommit 5ea708db6c45065b2db8194ba8b77b19bd69eda1[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Fri Jun 23 04:12:37 2023 -0300
+
+    fixed navbar and certificates display on phones
+
+[33mcommit 61a3bdb81ef8aa6da11927738d3277aca86ba2c6[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Fri Jun 23 02:16:41 2023 -0300
+
+    changes on titles H2, some visual changes, optimization of web and a better user experience in all devices
+
+[33mcommit 214602f668cf21e19a73a62fe75d8693b26c5d03[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Mon Jun 19 04:22:06 2023 -0300
+
+    cambios en javascript, css y html más agregados de imagenes
+
+[33mcommit 1dc30cb083ec233252346ae4481c197592d8feae[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Mon Jun 19 01:52:33 2023 -0300
+
+    cambios variados
+
+[33mcommit e7096777286fc9a1a687c0698eecf3f085adcc7a[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Sun May 21 02:21:39 2023 -0300
+
+    agregado de 1 proyecto y renovación de los cv
+
+[33mcommit 1e84df99f5e5633b70484dacb94fb6d115c61818[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Fri May 19 00:53:56 2023 -0300
+
+    cambios variados de estetica
+
+[33mcommit 6c46bc2df4e73f90837df294defb051315e35395[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Thu May 18 16:56:26 2023 -0300
+
+    arreglos variados
+
+[33mcommit 2addf2a44598e9fbea2a75e3c02261644162506c[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Wed May 17 23:05:14 2023 -0300
+
+    arreglo de backgrounds
+
+[33mcommit 8377ae0239e81e05b01e131fa0f0bc548aa40ef9[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Wed May 17 22:11:33 2023 -0300
+
+    cambios en el html y css
+
+[33mcommit 913843ae0885917def1fde900ad2b3cbcfa6c455[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Wed May 17 21:00:20 2023 -0300
+
+    cambio en el cv español y js
+
+[33mcommit d1519a041b5999c36469a5f12fa72f0db98cacba[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Wed May 17 20:42:09 2023 -0300
+
+    cambio en el video y muestra de cv
+
+[33mcommit 752bef2f2b81b772f726bd52f70527f2077d7f42[m
+Author: Alexandro Moroz <AlexandroMoroz5@gmail.com>
+Date:   Wed May 17 20:19:55 2023 -0300
+
+    initial commit
