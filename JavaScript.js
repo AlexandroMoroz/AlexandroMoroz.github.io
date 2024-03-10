@@ -43,12 +43,11 @@ function toggleLanguage() {
   var langButton = document.getElementById("language-toggle");
   var cvLink = document.getElementById("cv");
 
-    if (langButton.textContent === "Cambiar al Español") {
-      cvLink.textContent = "Download Resume";
-    } else if (langButton.textContent === "Switch to English"){
-      cvLink.textContent = "Descargar CV";
-    }
-  
+  if (langButton.textContent === "Cambiar al Español") {
+    cvLink.textContent = "Download Resume";
+  } else if (langButton.textContent === "Switch to English") {
+    cvLink.textContent = "Descargar CV";
+  }
 
   if (langButton.textContent === "Switch to English") {
     langButton.textContent = "Cambiar al Español";
@@ -94,7 +93,10 @@ themeToggle.addEventListener("click", toggleTextMutedClass);
 
 function downloadCV() {
   const languageToggle = document.getElementById("language-toggle");
-  const cvFilename = languageToggle.textContent === "Cambiar al Español" ? "Ivan-Alexandro-Moroz-EN.pdf" : "Ivan-Alexandro-Moroz-ES.pdf";
+  const cvFilename =
+    languageToggle.textContent === "Cambiar al Español"
+      ? "Ivan-Alexandro-Moroz-EN.pdf"
+      : "Ivan-Alexandro-Moroz-ES.pdf";
 
   const downloadLink = document.getElementById("cv");
   downloadLink.setAttribute("href", "./" + cvFilename);
@@ -102,8 +104,6 @@ function downloadCV() {
   downloadLink.setAttribute("type", "application/pdf");
   downloadLink.click;
 }
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
   var menuItems = document.querySelectorAll(".navbar-nav a, .navbar img, #top");
@@ -126,4 +126,18 @@ function toggleMode() {
   } else {
     logo.src = "./logo2.png";
   }
+}
+
+function verMas(texto, imagenes, boton) {
+
+  const imageContainer = document.getElementById(imagenes);
+  imageContainer.style.display = "block";
+
+  const over = document.getElementById(texto);
+  over.style.transition = "max-height 1.5s ease-in-out";
+  over.style.maxHeight = "none";
+
+  const botonVerMas = document.getElementById(boton);
+
+  botonVerMas.style.display = "none";
 }
