@@ -37,7 +37,7 @@ body {
   z-index: 999;
   background-color: #ffffff94;
   font-size: 24px;
-  border: 2px solid black;
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 15%;
   padding: 10px;
   text-align: center;
@@ -270,7 +270,7 @@ video {
   width: fit-content;
   margin: auto;
   background-color: rgba(49, 49, 49, 0.5);
-  border: 2px solid #ffffff9f;
+  border: 2px solid #686868de;
   border-radius: 40px 5px 40px 5px;
   padding: 10px;
 }
@@ -319,7 +319,7 @@ video {
 .dark-mode .global {
   width: 250px;
   background-color: rgba(49, 49, 49, 0.5);
-  border: 2px solid #ffffff9f;
+  border: 2px solid #686868de;
   border-radius: 1px 25px 1px 25px;
   padding: 5px;
   margin-bottom: 10px;
@@ -351,7 +351,7 @@ video {
 
 .dark-mode .presentacion {
   background-color: rgba(49, 49, 49, 0.5);
-  border: 2px solid #ffffff9f;
+  border: 2px solid #686868de;
   border-radius: 10px;
   padding: 20px;
 }
@@ -385,7 +385,7 @@ video {
 }
 
 .dark-mode .skill-item {
-  border-color: #ffffff9f;
+  border-color: #686868de;
   background-color: rgba(49, 49, 49, 0.5);
 }
 
@@ -463,20 +463,6 @@ h1 {
 
 #rol {
   text-align: center;
-}
-
-.dark-mode .blog {
-  background-color: rgba(49, 49, 49, 0.5);
-  border: 2px solid #ffffff9f;
-  border-radius: 10px;
-  padding: 20px;
-}
-
-.light-mode .blog {
-  background-color: rgba(255, 255, 255, 0.863);
-  border: 3px solid #000000;
-  border-radius: 10px;
-  padding: 20px;
 }
 
 .texto {
@@ -569,7 +555,7 @@ a {
 
 .dark-mode .info {
   background-color: rgba(49, 49, 49, 0.5);
-  border: 2px solid #ffffff9f;
+  border: 2px solid #686868de;
   border-radius: 10px;
   padding: 20px;
   color: #fff;
@@ -593,7 +579,7 @@ a {
 
 .dark-mode .icons {
   background-color: rgba(49, 49, 49, 0.5);
-  border: 2px solid #ffffff9f;
+  border: 2px solid #686868de;
   border-radius: 10px;
   padding: 20px;
 }
@@ -607,7 +593,7 @@ a {
 
 .dark-mode .pie {
   background-color: rgba(49, 49, 49, 0.5);
-  border-top: 2px solid #ffffff9f;
+  border-top: 2px solid #686868de;
   padding: 20px;
 }
 
