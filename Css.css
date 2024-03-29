@@ -102,14 +102,33 @@ body {
   margin-top: 1rem;
 }
 
+.zoomable-image {
+  border: 3px solid #000000;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  filter: blur(3px);
+  transition: transform 0.3s, filter 0.3s ease;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.zoomable-image:hover {
+  transform: scale(1.2);
+  filter: blur(0);
+  z-index: 1;
+}
+
 .image-container {
   justify-content: center;
 }
 
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
-  grid-gap: 25px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
 }
 
 .dark-mode .navbar {
@@ -212,7 +231,8 @@ li a {
   background-position: center center;
   background-attachment: fixed;
   background-image: url("./fondo_claro.webp");
-  opacity: 55%;
+  opacity: 45%;
+  filter: blur(5px);
   z-index: -1;
 }
 
@@ -237,7 +257,8 @@ li a {
   background-position: center center;
   background-attachment: fixed;
   background-image: url("./fondo_oscuro.webp");
-  opacity: 35%;
+  opacity: 25%;
+  filter: blur(2px);
   z-index: -1;
 }
 
@@ -361,22 +382,6 @@ video {
   border: 3px solid #000000;
   border-radius: 10px;
   padding: 20px;
-}
-
-.zoomable-image {
-  border: 3px solid #000000;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  filter: blur(3px);
-  transition: transform 0.3s, filter 0.3s ease;
-}
-
-.zoomable-image:hover {
-  transform: scale(1.2);
-  filter: blur(0);
-  z-index: 1;
 }
 
 .light-mode .skill-item {
@@ -801,11 +806,11 @@ a {
   }
 
   #projects .container .row.first-project .col-lg-6 {
-    order: 1;
+    order: 1 !important;
   }
 
   #projects .container .row.first-project .col-lg-6:nth-child(2) {
-    order: 2;
+    order: 2 !important;
   }
 
   .navbar {
@@ -831,10 +836,6 @@ a {
 
   .nav-link {
     padding: 5px 0;
-  }
-
-  .certificate-grid {
-    display: block;
   }
 
   .image-container {
@@ -1095,6 +1096,10 @@ a {
 
   .boton-ver-mas {
     display: block;
+  }
+  
+  .zoomable-image {
+    pointer-events: none;
   }
 }
 
