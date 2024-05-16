@@ -529,6 +529,7 @@
     </div>
 
     <!-- navbar -->
+
     <nav class="navbar navbar-dark bg-dark fixed-top" id="nav">
       <div class="container-fluid">
         <a href="#" class="click">
@@ -575,64 +576,94 @@
             </button>
           </div>
 
+          <!-- Navbar en Offcanvas -->
+
           <div class="offcanvas-body">
             <ul class="navbar-nav">
-              <li class="nav-item click">
-                <a
-                  onclick="scrollToSection('about')"
-                  class="nav-link"
-                  data-lang="es"
-                  data-lang-en="Sobre mi"
-                >
-                  <span></span>
+              <!-- Li en inglés -->
+
+              <li class="nav-item click SwitchEs">
+                <a onclick="scrollToSection('about')" class="nav-link">
                   About me
                 </a>
               </li>
 
-              <li class="nav-item click">
+              <!-- Li en Español -->
+
+              <li class="nav-item click SwitchEn">
+                <a onclick="scrollToSection('about')" class="nav-link">
+                  Sobre mi
+                </a>
+              </li>
+
+              <!-- Li en inglés -->
+
+              <li class="nav-item click SwitchEs">
                 <a
                   onclick="scrollToSection('projects')"
                   class="nav-link px-2 ms-1 text-white"
-                  data-lang="es"
-                  data-lang-en="Proyectos"
                 >
-                  <span></span>
                   Projects
                 </a>
               </li>
-              <li class="nav-item click">
+
+              <!-- Li en español -->
+
+              <li class="nav-item click SwitchEn">
                 <a
-                  onclick="scrollToSection('skills')"
-                  class="nav-link"
-                  data-lang="es"
-                  data-lang-en="Habilidades"
+                  onclick="scrollToSection('projects')"
+                  class="nav-link px-2 ms-1 text-white"
                 >
-                  <span></span>
+                  Proyectos
+                </a>
+              </li>
+
+              <!-- Li en inglés -->
+
+              <li class="nav-item click SwitchEs">
+                <a onclick="scrollToSection('skills')" class="nav-link">
                   Skills
                 </a>
               </li>
-              <li class="nav-item click">
+
+              <!-- Li en español -->
+
+              <li class="nav-item click SwitchEn">
+                <a onclick="scrollToSection('skills')" class="nav-link">
+                  Habilidades
+                </a>
+              </li>
+
+              <!-- Li en inglés -->
+
+              <li class="nav-item click SwitchEs">
                 <a
                   onclick="scrollToSection('contact')"
                   class="nav-link px-2 ms-1 text-white"
-                  data-lang="es"
-                  data-lang-en="Contáctame"
                 >
-                  <span></span>
                   Contact me
+                </a>
+              </li>
+
+              <!-- Li en español -->
+
+              <li class="nav-item click SwitchEn">
+                <a
+                  onclick="scrollToSection('contact')"
+                  class="nav-link px-2 ms-1 text-white"
+                >
+                  Contáctame
                 </a>
               </li>
             </ul>
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item click">
-                <div class="language-switch">
-                  <button
-                    id="language-toggle"
-                    class="text-white"
-                    onclick="toggleLanguage()"
-                  >
-                    Switch to English
-                  </button>
+              <li>
+                <div class="flex-cradle">
+                  <div class="slider-cradle">
+                    <div class="option-1">ES</div>
+                    <div class="option-2">EN</div>
+                    <div class="handle"></div>
+                  </div>
                 </div>
               </li>
               <div
@@ -670,20 +701,49 @@
     </nav>
 
     <main>
-      <div class="container yo">
+      <!-- Primera sección con el bloque de presentación -->
+
+      <!-- div en español -->
+
+      <div class="container yo SwitchEn">
         <div class="nombreRol d-flex justify-content-center align-items-center">
           <div class="px-3 cargo">
             <h1 style="font-family: 'Playfair Display', serif">
               Ivan Alexandro Moroz
             </h1>
-            <p id="rol" data-lang="en" data-lang-es="Web Developer - Java">
-              Desarrollador Web - Java
-            </p>
+            <p id="rol">Desarrollador Web - Java</p>
             <a
               class="btn btn-primary github"
               id="cv"
-              data-lang="es"
-              data-lang-en="Descargar CV"
+              onclick="downloadCV()"
+              href="./Ivan-Alexandro-Moroz-ES.pdf"
+              download="Ivan-Alexandro-Moroz-ES.pdf"
+              type="application/pdf"
+            >
+              Descargar CV
+            </a>
+          </div>
+          <img
+            src="https://alexandromoroz.github.io/cv%20semi%20profesional.jpg"
+            alt="Profile Picture"
+            class="rounded-circle img-thumbnail ml-3"
+            id="imagen"
+          />
+        </div>
+      </div>
+
+      <!-- div en inglés -->
+
+      <div class="container SwitchEs" style="margin-top: 1rem;">
+        <div class="nombreRol d-flex justify-content-center align-items-center">
+          <div class="px-3 cargo">
+            <h1 style="font-family: 'Playfair Display', serif">
+              Ivan Alexandro Moroz
+            </h1>
+            <p id="rol">Web Developer - Java</p>
+            <a
+              class="btn btn-primary github"
+              id="cv"
               onclick="downloadCV()"
               href="./Ivan-Alexandro-Moroz-EN.pdf"
               download="Ivan-Alexandro-Moroz-EN.pdf"
@@ -700,57 +760,73 @@
           />
         </div>
       </div>
-
       <br />
 
+      <!-- Segunda sección donde se explica sobre mi -->
+
       <section id="about" class="container">
-        <div class="presentacion bot-bot">
-          <h2 class="text-center" data-lang="es" data-lang-en="Sobre mi">
-            About Me
-          </h2>
-          <p
-            class="texto"
-            data-lang="es"
-            data-lang-en='¡Hola! soy Alex, también tuve apodos como "Morita" y "Rusito", un desarrollador web en formación, estudié 7 años en un colegio técnico la rama de electromecánica y luego terminé en un bachiller con orientación en bellas artes.
+
+        <!-- div en español -->
+
+        <div class="presentacion bot-bot SwitchEn">
+          <h2 class="text-center">Sobre mi</h2>
+          <p class="texto">
+            Hola! soy Alex, también tuve apodos como "Morita" y "Rusito", un desarrollador web en formación, estudié 7 años en un colegio técnico la rama de electromecánica y luego terminé en un bachiller con orientación en bellas artes.
 
           Comencé en la programación meses después de terminar mis estudios secundarios, estudié en el curso de Argentina programa 4.0 y en un curso fullstack con la empresa EGG COOPERATION, a día de hoy tengo más de 1 año estudiando al respecto.
 
           A lo largo de mi vida trabajé en muchos sectores, tales como metalúrgica, carpintería, call centers, correos, logísticas, etc. Gracias a esta experiencia, hoy en día pienso de una forma completamente distinta.
 
-          Soy una persona muy tranquila y me encanta trabajar en equipos, soy muy dedicado a lo que hago y me es muy difícil dejar a la mitad un problema, generalmente no descanso hasta encontrar la solución.
-                   '
-          >
-            Hello! I'm Alex, also had nicknames like "Morita" or "Rusito", a web
-            developer in training, I studied 7 years in a technical school in
-            the electromechanical branch and then finished high school with a
-            focus on fine arts. I started in programming months after finishing
-            my high school studies, I studied in the Argentina Program 4.0
-            course and in a full-stack course with the company EGG COOPERATION,
-            to this day I have been studying in this field for over 1 year.
-            Throughout my life, I have worked in many sectors, such as
-            metallurgy, carpentry, call centers, postal services, logistics,
-            etc. Thanks to this experience, nowadays I think in a completely
-            different way. I am a very calm person and I love working in teams,
-            I am very dedicated to what I do and it is very difficult for me to
-            leave a problem halfway, I generally do not rest until I find the
-            solution.
+          Soy una persona muy tranquila y me encanta trabajar en equipos, soy muy dedicado a lo que hago y me es muy difícil dejar a la mitad un problema, generalmente no descanso hasta encontrar la solución.                  
+          </p>
+        </div>
+
+        <!-- div en inglés -->
+
+        <div class="presentacion SwitchEs">
+          <h2 class="text-center">About Me</h2>
+          <p class="texto">
+            Hello! I'm Alex, also had nicknames like "Morita" or "Rusito", a web developer in training, I studied 7 years in a technical school in the electromechanical branch and then finished high school with a focus on fine arts.
+            
+            I started in programming months after finishing my high school studies, I studied in the Argentina Program 4.0 course and in a full-stack course with the company EGG COOPERATION, to this day I have been studying in this field for over 1 year.
+            
+            Throughout my life, I have worked in many sectors, such as metallurgy, carpentry, call centers, postal services, logistics, etc.
+             
+            Thanks to this experience, nowadays I think in a completely different way.
+            
+            I am a very calm person and I love working in teams, I am very dedicated to what I do and it is very difficult for me to leave a problem halfway, I generally do not rest until I find the solution.
           </p>
         </div>
       </section>
 
       <br />
 
+      <!-- Tercera sección de proyectos -->
+
       <section id="projects">
         <div class="container">
-          <div class="centrar bot-bot">
+        
+          <!-- Div en Español -->
+          
+          <div class="bot-bot SwitchEn">
             <h2
-              class="text-center global"
-              data-lang="es"
-              data-lang-en="Proyectos"
+              class="text-center global centrar"             
+            >
+            Proyectos
+            </h2>
+          </div>
+          
+          <!-- Div en inglés -->
+
+          <div class="SwitchEs">
+            <h2
+              class="text-center global centrar"
             >
               Projects
             </h2>
           </div>
+
+          <!-- Primer proyecto -->
 
           <div class="row d-flex align-items-center first-project bot-right">
             <div class="col-lg-6">
@@ -802,7 +878,51 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="info">
+
+              <!-- Div en Español -->
+
+              <div class="info SwitchEn">
+                <h5
+                  class="text-center title"                 
+                >
+                Página de noticias
+                </h5>
+                <p class="text-center">
+                  Java - MySQL - HTML5 - CSS3 - Bootstrap - Thymeleaf - Spring -
+                  Spring Security - JPA - Maven
+                </p>
+                <p
+                  id="p1"
+                  class="text-center over"        
+                >
+                Esta página web ofrece una plataforma para que los usuarios puedan mantenerse informados sobre las últimas noticias, los periodistas puedan compartir sus historias con el mundo y los administradores puedan controlar el contenido de la página web.
+
+                Los usuarios pueden navegar por las noticias de actualidad. Los periodistas pueden crear cuentas para publicar noticias, editar sus artículos y colaborar con otros periodistas.
+                
+                Los administradores tienen acceso a las herramientas necesarias para gestionar la página web, como la creación de noticias y la gestión de usuarios.             
+                </p>
+                <div class="text-center">
+                  <a
+                    href="https://github.com/AlexandroMoroz/Pagina-de-noticias"
+                    target="_blank"
+                    class="btn btn-primary github rep1"                 
+                    >Repositorio Github</a
+                  >
+                </div>
+                <button
+                  id="b1"
+                  class="boton-ver-mas mt-2 btn btn-primary github rep2"
+                  onclick="verMas('p1', 'i1', 'b1')"
+                >
+                  Ver más
+                </button>
+              </div>
+            
+          
+
+              <!-- Div en inglés -->
+
+              <div class="info SwitchEs">
                 <h5
                   class="text-center title"
                   data-lang="es"
@@ -816,38 +936,29 @@
                 </p>
                 <p
                   id="p1"
-                  class="text-center over"
-                  data-lang="es"
-                  data-lang-en="Esta página web ofrece una plataforma para que los usuarios puedan mantenerse informados sobre las últimas noticias, los periodistas puedan compartir sus historias con el mundo y los administradores puedan controlar el contenido de la página web.
-
-                Los usuarios pueden navegar por las noticias de actualidad. Los periodistas pueden crear cuentas para publicar noticias, editar sus artículos y colaborar con otros periodistas. Los administradores tienen acceso a las herramientas necesarias para gestionar la página web, como la creación de noticias y la gestión de usuarios.           
-                "
+                  class="text-center over"              
                 >
-                  This website offers a platform for users to stay informed
-                  about the latest news, journalists to share their stories with
-                  the world, and administrators to control the website's
-                  content. Users can browse current news. Journalists can create
-                  accounts to publish news, edit their articles, and collaborate
-                  with other journalists. Administrators have access to the
-                  tools they need to manage the website, such as creating news
-                  and managing users.
+                  This website offers a platform for users to stay informed about the latest news, journalists to share their stories with the world, and administrators to control the website's content.
+                  
+                  Users can browse current news. Journalists can create accounts to publish news, edit their articles, and collaborate with other journalists.
+                  
+                  Administrators have access to the tools they need to manage the website, such as creating news and managing users.
                 </p>
                 <div class="text-center">
                   <a
                     href="https://github.com/AlexandroMoroz/Pagina-de-noticias"
                     target="_blank"
-                    class="btn btn-primary github rep1"
-                    data-lang="es"
-                    data-lang-en="Repositorio Github"
-                    >GitHub Repository</a
-                  >
+                    class="btn btn-primary github"
+                    >
+                    GitHub Repository
+                    </a>
                 </div>
                 <button
                   id="b1"
-                  class="boton-ver-mas mt-2 btn btn-primary github rep2"
+                  class="boton-ver-mas mt-2 btn btn-primary github"
                   onclick="verMas('p1', 'i1', 'b1')"
                 >
-                  Ver más
+                  See more
                 </button>
               </div>
             </div>
@@ -855,14 +966,57 @@
 
           <br />
 
+          <!-- Segundo proyecto -->
+
           <div class="bot-left">
             <div class="row d-flex align-items-center">
               <div class="col-lg-6">
-                <div class="info">
+
+                <!-- Div en Español -->
+
+                <div class="info SwitchEn">
+                  <h5
+                    class="text-center title"                  
+                  >
+                  Página de salud "Vitalidapp"
+                  </h5>
+                  <p class="text-center">
+                    Java - MySQL - HTML5 - CSS3 - Javascript - Bootstrap -
+                    Thymeleaf - Spring Framework - Spring Security - JPA - Maven
+                  </p>
+                  <p
+                    id="p2"
+                    class="text-center over"
+                  >
+                  Esta plataforma web ayuda a los médicos autónomos a registrar y atender pacientes,
+                  mantener sus historiales médicos en una base de datos actualizada y guardar los diagnósticos.
+                  La plataforma resuelve el problema actual de los hospitales, donde los historiales médicos se pierden
+                  con frecuencia y no hay un orden claro. La plataforma proporciona una solución segura y eficiente para que los
+                  médicos autónomos puedan gestionar sus pacientes.
+                  </p>
+                  <div class="text-center">
+                    <a
+                      href="https://github.com/AlexandroMoroz/health-app"
+                      target="_blank"
+                      class="btn btn-primary github rep2"
+                      >
+                      Repositorio Github
+                      </a>
+                  </div>
+                  <button
+                    id="b2"
+                    class="boton-ver-mas mt-2 btn btn-primary github rep2"
+                    onclick="verMas('p2', 'i2', 'b2')"
+                  >
+                    Ver más
+                  </button>
+                </div>
+
+                <!-- Div en inglés -->
+
+                <div class="info SwitchEs">
                   <h5
                     class="text-center title"
-                    data-lang="es"
-                    data-lang-en='Página de salud "Vitalidapp"'
                   >
                     Health Website "Vitalidapp"
                   </h5>
@@ -880,30 +1034,27 @@
                 con frecuencia y no hay un orden claro. La plataforma proporciona una solución segura y eficiente para que los
                 médicos autónomos puedan gestionar sus pacientes."
                   >
-                    This web platform helps self-employed doctors to register
-                    and care for patients, keep their medical records in an
-                    updated database and save diagnoses. The platform solves the
-                    current problem in hospitals, where medical records are
-                    often lost and there is no clear order. The platform
-                    provides a safe and efficient solution for self-employed
-                    doctors to manage their patients.
+                    This web platform helps self-employed doctors to register and care for patients, keep their medical records in an updated database and save diagnoses.
+                    
+                    The platform solves the current problem in hospitals, where medical records are often lost and there is no clear order.
+                    
+                    The platform provides a safe and efficient solution for self-employed doctors to manage their patients.
                   </p>
                   <div class="text-center">
                     <a
                       href="https://github.com/AlexandroMoroz/health-app"
                       target="_blank"
-                      class="btn btn-primary github rep2"
-                      data-lang="es"
-                      data-lang-en="Repositorio Github"
-                      >GitHub Repository</a
-                    >
+                      class="btn btn-primary github"
+                      >
+                      GitHub Repository
+                      </a>
                   </div>
                   <button
                     id="b2"
-                    class="boton-ver-mas mt-2 btn btn-primary github rep2"
+                    class="boton-ver-mas mt-2 btn btn-primary github"
                     onclick="verMas('p2', 'i2', 'b2')"
                   >
-                    Ver más
+                    See More
                   </button>
                 </div>
               </div>
@@ -960,6 +1111,8 @@
 
           <br />
 
+          <!-- Tercer proyecto -->
+
           <div class="row d-flex align-items-center first-project bot-right">
             <div class="col-lg-6">
               <div id="i3" class="image-container">
@@ -1010,11 +1163,12 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="info">
+
+            <!-- Div en español -->
+
+              <div class="info SwitchEn">
                 <h5
                   class="text-center title"
-                  data-lang="es"
-                  data-lang-en="JavaCrypter"
                 >
                   JavaCrypter
                 </h5>
@@ -1022,22 +1176,14 @@
                 <p
                   id="p3"
                   class="text-center over"
-                  data-lang="es"
-                  data-lang-en='Esta plataforma web es un challenge proporcionado por el programa "ONE" de Alura en conjunto con Oracle, la idea del challenge
-                es poner en práctica lo aprendido durante el programa y crear un encriptador en donde el usuario debe poder
-                ingresar un texto y encriptarlo o en caso de ya estar encriptado, desencriptarlo, tiene un diseño estéticamente
-                agradable con una paleta de colores única. Tiene ciertos impedimentos,
-                el usuario no puede ingresar textos con caracteres especiales, acentos o mayúsculas.'
                 >
-                  This web platform is a challenge provided by the Alura "ONE"
-                  program in conjunction with Oracle. The idea of the challenge
-                  is to put into practice what was learned during the program
-                  and create an encryptor where the user must be able to enter a
-                  text and encrypt it or, if it is already encrypted, decrypt
-                  it. It has an aesthetically pleasing design with a unique
-                  color palette. It has certain limitations, the user cannot
-                  enter texts with special characters, accents, or uppercase
-                  letters.
+                Esta plataforma web es un challenge proporcionado por el programa "ONE" de Alura en conjunto con Oracle. 
+                
+                La idea del challenge es poner en práctica lo aprendido durante el programa y crear un encriptador en donde el usuario debe poder ingresar un texto y encriptarlo o en caso de ya estar encriptado, desencriptarlo. 
+                
+                Tiene un diseño estéticamente agradable con una paleta de colores única. 
+                
+                Tiene ciertos impedimentos, el usuario no puede ingresar textos con caracteres especiales, acentos o mayúsculas.
                 </p>
                 <div class="text-center">
                   <a
@@ -1045,17 +1191,16 @@
                     target="_blank"
                     class="btn btn-primary github rep1 mt-2"
                     data-lang="es"
-                    data-lang-en="Repositorio Github"
-                    >GitHub Repository</a
-                  >
+                    data-lang-en=""
+                    >
+                    Repositorio Github
+                    </a>
                   <a
                     href="https://alexandromoroz.github.io/Encriptador-Challenge-Alura/"
                     target="_blank"
                     class="btn btn-primary github rep1 mt-2"
-                    data-lang="es"
-                    data-lang-en="Web online"
                   >
-                    Online web
+                  Web online
                   </a>
                 </div>
                 <button
@@ -1066,19 +1211,113 @@
                   Ver más
                 </button>
               </div>
+
+              <!-- Div en inglés -->
+
+              <div class="info SwitchEs">
+                <h5
+                  class="text-center title"
+                >
+                  JavaCrypter
+                </h5>
+                <p class="text-center">HTML5 - CSS3 - Bootstrap - Javascript</p>
+                <p
+                  id="p3"
+                  class="text-center over"
+                >
+                  This web platform is a challenge provided by the Alura "ONE" program in conjunction with Oracle. 
+                  
+                  The idea of the challenge is to put into practice what was learned during the program and create an encryptor where the user must be able to enter a text and encrypt it or, if it is already encrypted, decrypt it. 
+                  
+                  It has an aesthetically pleasing design with a unique color palette. 
+                  
+                  It has certain limitations, the user cannot enter texts with special characters, accents, or uppercase letters.
+                </p>
+                <div class="text-center">
+                  <a
+                    href="https://github.com/AlexandroMoroz/Encriptador-Challenge-Alura"
+                    target="_blank"
+                    class="btn btn-primary github mt-2"
+                    >
+                    GitHub Repository
+                  </a>
+                  <a
+                    href="https://alexandromoroz.github.io/Encriptador-Challenge-Alura/"
+                    target="_blank"
+                    class="btn btn-primary github mt-2"
+                  >
+                    Online web
+                  </a>
+                </div>
+                <button
+                  id="b3"
+                  class="boton-ver-mas mt-2 btn btn-primary github"
+                  onclick="verMas('p3', 'i3', 'b3')"
+                >
+                  See more
+                </button>
+              </div>
             </div>
           </div>
 
           <br />
 
+          <!-- Cuarto proyecto -->
+
           <div class="bot-left">
             <div class="row d-flex align-items-center">
               <div class="col-lg-6">
-                <div class="info">
+
+                <!-- Div en Español -->
+
+                <div class="info SwitchEn">
+                  <h5
+                    class="text-center title"
+                  >
+                  Marketplace de venta de productos orgánicos
+                  </h5>
+                  <p class="text-center">
+                    HTML5 - CSS3 - Javascript - Tailwind- React - Vite - Spring
+                    Framework - Java - MySQL - Maven - Hibernate - Eureka -
+                    Junit 5 - Mockito - API RESTful
+                  </p>
+                  <p
+                    id="p4"
+                    class="text-center over">
+                    La presente aplicación web surge como respuesta a una necesidad real y cotidiana de las personas que buscan mantener una alimentación sana.
+
+                    El desafío radica en la dificultad para encontrar locales que oferten productos orgánicos y saludables. En la mayoría de los casos, su ubicación se conoce a través del boca a boca.
+                    
+                    Nuestra propuesta consiste en una aplicación que conecta a los usuarios con los vendedores de estos productos. De esta manera, se ofrece seguridad, transparencia y comodidad a quienes buscan mejorar su calidad de vida a través de la alimentación.
+                    
+                    La aplicación facilita el acceso a una amplia variedad de productos.
+      
+                    En definitiva, la aplicación se posiciona como una herramienta útil y confiable para quienes buscan mejorar su salud y bienestar a través de una alimentación sana.   
+                  </p>
+                  <div class="text-center">
+                    <a
+                      href="https://github.com/No-Country/c16-57-t-java-react"
+                      target="_blank"
+                      class="btn btn-primary github rep2"
+                      >
+                      Repositorio Github
+                    </a>
+                  </div>
+                  <button
+                    id="b4"
+                    class="boton-ver-mas mt-2 btn btn-primary github rep2"
+                    onclick="verMas('p4', 'i4', 'b4')"
+                  >
+                    Ver más
+                  </button>
+                </div>
+
+                <!-- Div en Inglés -->
+
+                <div class="info SwitchEs">
                   <h5
                     class="text-center title"
                     data-lang="es"
-                    data-lang-en="Marketplace de venta de productos orgánicos"
                   >
                     Marketplace for the sale of organic products
                   </h5>
@@ -1090,47 +1329,33 @@
                   <p
                     id="p4"
                     class="text-center over"
-                    data-lang="es"
-                    data-lang-en="La presente aplicación web surge como respuesta a una necesidad real y cotidiana de las personas que buscan mantener una alimentación sana.
-
-              El desafío radica en la dificultad para encontrar locales que oferten productos orgánicos y saludables. En la mayoría de los casos, su ubicación se conoce a través del boca a boca.
-              
-              Nuestra propuesta consiste en una aplicación que conecta a los usuarios con los vendedores de estos productos. De esta manera, se ofrece seguridad, transparencia y comodidad a quienes buscan mejorar su calidad de vida a través de la alimentación.
-              
-              La aplicación facilita el acceso a una amplia variedad de productos.
-
-              En definitiva, la aplicación se posiciona como una herramienta útil y confiable para quienes buscan mejorar su salud y bienestar a través de una alimentación sana."
-                  >
-                    This web application arises as a response to a real and
-                    everyday need of people who seek to maintain a healthy diet.
-                    The challenge lies in the difficulty of finding stores that
-                    offer organic and healthy products. In most cases, their
-                    location is known through word of mouth. Our proposal
-                    consists of an application that connects users with the
-                    sellers of these products. In this way, it offers security,
-                    transparency and convenience to those who seek to improve
-                    their quality of life through food. The application
-                    facilitates access to a wide variety of products. In short,
-                    the application positions itself as a useful and reliable
-                    tool for those who seek to improve their health and
-                    well-being through a healthy diet.
+                   >
+                    This web application arises as a response to a real and everyday need of people who seek to maintain a healthy diet.
+                    
+                    The challenge lies in the difficulty of finding stores that offer organic and healthy products. In most cases, their location is known through word of mouth.
+                    
+                    Our proposal consists of an application that connects users with the sellers of these products.
+                    
+                    In this way, it offers security, transparency and convenience to those who seek to improve their quality of life through food.
+                    
+                    The application facilitates access to a wide variety of products.
+                    
+                    In short, the application positions itself as a useful and reliable tool for those who seek to improve their health and well-being through a healthy diet.
                   </p>
                   <div class="text-center">
                     <a
                       href="https://github.com/No-Country/c16-57-t-java-react"
                       target="_blank"
-                      class="btn btn-primary github rep2"
-                      data-lang="es"
-                      data-lang-en="Repositorio Github"
-                      >GitHub Repository</a
-                    >
+                      class="btn btn-primary github"
+                      >
+                      GitHub Repository</a>
                   </div>
                   <button
                     id="b4"
-                    class="boton-ver-mas mt-2 btn btn-primary github rep2"
+                    class="boton-ver-mas mt-2 btn btn-primary github"
                     onclick="verMas('p4', 'i4', 'b4')"
                   >
-                    Ver más
+                    See more
                   </button>
                 </div>
               </div>
@@ -1147,12 +1372,26 @@
       </section>
 
       <br />
+
+      <!-- Quinta sección de habilidades -->
+
       <section class="container" id="skills">
-        <div class="centrar bot-bot">
+
+        <!-- Div en español -->
+
+        <div class="bot-bot SwitchEn">
           <h2
-            class="text-center global"
-            data-lang="es"
-            data-lang-en="Habilidades"
+            class="text-center global centrar"
+          >
+          Habilidades
+          </h2>
+        </div>
+
+        <!-- Div en inglés-->
+
+        <div class="SwitchEs">
+          <h2
+            class="text-center global centrar"
           >
             Skills
           </h2>
@@ -1269,12 +1508,17 @@
 
       <br />
 
+      <!-- Sexta sección de contacto -->
+
       <section id="contact" class="container bot-bot">
         <div class="icons">
           <div class="d-flex align-items-center justify-content-center">
-            <h2 data-lang="es" data-lang-en="Contáctame">Contact me</h2>
+            <h2 class="SwitchEn">Contáctame</h2>
           </div>
-          <div class="contact-form">
+          <div class="d-flex align-items-center justify-content-center">
+            <h2 class="SwitchEs">Contact me</h2>
+          </div>
+          <div class="contact-form SwitchEn">
             <form
               id="contact-form"
               action="https://formspree.io/f/xyyqvvod"
@@ -1285,10 +1529,8 @@
                   <label
                     for="name"
                     class="form-label"
-                    data-lang="es"
-                    data-lang-en="Nombre:"
-                    >Name:</label
-                  >
+                    >Nombre:
+                    </label>
                   <input
                     type="text"
                     class="form-control"
@@ -1301,10 +1543,8 @@
                   <label
                     for="email"
                     class="form-label"
-                    data-lang="es"
-                    data-lang-en="Email:"
-                    >Email:</label
-                  >
+                    >Email:
+                  </label>
                   <input
                     type="email"
                     class="form-control"
@@ -1319,11 +1559,9 @@
                 <label
                   for="subject"
                   class="form-label"
-                  data-lang="es"
-                  data-lang-en="Asunto:"
-                  >Affair:</label
-                >
-                <input
+                  >Asunto:
+                  </label>
+                  <input
                   type="text"
                   class="form-control"
                   id="subject"
@@ -1336,10 +1574,8 @@
                 <label
                   for="message"
                   class="form-label"
-                  data-lang="es"
-                  data-lang-en="Mensaje:"
-                  >Message:</label
-                >
+                  >
+                  Mensaje:</label>
                 <textarea
                   class="form-control"
                   id="message"
@@ -1353,8 +1589,91 @@
                   type="submit"
                   id="btn-submit"
                   class="btn btn-primary rep3"
-                  data-lang="es"
-                  data-lang-en="Enviar"
+                >
+                Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+        
+
+        <!-- Form en inglés -->
+
+          <div class="contact-form SwitchEs">
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/xyyqvvod"
+              method="post"
+            >
+              <div class="mb-3 row">
+                <div class="col-md-6">
+                  <label
+                    for="name"
+                    class="form-label"
+                    >
+                    Name:
+                    </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label
+                    for="email"
+                    class="form-label"
+                    >
+                    Email:
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label
+                  for="subject"
+                  class="form-label"
+                  >
+                  Affair:
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  name="subject"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label
+                  for="message"
+                  class="form-label"
+                  >
+                  Message:
+                </label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  id="btn-submit"
+                  class="btn btn-primary"
                 >
                   Submit
                 </button>
@@ -1362,6 +1681,7 @@
             </form>
           </div>
         </div>
+      </div>
       </section>
 
       <br />
@@ -1369,17 +1689,18 @@
 
     <div class="b-example-divider"></div>
 
-    <footer
-      class="d-flex flex-wrap justify-content-between align-items-center py-3 pie"
+    <!-- Footer en español-->
+
+    <!-- <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 pie SwitchEn"
     >
       <div class="col-md-6 d-flex align-items-center">
         <span
           id="footer-text"
-          class="mb-3 mb-md-0"
-          data-lang="es"
-          data-lang-en="Copyright © 2023 Ivan Alexandro Moroz. Todos los derechos reservados."
-          >Copyright © 2023 Ivan Alexandro Moroz. All rights are reserved.</span
-        >
+          class="mb-3 mb-md-0 "
+          >
+          Copyright © 2023 Ivan Alexandro Moroz. Todos los derechos reservados.
+          </span>
       </div>
       <div class="col-md-6 d-flex justify-content-end" id="footerIcons">
         <a
@@ -1399,7 +1720,41 @@
           <i class="fab fa-github git"></i>
         </a>
       </div>
+    </footer> -->
+
+    <!-- Footer en inglés -->
+
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 pie SwitchEs"
+    >
+    <div class="col-md-6 d-flex align-items-center">
+      <span
+        id="footer-text"
+        class="mb-3 mb-md-0 "
+        >
+        Copyright © 2023 Ivan Alexandro Moroz. All rights are reserved.
+      </span>
+    </div>
+      <div class="col-md-6 d-flex justify-content-end" id="footerIcons">
+        <a
+          href="https://www.linkedin.com/in/ivan-alexandro-moroz-java-developer-trainee/"
+          target="_blank"
+          class="me-3"
+          style="font-size: 25px"
+        >
+          <i class="fab fa-linkedin" style="color: #0a66c2"></i>
+        </a>
+        <a
+          href="https://github.com/AlexandroMoroz"
+          target="_blank"
+          id="footerIcon"
+          style="font-size: 25px; margin-right: 80px"
+        >
+          <i class="fab fa-github git"></i>
+        </a>
+      </div>
     </footer>
+   
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>

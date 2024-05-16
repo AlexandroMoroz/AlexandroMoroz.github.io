@@ -178,6 +178,72 @@ body {
   background-color: rgb(223, 222, 222) !important;
 }
 
+.flex-cradle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  font-family: Helvetica;
+}
+
+.slider-cradle {
+  display: flex;
+  width: 100px;
+  text-align: center;
+  border-radius: 30px;
+  border: 2px solid white;
+  background: transparent;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.4);
+  transition: background ease-in-out 0.5s;
+}
+
+.light-mode .slider-cradle {
+  border: 2px solid rgba(0, 0, 0, 0.514);
+}
+.slider-cradle .option-1 {
+  cursor: pointer;
+  width: 50%;
+  position: relative;
+  z-index: 2;
+}
+.slider-cradle .option-2 {
+  cursor: pointer;
+  width: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.light-mode .slider-cradle .option-1, .light-mode .slider-cradle .option-2 {
+  color: black;
+}
+
+.slider-cradle .handle {
+  cursor: pointer;
+  width: 46px;
+  height: 46px;
+  border-radius: 30px;
+  position: absolute;
+  background: rgba(82, 81, 81, 0.767);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+  transition: transform cubic-bezier(1, 0.11, 1, 1.04) 200ms;
+}
+
+.light-mode .slider-cradle .handle {
+  background: rgba(42, 209, 111, 0.836);
+}
+.slider-cradle div {
+  line-height: 50px;
+  color: white;
+  font-weight: 500;
+}
+.slider-cradle {
+  background: transparent;
+}
+
 li a {
   color: #fff;
   position: relative;
@@ -364,9 +430,9 @@ video {
 }
 
 .centrar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 15px;
 }
 
@@ -1096,6 +1162,7 @@ a {
 
   .boton-ver-mas {
     display: block;
+    margin: auto;
   }
   
   .zoomable-image {
