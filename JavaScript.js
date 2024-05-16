@@ -7,6 +7,8 @@ var offcanvas = new bootstrap.Offcanvas(
   document.getElementById("offcanvasDarkNavbar")
 );
 
+// Función para cambiar entre temas de la pagina.
+
 themeToggle.addEventListener("click", function () {
   if (body.classList.contains("light-mode")) {
     logoImg.src = "./logo.png";
@@ -25,6 +27,17 @@ themeToggle.addEventListener("click", function () {
   offcanvas.hide();
 });
 
+// Función para ocultar todos los elementos HTML que tengan la etiqueta "SwitchEs" cuando carga el DOM entero.
+
+document.addEventListener("DOMContentLoaded", function () {
+  var switchEsElements = document.querySelectorAll(".SwitchEs");
+  for (var i = 0; i < switchEsElements.length; i++) {
+    switchEsElements[i].style.display = "none";
+  }
+});
+
+// Función para scrollar a la sección correspondiente.
+
 function scrollToSection(sectionId) {
   const element = document.getElementById(sectionId);
   const navbarHeight = document.getElementById("nav").offsetHeight;
@@ -36,48 +49,40 @@ function scrollToSection(sectionId) {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  toggleLanguage();
-});
-function toggleLanguage() {
-  var langButton = document.getElementById("language-toggle");
-  var cvLink = document.getElementById("cv");
+// Función para cambiar entre idiomas.
 
-  if (langButton.textContent === "Cambiar al Español") {
-    cvLink.textContent = "Download Resume";
-  } else if (langButton.textContent === "Switch to English") {
-    cvLink.textContent = "Descargar CV";
-  }
+var slider = document.querySelector(".slider-cradle");
+  var handle = slider.querySelector(".handle");
 
-  if (langButton.textContent === "Switch to English") {
-    langButton.textContent = "Cambiar al Español";
-    replaceTextContent("en", "es");
-    offcanvas.hide();
-  } else {
-    langButton.textContent = "Switch to English";
-    replaceTextContent("es", "en");
-    offcanvas.hide();
-  }
-}
+slider.addEventListener("click", function () {
 
-function replaceTextContent(fromLanguage, toLanguage) {
-  var elements = document.querySelectorAll("[data-lang]");
-
-  elements.forEach(function (element) {
-    var currentText = element.textContent;
-    var targetText = element.getAttribute("data-lang-" + toLanguage);
-
-    if (element.getAttribute("data-lang") === fromLanguage) {
-      element.textContent = targetText;
-
-      element.setAttribute("data-lang-" + fromLanguage, currentText);
-
-      element.setAttribute("data-lang", toLanguage);
-    }
+    var switchEnElements = document.querySelectorAll(".SwitchEn");
+    var switchEsElements = document.querySelectorAll(".SwitchEs");
+    switchEnElements.forEach(function (switchEn) {
+      if (switchEn.style.display === "none") {
+        switchEn.style.display = "block";
+      } else {
+        switchEn.style.display = "none";
+      }
+    });
+    switchEsElements.forEach(function (switchEs) {
+      if (switchEs.style.display === "none") {
+        switchEs.style.display = "block";
+      } else {
+        switchEs.style.display = "none";
+      }
+    });
+    
+    if (handle.style.transform === "translateX(50px)") {
+      handle.style.transform = "translateX(0px)"
+    } else {
+      handle.style.transform = "translateX(50px)"
+    }     
   });
-}
 
 const footerText = document.getElementById("footer-text");
+
+// Función para mutear el texto del footer.
 
 function toggleTextMutedClass() {
   if (document.body.classList.contains("light-mode")) {
@@ -90,6 +95,8 @@ function toggleTextMutedClass() {
 toggleTextMutedClass();
 
 themeToggle.addEventListener("click", toggleTextMutedClass);
+
+// Función para descargar el CV.
 
 function downloadCV() {
   const languageToggle = document.getElementById("language-toggle");
@@ -105,6 +112,8 @@ function downloadCV() {
   downloadLink.click;
 }
 
+// Función para cerrar el Offcanvas al hacer clic en un elemento de la barra de navegación.
+
 document.addEventListener("DOMContentLoaded", function () {
   var menuItems = document.querySelectorAll(".navbar-nav a, .navbar img, #top");
   menuItems.forEach(function (item) {
@@ -113,6 +122,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// Función para cambiar entre el modo oscuro y el modo claro.
 
 function toggleMode() {
   const body = document.body;
@@ -128,8 +139,9 @@ function toggleMode() {
   }
 }
 
-function verMas(texto, imagenes, boton) {
+// Función para ver más sobre un proyecto.
 
+function verMas(texto, imagenes, boton) {
   const imageContainer = document.getElementById(imagenes);
   imageContainer.style.display = "block";
 
