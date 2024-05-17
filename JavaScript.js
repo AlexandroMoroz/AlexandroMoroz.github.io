@@ -46,6 +46,7 @@ function scrollToSection(sectionId) {
 
   window.scrollTo({
     top: scroll,
+    behavior: 'smooth'
   });
 }
 
