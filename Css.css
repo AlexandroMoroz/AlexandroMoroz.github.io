@@ -4,7 +4,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
 body {
@@ -537,6 +537,7 @@ h1 {
 }
 
 .texto {
+  margin-top: 0;
   text-align: center;
   white-space: pre-line;
 }
