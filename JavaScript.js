@@ -46,40 +46,39 @@ function scrollToSection(sectionId) {
 
   window.scrollTo({
     top: scroll,
-    behavior: 'smooth'
+    behavior: "smooth",
   });
 }
 
 // Función para cambiar entre idiomas.
 
 var slider = document.querySelector(".slider-cradle");
-  var handle = slider.querySelector(".handle");
+var handle = slider.querySelector(".handle");
 
 slider.addEventListener("click", function () {
-
-    var switchEnElements = document.querySelectorAll(".SwitchEn");
-    var switchEsElements = document.querySelectorAll(".SwitchEs");
-    switchEnElements.forEach(function (switchEn) {
-      if (switchEn.style.display === "none") {
-        switchEn.style.display = "block";
-      } else {
-        switchEn.style.display = "none";
-      }
-    });
-    switchEsElements.forEach(function (switchEs) {
-      if (switchEs.style.display === "none") {
-        switchEs.style.display = "block";
-      } else {
-        switchEs.style.display = "none";
-      }
-    });
-    
-    if (handle.style.transform === "translateX(50px)") {
-      handle.style.transform = "translateX(0px)"
+  var switchEnElements = document.querySelectorAll(".SwitchEn");
+  var switchEsElements = document.querySelectorAll(".SwitchEs");
+  switchEnElements.forEach(function (switchEn) {
+    if (switchEn.style.display === "none") {
+      switchEn.style.display = "block";
     } else {
-      handle.style.transform = "translateX(50px)"
-    }     
+      switchEn.style.display = "none";
+    }
   });
+  switchEsElements.forEach(function (switchEs) {
+    if (switchEs.style.display === "none") {
+      switchEs.style.display = "block";
+    } else {
+      switchEs.style.display = "none";
+    }
+  });
+
+  if (handle.style.transform === "translateX(50px)") {
+    handle.style.transform = "translateX(0px)";
+  } else {
+    handle.style.transform = "translateX(50px)";
+  }
+});
 
 const footerText = document.getElementById("footer-text");
 
@@ -154,3 +153,29 @@ function verMas(texto, imagenes, boton) {
 
   botonVerMas.style.display = "none";
 }
+
+const COLORS = ["#fff2", "#fff4", "#fff7", "#fffc"];
+
+const generateSpaceLayer = (size, selector, totalStars, duration) => {
+  const layer = [];
+  const pageHeight = document.documentElement.scrollHeight;
+  const pageWidth = document.documentElement.scrollWidth;
+  const color = COLORS[Math.floor(Math.random() * COLORS.length)];
+
+  for (let i = 0; i < totalStars; i++) {
+    const x = Math.floor(Math.random() * pageWidth);
+    const y = Math.floor(Math.random() * pageHeight);
+    layer.push(`${x}px ${y}px 0 ${color}`);
+    layer.push(`${x}px ${y + pageHeight}px 0 ${color}`);
+  }
+
+  const container = document.querySelector(selector);
+  container.style.setProperty("--space-layer", layer.join(","));
+  container.style.setProperty("--size", size);
+  container.style.setProperty("--duration", duration);
+  container.style.setProperty("--pageHeight", `${pageHeight}px`);
+};
+
+generateSpaceLayer("1px", ".space-1", 2000, "350s");
+generateSpaceLayer("2px", ".space-2", 1000, "300s");
+generateSpaceLayer("4px", ".space-3", 500, "250s");

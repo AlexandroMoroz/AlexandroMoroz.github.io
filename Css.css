@@ -135,19 +135,7 @@ body {
   position: sticky;
   background-color: #343a40;
   z-index: 1;
-  background: url("https://www.transparenttextures.com/patterns/stardust.png");
-  animation: starsFall 120s linear infinite;
   border-bottom: 2px solid rgba(255, 255, 255, 0.185);
-}
-
-@keyframes starsFall {
-  0% {
-    background-position: 0 0;
-  }
-
-  100% {
-    background-position: -100vw 100vh;
-  }
 }
 
 .light-mode .navbar {
@@ -302,16 +290,16 @@ li a {
   z-index: -1;
 }
 
-.dark-mode {
+/* .dark-mode {
   background-color: rgba(10, 10, 10, 1);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   color: white;
-}
+} */
 
-.dark-mode::before {
+/* .dark-mode::before {
   content: "";
   position: fixed;
   top: 0;
@@ -326,6 +314,32 @@ li a {
   opacity: 25%;
   filter: blur(2px);
   z-index: -1;
+} */
+
+.dark-mode {
+  background-image: linear-gradient(#19191a, #000);
+  color: white;
+}
+
+.dark-mode .space {
+  width: var(--size);
+  height: var(--size);
+  background: #fff;
+  box-shadow: var(--space-layer);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 85%;
+  animation: moveStars var(--duration) linear infinite;
+}
+
+@keyframes moveStars {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-1 * var(--pageHeight)));
+  }
 }
 
 .dark-mode h2 {
@@ -483,7 +497,7 @@ button#theme-toggle {
   border: none;
   outline: none;
   cursor: pointer;
-  transition: transform 0.5s, background-color 0.5s;
+  transition: background-color 0.5s;
 }
 
 button#theme-toggle:hover {
@@ -492,7 +506,6 @@ button#theme-toggle:hover {
 
 .light-mode #theme-toggle {
   background-color: rgba(46, 204, 112, 0.747);
-  transition: 1s;
 }
 
 .light-mode #theme-toggle:hover {
@@ -507,6 +520,7 @@ button#theme-toggle:hover {
 #moon-icon {
   display: inline-block;
   font-size: 20px;
+  rotate: 145deg;
 }
 
 #theme-toggle {
@@ -517,7 +531,6 @@ button#theme-toggle:hover {
 }
 
 #theme-toggle:hover {
-  transform: rotate(180deg);
   color: #ffc107;
 }
 
@@ -667,12 +680,14 @@ a {
   background-color: rgba(49, 49, 49, 0.5);
   border-top: 2px solid #686868de;
   padding: 20px;
+  z-index: 1;
 }
 
 .light-mode .pie {
   background-color: rgba(255, 255, 255, 0.863);
   border-top: 3px solid #000000;
   padding: 20px;
+  z-index: 1;
 }
 
 .icons h2 {
