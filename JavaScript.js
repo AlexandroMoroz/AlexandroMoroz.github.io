@@ -179,3 +179,14 @@ const generateSpaceLayer = (size, selector, totalStars, duration) => {
 generateSpaceLayer("1px", ".space-1", 2000, "350s");
 generateSpaceLayer("2px", ".space-2", 1000, "300s");
 generateSpaceLayer("4px", ".space-3", 500, "250s");
+
+window.addEventListener('resize', () => {
+  generateSpaceLayer("1px", ".space-1", 2000, "350s");
+  generateSpaceLayer("2px", ".space-2", 1000, "300s");
+  generateSpaceLayer("4px", ".space-3", 500, "250s");
+});
+
+window.addEventListener('load', () => {
+  // Añade la clase 'loaded' al cuerpo del documento
+  document.body.classList.add('loaded');
+});
