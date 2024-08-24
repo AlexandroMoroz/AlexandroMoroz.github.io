@@ -10,6 +10,14 @@ html {
 body {
   font-family: "GeistMono";
   margin: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+body.loaded {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
 }
 
 ::-webkit-scrollbar {

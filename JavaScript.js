@@ -185,3 +185,8 @@ window.addEventListener('resize', () => {
   generateSpaceLayer("2px", ".space-2", 1000, "300s");
   generateSpaceLayer("4px", ".space-3", 500, "250s");
 });
+
+window.addEventListener('load', () => {
+  // Añade la clase 'loaded' al cuerpo del documento
+  document.body.classList.add('loaded');
+});
